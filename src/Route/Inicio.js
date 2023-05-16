@@ -37,7 +37,7 @@ export function MiniHeader() {
   return (
     <div className="header">
       <ul className="header__list">
-        <li className="header__item"> :D +00000000000</li>
+        <li className="header__item">+00000000000</li>
         <li className="header__item">info@predicafiel.com</li>
         <li className="header__item">
           <ul className="header__list-icons">
