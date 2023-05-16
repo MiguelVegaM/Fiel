@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Inicio from "./Route/Inicio";
+import Nosotros from "./Route/Nosotros";
+import Entrenamientos from "./Route/Entrenamientos";
+import Eventos from "./Route/Eventos";
+import Recursos from "./Route/Recursos";
+import Contacto from "./Route/Contacto";
+import DeclaracionDoctrinal from "./Route/DeclaracionDoctrinal";
+import Equipo from "./Route/Equipo";
+import Alianzas from "./Route/Alianzas";
+import Navbar from "./inicio/Navbar";
+import MiniHeader from "./inicio/MiniHeader";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Inicio />} />
+      <Route path="nosotros" element={<Nosotros />} />
+      <Route path="entrenamientos" element={<Entrenamientos />} />
+      <Route path="eventos" element={<Eventos />} />
+      <Route path="recursos" element={<Recursos />} />
+      <Route path="contacto" element={<Contacto />} />
+      <Route path="declaracion-doctrinal" element={<DeclaracionDoctrinal />} />
+      <Route path="equipo" element={<Equipo />} />
+      <Route path="alianzas" element={<Alianzas />} />
+    </Routes>
   );
 }
 

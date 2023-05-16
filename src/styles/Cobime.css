@@ -1,0 +1,33 @@
+.cobime {
+  background-image: linear-gradient(to left, #00000010, #000000, #00000010),
+    url("https://t4.ftcdn.net/jpg/03/26/59/69/360_F_326596944_m7WkrlErKIg1W2HAIzuOWUwGZ5R54v4h.jpg");
+  /* height: 290px; */
+  text-align: center;
+  color: #fff;
+  padding-block: 60px;
+  padding-inline: 50px;
+}
+
+.cobime__background-image {
+  /* z-index: 2; */
+}
+
+.cobime__header {
+  font-size: smaller;
+}
+
+.cobime__main {
+  font-weight: 600;
+}
+
+.cobime__main--bold {
+  font-weight: 800;
+}
+
+.cobime__paragraph {
+  font-size: larger;
+}
+
+.cobime__button-container {
+  margin-top: 20px;
+}

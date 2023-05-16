@@ -1,0 +1,85 @@
+.recursos {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.recursos__header {
+  margin: 100px auto 35px;
+  width: 65%;
+}
+
+.recursos__header-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #860e30;
+}
+
+.recursos__header-logo {
+  display: flex;
+}
+
+.recursos__logo {
+  margin-top: 40px;
+  width: 45px;
+}
+
+.line--gray {
+  border: 0.75px solid rgba(0, 0, 0, 0.253);
+  width: 190px;
+  margin-bottom: 15px;
+}
+
+.recursos__text {
+  color: rgb(74, 74, 74);
+}
+
+.recursos__vid {
+  position: relative;
+}
+
+.recursos__vid-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.recursos__button-container {
+  /* border: 1px solid red; */
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+/*  Sigo sin poder seleccionar el componente del boton  */
+/* .recursos__button {
+} */
+
+.recursos__play-button {
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .recursos__header-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 400px;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .recursos__header-title {
+    font-size: 1.5rem;
+  }
+}
