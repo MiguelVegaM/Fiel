@@ -26,6 +26,7 @@
 .header__list-icons {
   display: flex;
   list-style: none;
+  padding-left: 0px;
 }
 
 .header__icon-circle {
