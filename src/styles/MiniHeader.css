@@ -5,6 +5,7 @@
   color: #fff;
   display: flex;
   /* justify-content: flex-end; */
+  overflow-x: hidden;
 }
 
 .header__list {

@@ -39,6 +39,10 @@
   border-radius: 5px;
 }
 
+.dropdown-item.active {
+  background-color: #850e30;
+}
+
 .navbar a.active {
   text-decoration: underline;
   font-weight: 700;

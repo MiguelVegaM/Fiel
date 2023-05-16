@@ -1,8 +1,10 @@
 import React from "react";
+
 import { Helmet } from "react-helmet";
-import MiniHeader from "../inicio/MiniHeader";
-import Navbar from "../inicio/Navbar";
-import MiniFooter from "../inicio/MiniFooter";
+
+import { MiniHeader } from "./Inicio";
+import { Navbar } from "./Inicio";
+import { MiniFooter } from "./Inicio";
 
 function Contacto(props) {
   return (

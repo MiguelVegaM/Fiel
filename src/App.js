@@ -9,8 +9,6 @@ import Contacto from "./Route/Contacto";
 import DeclaracionDoctrinal from "./Route/DeclaracionDoctrinal";
 import Equipo from "./Route/Equipo";
 import Alianzas from "./Route/Alianzas";
-import Navbar from "./inicio/Navbar";
-import MiniHeader from "./inicio/MiniHeader";
 
 function App() {
   return (
