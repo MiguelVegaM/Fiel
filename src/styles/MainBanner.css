@@ -11,7 +11,7 @@
 
 .main-banner__text {
   color: #fff;
-  padding-inline: 3rem;
+  padding-inline: 5rem;
   max-width: 900px;
   /* height: 100%; */
   padding: 190px 40px;
@@ -51,7 +51,8 @@
 @media (max-width: 767px) {
   .main-banner__text {
     padding: 180px 40px;
-    max-width: 500px;
+    max-width: 475px;
+    font-size: 0.8rem;
   }
   .main-banner {
     justify-content: center;
