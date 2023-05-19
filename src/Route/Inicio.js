@@ -122,7 +122,7 @@ export function Navbar(props) {
             <li className="nav-item dropdown navbar__list-item">
               <NavLink
                 className="dropdown-toggle  navbar__link"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -789,34 +789,46 @@ export function Footer(props) {
             <div className="footer__accesos-directos1">
               <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink to="/" className="footer__accesos-directos-link">
                     Inicio
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink to="#" className="footer__accesos-directos-link">
                     Nosotros
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/entrenamientos"
+                    className="footer__accesos-directos-link"
+                  >
                     Entrenamientos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/eventos"
+                    className="footer__accesos-directos-link"
+                  >
                     Eventos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/recursos"
+                    className="footer__accesos-directos-link"
+                  >
                     Recursos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/cobime"
+                    className="footer__accesos-directos-link"
+                  >
                     COBIME
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
