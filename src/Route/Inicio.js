@@ -37,7 +37,7 @@ export function MiniHeader() {
   return (
     <div className="header">
       <ul className="header__list">
-        <li className="header__item"> :D +00000000000</li>
+        <li className="header__item">+00000000000</li>
         <li className="header__item">info@predicafiel.com</li>
         <li className="header__item">
           <ul className="header__list-icons">
@@ -789,34 +789,49 @@ export function Footer(props) {
             <div className="footer__accesos-directos1">
               <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink to="/" className="footer__accesos-directos-link">
                     Inicio
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/nosotros"
+                    className="footer__accesos-directos-link"
+                  >
                     Nosotros
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/entrenamientos"
+                    className="footer__accesos-directos-link"
+                  >
                     Entrenamientos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/eventos"
+                    className="footer__accesos-directos-link"
+                  >
                     Eventos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/recursos"
+                    className="footer__accesos-directos-link"
+                  >
                     Recursos
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/cobime"
+                    className="footer__accesos-directos-link"
+                  >
                     COBIME
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
