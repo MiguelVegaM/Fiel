@@ -92,11 +92,13 @@ export function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div>
-        <img
-          className="navbar__logo"
-          src="https://www.predicafiel.org/images/logo-largo.png"
-          alt="Fiel Logo"
-        />
+        <NavLink to="/" className="navbar__logo-link">
+          <img
+            className="navbar__logo"
+            src="https://www.predicafiel.org/images/logo-largo.png"
+            alt="Fiel Logo"
+          />
+        </NavLink>
       </div>
       <div className="navbar__dropdown">
         <button

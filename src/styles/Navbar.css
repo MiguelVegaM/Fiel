@@ -43,6 +43,10 @@
   background-color: #850e30;
 }
 
+.navbar__logo-link:active {
+  background-color: #ffffff00 !important;
+}
+
 .navbar a.active {
   text-decoration: underline;
   font-weight: 700;
