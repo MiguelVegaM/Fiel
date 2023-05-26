@@ -852,7 +852,7 @@ export function Footer(props) {
                 </li>
                 <li className="footer__accesos-directos-list-item">
                   <NavLink
-                    to="/alianza"
+                    to="/alianzas"
                     className="footer__accesos-directos-link"
                   >
                     Alianzas
