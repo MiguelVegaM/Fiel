@@ -122,7 +122,7 @@ export function Navbar(props) {
             <li className="nav-item dropdown navbar__list-item">
               <NavLink
                 className="dropdown-toggle  navbar__link"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -794,10 +794,7 @@ export function Footer(props) {
                   </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/nosotros"
-                    className="footer__accesos-directos-link"
-                  >
+                  <NavLink to="#" className="footer__accesos-directos-link">
                     Nosotros
                   </NavLink>
                 </li>
@@ -838,19 +835,28 @@ export function Footer(props) {
             <div className="footer__accesos-directos2">
               <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/declaracion-doctrinal"
+                    className="footer__accesos-directos-link"
+                  >
                     Declaración Doctrinal
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/equipo"
+                    className="footer__accesos-directos-link"
+                  >
                     Equipo
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/alianza"
+                    className="footer__accesos-directos-link"
+                  >
                     Alianzas
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
                   <a href="" className="footer__accesos-directos-link">
