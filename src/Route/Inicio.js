@@ -835,19 +835,28 @@ export function Footer(props) {
             <div className="footer__accesos-directos2">
               <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/declaracion-doctrinal"
+                    className="footer__accesos-directos-link"
+                  >
                     Declaración Doctrinal
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/equipo"
+                    className="footer__accesos-directos-link"
+                  >
                     Equipo
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/alianza"
+                    className="footer__accesos-directos-link"
+                  >
                     Alianzas
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
                   <a href="" className="footer__accesos-directos-link">
