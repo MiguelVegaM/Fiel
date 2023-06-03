@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -632,6 +633,16 @@ export function Alianzas(props) {
 }
 
 export function ContactoWhats(props) {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <div className="contacto">
       <div className="contacto__container">
@@ -666,36 +677,78 @@ export function ContactoWhats(props) {
             Para brindarte atención personaliza compartenos tus datos y pronto
             nos pondremos en contacto contigo
           </p>
-          <form className="contacto__form">
+
+          {/* //!                   FORMULARIO */}
+          <form onSubmit={handleSubmit(onSubmit)} className="contacto__form">
             <input
+              {...register("nombre", {
+                required: true,
+              })}
               className="contacto__input"
               type="text"
               placeholder="Nombre"
             />
+            {errors.nombre?.type === "required" && (
+              <p className="input-errors">Este campo es requerido</p>
+            )}
             <input
+              {...register("apellido", {
+                required: true,
+              })}
               className="contacto__input"
               type="text"
               placeholder="Apellido"
             />
+            {errors.apellido?.type === "required" && (
+              <p className="input-errors">Este campo es requerido</p>
+            )}
             <input
+              {...register("teléfono", {
+                required: true,
+              })}
               className="contacto__input"
               type="tel"
               placeholder="Teléfono"
             />
+            {errors.teléfono?.type === "required" && (
+              <p className="input-errors">Este campo es requerido</p>
+            )}
             <input
+              {...register("email", {
+                required: true,
+                pattern:
+                  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              })}
               className="contacto__input"
               type="email"
               placeholder="E-mail"
             />
+            {errors.email?.type === "required" && (
+              <p className="input-errors">Este campo es requerido</p>
+            )}
+            <textarea
+              {...register("mensaje", {
+                required: true,
+                maxLength: 140,
+              })}
+              className="contacto__input-large"
+              type="text"
+              placeholder="Mensaje"
+            ></textarea>
+            {errors.mensaje?.type === "required" && (
+              <p className="input-errors">Este campo es requerido</p>
+            )}
+            {errors.Mensaje?.type === "maxLength" && (
+              <p className="input-errors">Maximo 140 caracteres</p>
+            )}
+            <div className="contacto__button-container form_button">
+              <input
+                className="button-component"
+                type="submit"
+                value="ENVIAR"
+              />
+            </div>
           </form>
-          <textarea
-            className="contacto__input-large"
-            type="text"
-            placeholder="Mensaje"
-          ></textarea>
-          <div className="contacto__button-container">
-            <Button class>ENVIAR</Button>
-          </div>
         </div>
       </div>
     </div>
