@@ -1,7 +1,6 @@
 .main-banner {
-  background-image: linear-gradient(to left, #850e3038, #00000000, #ffffff00),
-    linear-gradient(to bottom right, #ffffff00, #000000),
-    url("https://images.theconversation.com/files/370607/original/file-20201120-23-jsdx02.jpg?ixlib=rb-1.1.0&rect=235%2C0%2C3966%2C1983&q=45&auto=format&w=1356&h=668&fit=crop");
+  background-image: url(/public/images/mainBanner-bg.png);
+  background-size: cover;
   /* height: 80vh; */
   display: flex;
   justify-content: end;

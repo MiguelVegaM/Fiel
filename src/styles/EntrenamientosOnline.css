@@ -1,7 +1,8 @@
 .entrenamiento-online {
   /* no puedo quitar el border por que se mueve todo <------------------------------------ */
   border: 1px solid transparent;
-  background-image: url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=927&q=80");
+  background-image: url(../../public/images/HOME-Predica-Fiel-banner-2.png);
+  background-size: cover;
   height: 100%;
 }
 
@@ -11,7 +12,7 @@
   justify-content: space-around;
   margin: 0 auto;
   max-width: 70%;
-  margin-block: 120px;
+  margin-block: 40px;
 }
 
 .entrenamiento-online__box-text {
@@ -38,19 +39,17 @@
   margin-block: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .entrenamiento-online__image {
-  filter: grayscale(100%) invert(1);
   width: 350px;
   margin-bottom: 30px;
 }
 
-.entrenamiento__button-container {
+.entrenamiento__button-container-box {
   /* border: 1px solid rebeccapurple; */
   display: flex;
-  width: 230px;
+  width: 300px;
   justify-content: space-around;
   margin-right: -125px;
 }
@@ -66,6 +65,7 @@
   }
   .entrenamiento-online__box-logo {
     justify-content: center;
+    align-items: center;
   }
   .entrenamiento__button-container {
     margin-right: 0px;
@@ -90,14 +90,15 @@
   background-color: #fff;
   width: 86%;
   margin-inline: auto;
-  border-radius: 50px 50px 0 0;
+  border-radius: 50px;
   display: flex;
+  margin-bottom: 50px;
 }
 
 .entrenamiento__card-image {
   height: 550px;
   width: 50%;
-  border-radius: 50px 0 0 0;
+  border-radius: 50px 0 0 50px;
   object-fit: cover;
 }
 
@@ -111,7 +112,6 @@
 .entrenamiento__card-title {
   font-size: 3rem;
   font-weight: 700;
-
   color: #850e30;
 }
 

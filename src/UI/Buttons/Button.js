@@ -1,10 +1,15 @@
 import React from "react";
 import "./Button.css";
 
-function Button(props) {
+function Button({ children, specificClass }) {
   return (
-    <button type="button" className="button-component">
-      {props.children}
+    <button
+      type="button"
+      className={`button-component ${
+        specificClass === undefined ? "" : specificClass
+      }`}
+    >
+      {children}
     </button>
   );
 }

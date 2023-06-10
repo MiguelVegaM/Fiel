@@ -2,7 +2,13 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 
-import { MiniHeader } from "./Inicio";
+import {
+  Alianzas,
+  ContactoWhats,
+  DisclaimerDonar,
+  Footer,
+  MiniHeader,
+} from "./Inicio";
 import { Navbar } from "./Inicio";
 import { MiniFooter } from "./Inicio";
 
@@ -14,7 +20,11 @@ function Entrenamientos(props) {
       </Helmet>
       <MiniHeader />
       <Navbar />
-      <h1>Entrenamientos</h1>
+
+      <Alianzas />
+      <ContactoWhats />
+      <Footer />
+      <DisclaimerDonar />
       <MiniFooter />
     </div>
   );

@@ -1,8 +1,9 @@
 .navbar {
+  background-color: #fff;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0px 8% 3px 8%;
-  /* position: sticky; */
+  /* margin: 0px 8% 3px 8%; */
 }
 
 .navbar__logo {

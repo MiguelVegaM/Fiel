@@ -96,7 +96,7 @@ export function Navbar(props) {
         <NavLink to="/" className="navbar__logo-link">
           <img
             className="navbar__logo"
-            src="https://www.predicafiel.org/images/logo-largo.png"
+            src="../images/logo-largo.png"
             alt="Fiel Logo"
           />
         </NavLink>
@@ -173,7 +173,7 @@ export function Navbar(props) {
               </NavLink>
             </li>
             <NavLink className="dropdown-item" to="/contacto">
-              <Button>Contacto</Button>
+              <Button specificClass="btn__navbar">CONTACTO</Button>
             </NavLink>
           </ul>
         </div>
@@ -195,7 +195,7 @@ export function MainBanner(props) {
           Fielmente comprometidos con la predicación de evangelio de Jesucristo,
           entrenando a expositores bíblicos en el mundo hispano parlante.
         </p>
-        <Button className="hola">CONOCE MÁS</Button>
+        <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
       </div>
     </section>
   );
@@ -221,22 +221,23 @@ export function EntrenamientosOnline(props) {
           <div className="entrenamiento-online__box-logo">
             <img
               className="entrenamiento-online__image"
-              src="https://www.predicafiel.org/images/logo-largo.png"
+              src="../images/logo-largo-blanco.png"
               alt="Fiel Logo"
             />
-            <div className="entrenamiento__button-container">
-              {/*  Cambiarlo a gris------------------- */}
-              <Button className="entrenamiento__button-gray-text">
+            <div className="entrenamiento__button-container-box">
+              <Button specificClass="btn__entrenamientos-online--gris">
                 EQUIPO
               </Button>
-              <Button className="button-red-text">SOBRE NOSOTROS</Button>
+              <Button specificClass="btn__entrenamientos-online--red">
+                SOBRE NOSOTROS
+              </Button>
             </div>
           </div>
         </div>
         <div className="entrenamiento__card">
           <img
             className="entrenamiento__card-image"
-            src="https://images.unsplash.com/photo-1617870757002-5c84bb82a755?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+            src="../../images/medium-shot-man-with-laptop.png"
             alt="Men on PC"
           />
           <div className="entrenamiento__card-text">
@@ -263,9 +264,13 @@ export function EntrenamientosOnline(props) {
               retroalimentación.
             </p>
             <div className="entrenamiento__button-container-box">
-              <Button className="button-red-text">CONOCER MÁS</Button>
+              <Button specificClass="btn__entrenamientos-online--rojo">
+                CONOCER MÁS
+              </Button>
               {/* //!Cambiarlo a gris------------------- */}
-              <Button className="button-gray-text">APLICAR</Button>
+              <Button specificClass="btn__entrenamientos-online--gris">
+                APLICAR
+              </Button>
             </div>
           </div>
         </div>
@@ -297,7 +302,9 @@ export function EntrenamientosPresenciales(props) {
         <div className="entrenamiento__button-container-banner">
           {/* //!Cambiarlo a blanco------------------- */}
 
-          <Button>CONOCER MÁS</Button>
+          <Button specificClass="btn__entrenamiento-presencial">
+            CONOCER MÁS
+          </Button>
         </div>
       </div>
     </div>
@@ -310,12 +317,13 @@ export function RecursosVid(props) {
       <div className="recursos__header">
         <div className="recursos__header-logo">
           <h1 className="recursos__header-title">
-            DISFRUTA DE TODOS LOS RECURSOS <span>QUE TENEMOS PARA TI.</span>
+            DISFRUTA DE TODOS LOS RECURSOS
+            <span>QUE TENEMOS PARA TI.</span>
           </h1>
           <div>
             <img
               className="recursos__logo"
-              src="https://www.predicafiel.org/images/logo-corto.png"
+              src="../images/logo-corto.png"
               alt="Fiel logo"
             />
           </div>
@@ -331,8 +339,8 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
+                src="../images/capa-3.png"
                 className="recursos__vid-image"
-                src="https://images.unsplash.com/photo-1627818653012-054f17eb0648?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80"
                 alt="Vid 1"
               />
               <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
@@ -341,8 +349,8 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
+                src="../images/capa-4.png"
                 className="recursos__vid-image"
-                src="https://images.unsplash.com/photo-1520703078787-a61e8cb387c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
                 alt="Vid 2"
               />
               <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
@@ -351,8 +359,8 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
+                src="../images/capa-5.png"
                 className="recursos__vid-image"
-                src="https://images.unsplash.com/photo-1560131517-b04bebfb8c8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"
                 alt="Vid 3"
               />
               <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
@@ -361,7 +369,7 @@ export function RecursosVid(props) {
         </div>
       </div>
       <div className="recursos__button-container">
-        <Button className="recursos__button">VER TODOS LOS RECURSOS</Button>
+        <Button specificClass="btn__recursosvid">VER TODOS LOS RECURSOS</Button>
       </div>
     </div>
   );
@@ -406,8 +414,8 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="https://www.predicafiel.org/images/miguel-1.jpg"
-                    alt="avatar1"
+                    src="../images/miguel.jpg"
+                    alt="Miguel Núñez"
                   />
                   <div className="testimonios__text-container">
                     <div className="testimonios__paragraph">
@@ -441,8 +449,8 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="https://www.predicafiel.org/images/usielfinal.jpg"
-                    alt="avatar2"
+                    src="../images/usiel.jpg"
+                    alt="Usiel Abreu"
                   />
                   <div className="testimonios__text-container">
                     <div className="testimonios__paragraph">
@@ -471,8 +479,8 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="https://www.predicafiel.org/images/doctor-juan-sanchez1.jpg"
-                    alt="avatar3"
+                    src="../images/juan.jpg"
+                    alt="Juan Sánchez"
                   />
                   <div className="testimonios__text-container">
                     <div className="testimonios__paragraph">
@@ -557,7 +565,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://simeontrust.org/es">
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/simeontrust.png"
+                src="../images/simeon-trust.jpg"
                 alt="Simeon Trust Logo"
               />
             </a>
@@ -566,7 +574,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://es.9marks.org/">
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/9Marks-Espan%CC%83ol-Logo-Oficial_Standards_Guide[1123].png"
+                src="../images/9marks.jpg"
                 alt="9 Marks Logo"
               />
             </a>
@@ -575,7 +583,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.sbts.edu/">
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/southerm.jpg"
+                src="../images/sbts.jpg"
                 alt="Southern Baptist Theological Seminary Logo"
               />
             </a>
@@ -586,7 +594,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.crosslinks.org/">
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/crosslinks.jpg"
+                src="../images/crosslinks.jpg"
                 alt="Crosslinks Logo"
               />
             </a>
@@ -598,7 +606,7 @@ export function Alianzas(props) {
             >
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/coalicion.jpg"
+                src="../images/coalicion.jpg"
                 alt="Coalición por el Evangelio Logo"
               />
             </a>
@@ -607,7 +615,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.proctrust.org.uk/">
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/pt.jpg"
+                src="../images/pt.jpg"
                 alt="Proclamation Trust Logo"
               />
             </a>
@@ -621,7 +629,7 @@ export function Alianzas(props) {
             >
               <img
                 className="alianzas__image"
-                src="https://www.predicafiel.org/images/crossconnections.jpg"
+                src="../images/crossconnections.jpg"
                 alt="Crossconections Logo"
               />
             </a>
@@ -650,7 +658,7 @@ export function ContactoWhats(props) {
           <div className="contacto__logo">
             <img
               className="contacto__image"
-              src="https://www.predicafiel.org/images/logo-largo.png"
+              src="../../images/logo-largo-blanco.png"
               alt="Fiel Logo"
             />
           </div>
@@ -678,54 +686,56 @@ export function ContactoWhats(props) {
             nos pondremos en contacto contigo
           </p>
 
-          {/* //!                   FORMULARIO */}
+          {/*----------------------------------------FORMULARIO */}
           <form onSubmit={handleSubmit(onSubmit)} className="contacto__form">
-            <input
-              {...register("nombre", {
-                required: true,
-              })}
-              className="contacto__input"
-              type="text"
-              placeholder="Nombre"
-            />
-            {errors.nombre?.type === "required" && (
-              <p className="input-errors">Este campo es requerido</p>
-            )}
-            <input
-              {...register("apellido", {
-                required: true,
-              })}
-              className="contacto__input"
-              type="text"
-              placeholder="Apellido"
-            />
-            {errors.apellido?.type === "required" && (
-              <p className="input-errors">Este campo es requerido</p>
-            )}
-            <input
-              {...register("teléfono", {
-                required: true,
-              })}
-              className="contacto__input"
-              type="tel"
-              placeholder="Teléfono"
-            />
-            {errors.teléfono?.type === "required" && (
-              <p className="input-errors">Este campo es requerido</p>
-            )}
-            <input
-              {...register("email", {
-                required: true,
-                pattern:
-                  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-              })}
-              className="contacto__input"
-              type="email"
-              placeholder="E-mail"
-            />
-            {errors.email?.type === "required" && (
-              <p className="input-errors">Este campo es requerido</p>
-            )}
+            <div className="contacto__inputs-container">
+              <input
+                {...register("nombre", {
+                  required: true,
+                })}
+                className="contacto__input"
+                type="text"
+                placeholder="Nombre"
+              />
+              {errors.nombre?.type === "required" && (
+                <p className="input-errors">Este campo es requerido</p>
+              )}
+              <input
+                {...register("apellido", {
+                  required: true,
+                })}
+                className="contacto__input"
+                type="text"
+                placeholder="Apellido"
+              />
+              {errors.apellido?.type === "required" && (
+                <p className="input-errors">Este campo es requerido</p>
+              )}
+              <input
+                {...register("teléfono", {
+                  required: true,
+                })}
+                className="contacto__input"
+                type="tel"
+                placeholder="Teléfono"
+              />
+              {errors.teléfono?.type === "required" && (
+                <p className="input-errors">Este campo es requerido</p>
+              )}
+              <input
+                {...register("email", {
+                  required: true,
+                  pattern:
+                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                })}
+                className="contacto__input"
+                type="email"
+                placeholder="E-mail"
+              />
+              {errors.email?.type === "required" && (
+                <p className="input-errors">Este campo es requerido</p>
+              )}
+            </div>
             <textarea
               {...register("mensaje", {
                 required: true,
@@ -962,7 +972,7 @@ export function DisclaimerDonar(props) {
         <div className="donar">
           <img
             className="donar__image"
-            src="https://www.revistareder.com/ojs/public/site/images/admin/PayPal_reder_button1.png"
+            src="../images/donar.png"
             alt="Donar Logo"
           />
         </div>

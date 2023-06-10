@@ -1,6 +1,7 @@
 .cobime {
-  background-image: linear-gradient(to left, #00000010, #000000, #00000010),
-    url("https://t4.ftcdn.net/jpg/03/26/59/69/360_F_326596944_m7WkrlErKIg1W2HAIzuOWUwGZ5R54v4h.jpg");
+  background-image: url("../../public/images/Banner-4.png");
+  background-size: cover;
+  background-position: center;
   /* height: 290px; */
   text-align: center;
   color: #fff;
