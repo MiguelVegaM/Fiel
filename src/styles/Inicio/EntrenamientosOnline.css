@@ -1,0 +1,152 @@
+.entrenamiento-online {
+  /* no puedo quitar el border por que se mueve todo <------------------------------------ */
+  border: 1px solid transparent;
+  background-image: url(/public/images/inicio/HOME-Predica-Fiel-banner-2.png);
+  background-size: cover;
+  height: 100%;
+}
+
+.entrenamiento-online__container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 70%;
+  margin-block: 40px;
+}
+
+.entrenamiento-online__box-text {
+  text-align: start;
+  padding-left: 5rem;
+  padding-right: 9rem;
+}
+
+.entrnamiento-online__text--normal {
+  color: #fff;
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: 200;
+}
+.entrenamiento-online__text--bold {
+  color: #fff;
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: 500;
+}
+
+.entrenamiento-online__box-logo {
+  text-align: center;
+  margin-block: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.entrenamiento-online__image {
+  width: 350px;
+  margin-bottom: 30px;
+}
+
+.entrenamiento__button-container-box {
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  margin-right: -125px;
+}
+
+@media (max-width: 1400px) {
+  .entrenamiento-online__container {
+    flex-direction: column;
+  }
+  .entrenamiento-online__box-text {
+    justify-content: center;
+    text-align: center;
+    padding-inline: 0px;
+  }
+  .entrenamiento-online__box-logo {
+    justify-content: center;
+    align-items: center;
+  }
+  .entrenamiento__button-container {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .entrnamiento-online__text--normal {
+    font-size: 0.9rem;
+  }
+  .entrenamiento-online__text--bold {
+    font-size: 0.9rem;
+  }
+  .entrenamiento-online__image {
+    width: 40%;
+  }
+}
+
+/* CARD---------------------------------------------------- */
+
+.entrenamiento__card {
+  background-color: #fff;
+  width: 86%;
+  margin-inline: auto;
+  border-radius: 50px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.entrenamiento__card-image {
+  height: 550px;
+  width: 50%;
+  border-radius: 50px 0 0 50px;
+  object-fit: cover;
+}
+
+.entrenamiento__card-text {
+  /* border: 2px solid red; */
+  width: 40%;
+  margin: auto;
+  color: rgb(87, 87, 87);
+}
+
+.entrenamiento__card-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #850e30;
+}
+
+.online-dot {
+  color: #00d700;
+  font-size: 45px;
+  font-weight: 900;
+  vertical-align: auto;
+}
+
+.entrenamiento__card-text-bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .entrenamiento__card {
+    flex-direction: column;
+  }
+  .entrenamiento__card-image {
+    height: 550px;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+    object-fit: cover;
+  }
+
+  .entrenamiento__card-text {
+    width: 100%;
+    padding-inline: 100px;
+    padding-block: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .entrenamiento__card-title {
+    font-size: 2rem;
+  }
+}

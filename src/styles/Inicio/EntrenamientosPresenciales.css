@@ -1,0 +1,56 @@
+.entrenamiento-presencial {
+  background-image: linear-gradient(
+      to right,
+      #000,
+      #000,
+      #000,
+      #000,
+      #000,
+      #00000000,
+      #00000000,
+      #00000000
+    ),
+    url(/public/images/inicio/banner-3.png);
+  background-size: contain;
+  background-position: right;
+}
+
+.entrenamiento-presencial__text {
+  color: #fff;
+  width: 38%;
+  height: 30%;
+  margin-left: 300px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.entrenamieto-presencial__paragraph {
+  font-size: 1.3rem;
+}
+
+.entrenamieto-presencial__text--light-text {
+  font-weight: 100;
+}
+
+.entrenamieto-presencial__text--small-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 1300px) {
+  .entrenamiento-presencial__text {
+    margin-left: 150px;
+  }
+}
+@media (max-width: 900px) {
+  .entrenamiento-presencial {
+    background-image: linear-gradient(to right, #000, #000);
+    background-size: auto;
+    background-position: right;
+  }
+
+  .entrenamiento-presencial__text {
+    width: 80%;
+    margin: auto;
+    padding-block: 80px;
+  }
+}

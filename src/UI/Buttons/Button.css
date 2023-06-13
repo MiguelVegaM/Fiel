@@ -45,3 +45,11 @@
   color: #8f2444;
   font-size: 0.8rem;
 }
+
+.btn__capacitacion-main-banner {
+  background-color: #ffffff;
+  color: #840731;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 15px 30px;
+}

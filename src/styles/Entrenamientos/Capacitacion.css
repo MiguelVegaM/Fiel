@@ -1,0 +1,247 @@
+/* ! CAPACITACION BANNER<-------------- */
+
+.capacitacion {
+  background-image: url(/public/images/entrenamientos/Banner-1.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 115px 500px 115px 300px;
+}
+
+.entrenamientos__header {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.entrenamientos__paragraph {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+/*! ENTRENAMIENOT ONLINE<----------- */
+.entrenamientos__entrenamientos-online {
+  display: flex;
+}
+
+.entrenamientos-entrenamiento__card-image {
+  border-radius: 0;
+  height: 700px;
+  width: 45%;
+  object-fit: cover;
+}
+
+.entrenamientos-entrenamiento__card-text {
+  margin: 100px 150px;
+  width: 30%;
+}
+
+.btn__entrenamientos-entrenamientos-online--rojo {
+  font-size: 0.8rem;
+  padding: 15px 25px;
+  margin-right: 10px;
+}
+.btn__entrenamientos-entrenamientos-online--gris {
+  font-size: 0.8rem;
+  background-color: #3b3b3b;
+  padding: 15px 25px;
+}
+
+/* ! PLAN HABANA BANNER <------------- */
+
+.plan-habana-banner {
+  display: grid;
+  background-color: #010002;
+  color: #fff;
+  grid-template-columns: 4fr 3fr;
+}
+
+.plan-habana-banner__text {
+  /* width: 65%; */
+  padding: 120px 110px 100px 250px;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.plan-habana-banner__header {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.plan-habana-banner--bold {
+  font-weight: 500;
+}
+
+.plan-habana-banner--small {
+  font-size: 1rem;
+}
+
+.plan-habana-banner__imagen-container {
+  /* width: 45%; */
+}
+
+.plan-habana-banner__imagen {
+  height: 600px;
+}
+
+/* ! PLAN HABANA EXPOSICION <--------- */
+
+.plan-habana-exposicion {
+  padding: 80px 300px;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+.plan-habana-exposicion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.plan-habana-exposicion--small {
+  font-size: 23px;
+  font-weight: 200;
+}
+.plan-habana-exposicion--big {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.plan-habana-exposicion__header-logo {
+  width: 270px;
+}
+
+.exposicion-p1 {
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.9rem;
+  text-align: justify;
+}
+.exposicion-p2 {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: justify;
+  color: #b9b9b9;
+}
+
+.plan-habana-exposicion--bold {
+  font-weight: 300;
+}
+.exposicion-p3 {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: justify;
+  color: #989898;
+}
+.exposicion-p4 {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: justify;
+  color: #909090;
+}
+.exposicion-p5 {
+  font-size: 1.4rem;
+  font-weight: 200;
+  text-align: justify;
+  color: #6f6f6f;
+  margin-bottom: 50px;
+}
+
+.btn-plan-habana-exposicion {
+  font-size: 1.1rem;
+  padding: 15px 40px;
+}
+
+/* ! INTERNADO <---------------- */
+.internado {
+  background: linear-gradient(#81062d, #6c0526);
+  color: #fff;
+  padding: 70px 300px;
+  position: relative;
+}
+
+.internado__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.internado__header-text {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.internado__header-logo {
+  height: 40px;
+}
+
+.internado__paragraph {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.internado__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.btn__internado {
+  background-color: #ffffff;
+  color: #82072e;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+}
+
+.internado__footer-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.internado__images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  position: absolute;
+  right: 180px;
+  left: 180px;
+  bottom: -80px;
+}
+
+.internado__image {
+  height: 300px;
+  border-radius: 20px;
+}
+
+.talleres {
+  padding: 150px 300px 90px 300px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  background: linear-gradient(#fff, #fbfbfb);
+}
+
+.talleres__header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #830731;
+}
+
+.talleres__paragraph {
+  font-size: 1.4rem;
+  color: #4d4d4d;
+  padding-right: 95px;
+  padding-bottom: 30px;
+}
+
+.btn__talleres {
+  padding: 15px 30px;
+  font-size: 0.9rem;
+}
+
+.talleres__image {
+  width: 400px;
+}

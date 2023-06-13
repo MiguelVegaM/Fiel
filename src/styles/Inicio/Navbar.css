@@ -1,0 +1,84 @@
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0px 8% 3px 8%; */
+}
+
+.navbar__logo {
+  width: 200px;
+  /* margin-right: 200px; */
+}
+
+/* .navbar__btn {
+}
+
+.navbar__list {
+} */
+
+.navbar__list-item {
+  margin: 7px 7px;
+}
+
+.navbar__link {
+  color: #737373;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.navbar__link:hover {
+  color: #737373;
+}
+.navbar__link:active {
+  color: #fff;
+}
+
+/* how to just select the a inside the dropdown ------------------------ */
+.navbar a:active {
+  background-color: #850e30;
+  border-radius: 5px;
+}
+
+.dropdown-item.active {
+  background-color: #850e30;
+}
+
+.navbar__logo-link:active {
+  background-color: #ffffff00 !important;
+}
+
+.navbar a.active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.dropdown-toggle {
+  text-decoration: none !important;
+
+  font-weight: 400 !important;
+}
+
+/* centrar el dropdown!!! <----------------------------- */
+/* .navbar__dropdown {
+} */
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: row !important;
+    padding-inline: 2rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    flex-wrap: nowrap;
+    justify-content: space-around !important;
+  }
+}

@@ -20,19 +20,19 @@ import { IconContext } from "react-icons";
 
 import Button from "../UI/Buttons/Button";
 
-import "../styles/MiniHeader.css";
-import "../styles/Navbar.css";
-import "../styles/MainBanner.css";
-import "../styles/EntrenamientosOnline.css";
-import "../styles/EntrenamientosPresenciales.css";
-import "../styles/RecursosVid.css";
-import "../styles/Testimonios.css";
-import "../styles/Cobime.css";
-import "../styles/Alianzas.css";
-import "../styles/ContactoWhats.css";
-import "../styles/Footer.css";
-import "../styles/DisclaimerDonar.css";
-import "../styles/MiniFooter.css";
+import "../styles/Inicio/MiniHeader.css";
+import "../styles/Inicio/Navbar.css";
+import "../styles/Inicio/MainBanner.css";
+import "../styles/Inicio/EntrenamientosOnline.css";
+import "../styles/Inicio/EntrenamientosPresenciales.css";
+import "../styles/Inicio/RecursosVid.css";
+import "../styles/Inicio/Testimonios.css";
+import "../styles/Inicio/Cobime.css";
+import "../styles/Inicio/Alianzas.css";
+import "../styles/Inicio/ContactoWhats.css";
+import "../styles/Inicio/Footer.css";
+import "../styles/Inicio/DisclaimerDonar.css";
+import "../styles/Inicio/MiniFooter.css";
 
 export function MiniHeader() {
   return (
@@ -96,7 +96,7 @@ export function Navbar(props) {
         <NavLink to="/" className="navbar__logo-link">
           <img
             className="navbar__logo"
-            src="../images/logo-largo.png"
+            src="/images/inicio/logo-largo.png"
             alt="Fiel Logo"
           />
         </NavLink>
@@ -221,7 +221,7 @@ export function EntrenamientosOnline(props) {
           <div className="entrenamiento-online__box-logo">
             <img
               className="entrenamiento-online__image"
-              src="../images/logo-largo-blanco.png"
+              src="/images/inicio/logo-largo-blanco.png"
               alt="Fiel Logo"
             />
             <div className="entrenamiento__button-container-box">
@@ -237,8 +237,8 @@ export function EntrenamientosOnline(props) {
         <div className="entrenamiento__card">
           <img
             className="entrenamiento__card-image"
-            src="../../images/medium-shot-man-with-laptop.png"
-            alt="Men on PC"
+            src="/images/inicio/medium-shot-man-with-laptop.png"
+            alt="Men on laptop"
           />
           <div className="entrenamiento__card-text">
             <h1 className="entrenamiento__card-title">Entrenamientos</h1>
@@ -267,7 +267,6 @@ export function EntrenamientosOnline(props) {
               <Button specificClass="btn__entrenamientos-online--rojo">
                 CONOCER MÁS
               </Button>
-              {/* //!Cambiarlo a gris------------------- */}
               <Button specificClass="btn__entrenamientos-online--gris">
                 APLICAR
               </Button>
@@ -323,7 +322,7 @@ export function RecursosVid(props) {
           <div>
             <img
               className="recursos__logo"
-              src="../images/logo-corto.png"
+              src="/images/inicio/logo-corto.png"
               alt="Fiel logo"
             />
           </div>
@@ -339,7 +338,7 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
-                src="../images/capa-3.png"
+                src="/images/inicio/capa-3.png"
                 className="recursos__vid-image"
                 alt="Vid 1"
               />
@@ -349,7 +348,7 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
-                src="../images/capa-4.png"
+                src="/images/inicio/capa-4.png"
                 className="recursos__vid-image"
                 alt="Vid 2"
               />
@@ -359,7 +358,7 @@ export function RecursosVid(props) {
           <div className="col thumbnail">
             <div className="recursos__vid">
               <img
-                src="../images/capa-5.png"
+                src="/images/inicio/capa-5.png"
                 className="recursos__vid-image"
                 alt="Vid 3"
               />
@@ -414,7 +413,7 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="../images/miguel.jpg"
+                    src="/images/inicio/miguel.jpg"
                     alt="Miguel Núñez"
                   />
                   <div className="testimonios__text-container">
@@ -449,7 +448,7 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="../images/usiel.jpg"
+                    src="/images/inicio/usiel.jpg"
                     alt="Usiel Abreu"
                   />
                   <div className="testimonios__text-container">
@@ -479,7 +478,7 @@ export function Testimonios(props) {
                 <div className="testimonios__testimonio">
                   <img
                     className="testimonios__avatar"
-                    src="../images/juan.jpg"
+                    src="/images/inicio/juan.jpg"
                     alt="Juan Sánchez"
                   />
                   <div className="testimonios__text-container">
@@ -565,7 +564,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://simeontrust.org/es">
               <img
                 className="alianzas__image"
-                src="../images/simeon-trust.jpg"
+                src="/images/inicio/simeon-trust.jpg"
                 alt="Simeon Trust Logo"
               />
             </a>
@@ -574,7 +573,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://es.9marks.org/">
               <img
                 className="alianzas__image"
-                src="../images/9marks.jpg"
+                src="/images/inicio/9marks.jpg"
                 alt="9 Marks Logo"
               />
             </a>
@@ -583,7 +582,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.sbts.edu/">
               <img
                 className="alianzas__image"
-                src="../images/sbts.jpg"
+                src="/images/inicio/sbts.jpg"
                 alt="Southern Baptist Theological Seminary Logo"
               />
             </a>
@@ -594,7 +593,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.crosslinks.org/">
               <img
                 className="alianzas__image"
-                src="../images/crosslinks.jpg"
+                src="/images/inicio/crosslinks.jpg"
                 alt="Crosslinks Logo"
               />
             </a>
@@ -606,7 +605,7 @@ export function Alianzas(props) {
             >
               <img
                 className="alianzas__image"
-                src="../images/coalicion.jpg"
+                src="/images/inicio/coalicion.jpg"
                 alt="Coalición por el Evangelio Logo"
               />
             </a>
@@ -615,7 +614,7 @@ export function Alianzas(props) {
             <a className="alianzas__link" href="https://www.proctrust.org.uk/">
               <img
                 className="alianzas__image"
-                src="../images/pt.jpg"
+                src="/images/inicio/pt.jpg"
                 alt="Proclamation Trust Logo"
               />
             </a>
@@ -629,7 +628,7 @@ export function Alianzas(props) {
             >
               <img
                 className="alianzas__image"
-                src="../images/crossconnections.jpg"
+                src="/images/inicio/crossconnections.jpg"
                 alt="Crossconections Logo"
               />
             </a>
@@ -658,7 +657,7 @@ export function ContactoWhats(props) {
           <div className="contacto__logo">
             <img
               className="contacto__image"
-              src="../../images/logo-largo-blanco.png"
+              src="/images/inicio/logo-largo-blanco.png"
               alt="Fiel Logo"
             />
           </div>
@@ -972,7 +971,7 @@ export function DisclaimerDonar(props) {
         <div className="donar">
           <img
             className="donar__image"
-            src="../images/donar.png"
+            src="/images/inicio/donar.png"
             alt="Donar Logo"
           />
         </div>
