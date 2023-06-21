@@ -1,37 +1,56 @@
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 /* ! CAPACITACION BANNER<-------------- */
 
 .capacitacion {
   background-image: url(/public/images/entrenamientos/Banner-1.jpg);
   background-size: cover;
   color: #fff;
-  padding: 115px 500px 115px 300px;
+  height: 470px;
+  /* width: 100vw; */
+  display: flex;
+}
+
+.capacitacion-container {
+  max-width: 60%;
+  /* align-items: center; */
+  /* padding: 115px 500px 115px 300px; */
+  margin: auto;
 }
 
 .entrenamientos__header {
-  font-size: 5rem;
+  font-size: max(4.5vw, 3rem);
   font-weight: 800;
 }
 
 .entrenamientos__paragraph {
-  font-size: 1.5rem;
+  font-size: max(1.5vw, 1rem);
   font-weight: 200;
 }
 
 /*! ENTRENAMIENOT ONLINE<----------- */
+
 .entrenamientos__entrenamientos-online {
-  display: flex;
 }
 
 .entrenamientos-entrenamiento__card-image {
-  border-radius: 0;
-  height: 700px;
-  width: 45%;
+  /* display: block; */
+  /* border-radius: 0; */
+  width: 100%;
+  aspect-ratio: 10/9;
+  /* width: 45vw; */
   object-fit: cover;
 }
 
 .entrenamientos-entrenamiento__card-text {
-  margin: 100px 150px;
-  width: 30%;
+  font-size: max(1vw, 0.8rem);
+  width: 100%;
+  padding-block: 11.8%;
+  padding-inline: 15%;
 }
 
 .btn__entrenamientos-entrenamientos-online--rojo {
@@ -45,32 +64,42 @@
   padding: 15px 25px;
 }
 
+/* Medias queries<------------- */
+
 /* ! PLAN HABANA BANNER <------------- */
 
+.plan-habana {
+  background-color: #0e0e0e;
+}
+
 .plan-habana-banner {
-  display: grid;
   background-color: #010002;
   color: #fff;
-  grid-template-columns: 4fr 3fr;
 }
 
 .plan-habana-banner__text {
-  padding: 120px 110px 100px 250px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* width: 30%; */
+  /* justify-content: center; */
+  margin: auto;
+  padding: 10%;
   font-size: 1.4rem;
   font-weight: 200;
 }
 
 .plan-habana-banner__header {
-  font-size: 50px;
+  font-size: max(3vw, 25px);
   font-weight: 800;
 }
 
 .plan-habana-banner--bold {
   font-weight: 500;
+  /* font-size: 1.2rem; */
 }
 
 .plan-habana-banner--small {
-  font-size: 1rem;
+  font-size: max(1vw, 0.8rem);
 }
 
 .plan-habana-banner__imagen-container {
@@ -78,13 +107,17 @@
 }
 
 .plan-habana-banner__imagen {
-  height: 600px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 /* ! PLAN HABANA EXPOSICION <--------- */
 
 .plan-habana-exposicion {
-  padding: 80px 300px;
+  padding-block: 80px;
+  width: 80%;
+  margin: 0 auto;
   background-color: #0e0e0e;
   color: #fff;
 }
@@ -101,7 +134,8 @@
   font-weight: 200;
 }
 .plan-habana-exposicion--big {
-  font-size: 3.5rem;
+  font-size: 55px;
+
   font-weight: 700;
 }
 
@@ -150,11 +184,24 @@
   padding: 15px 40px;
 }
 
+/* MEDIA QUERIES <------- */
+@media (max-width: 950px) {
+  .plan-habana-exposicion__header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
+
 /* ! INTERNADO <---------------- */
 .internado {
   background: linear-gradient(#81062d, #6c0526);
   color: #fff;
-  padding: 70px 300px;
+  /* width: 80%; */
+  padding-inline: 15%;
+  margin: 0 auto;
+  padding-block: 70px;
   position: relative;
 }
 
@@ -175,7 +222,7 @@
 }
 
 .internado__paragraph {
-  font-size: 1.5rem;
+  font-size: max(1.5rem);
   font-weight: 200;
   margin-bottom: 30px;
   text-align: justify;
@@ -201,26 +248,37 @@
 }
 
 .internado__images-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  width: 85%;
+  margin-inline: auto;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* gap: 1rem; */
   position: absolute;
-  right: 180px;
-  left: 180px;
-  bottom: -80px;
+  margin-top: -150px;
+  /* top: 610px; */
+  right: -20px;
+  left: -20px;
+  /* bottom: -80px; */
 }
 
 .internado__image {
-  height: 300px;
+  /* height: 300px; */
+  width: 100%;
   border-radius: 20px;
 }
 
 .talleres {
-  padding: 150px 300px 90px 300px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* padding: 150px 300px 90px 300px; */
+  padding: 150px 15% 100px 15%;
+  /* margin-top: 150px;
+  margin-bottom: 100px; */
+  /* width: 65%; */
+
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
   align-items: center;
   background: linear-gradient(#fff, #fbfbfb);
+  overflow-x: hidden;
 }
 
 .talleres__header {
@@ -242,5 +300,56 @@
 }
 
 .talleres__image {
-  width: 400px;
+  width: 100%;
+}
+
+/* MEDIA QUERIES <---------------- */
+@media (max-width: 700px) {
+  .row {
+    max-width: 100%;
+    gap: 1rem;
+  }
+
+  .internado__images-container {
+    /* width: 100%; */
+
+    /* margin-inline: auto; */
+    /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+    /* gap: 1rem; */
+    /* position: absolute; */
+    /* margin-top: -150px; */
+    /* top: 610px; */
+    /* right: -20px;
+    left: -20px; */
+    /* bottom: -80px; */
+    align-items: center;
+  }
+
+  .internado__image {
+    /* width: 100%; */
+    height: 80px;
+  }
+
+  .internado__footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .talleres__header {
+    text-align: center;
+  }
+
+  .talleres__paragraph {
+    padding-right: 0px;
+    text-align: center;
+  }
+
+  .talleres__text {
+    text-align: center;
+  }
+}
+
+.nopadding {
+  padding-left: 0 !important;
 }
