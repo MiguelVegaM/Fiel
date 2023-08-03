@@ -1,0 +1,137 @@
+.video-filtro__container {
+  /* height: 200px; */
+  background-color: #000;
+}
+.video-frame {
+  height: 700px;
+  width: 70%;
+  margin-inline: auto;
+  padding-block: 50px;
+  background-color: #989898;
+  border: 1px solid red;
+}
+
+.video-info {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.video-info__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.video-filtro__title {
+  & h3 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  & p {
+    color: #8c8f8e;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+.video-filtro__hr {
+  border: 1px solid #8c8f8e;
+}
+
+.video-filtro__length {
+  color: #8c8f8e;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-block: auto;
+}
+
+.video-info__subtitle {
+  padding-block: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  color: #8c8f8e;
+  gap: 10rem;
+  .bold {
+    font-weight: 600;
+  }
+}
+
+.video-filtro__footer {
+  width: 70%;
+  margin: 0 auto;
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* AUDIO <--------------------- */
+
+.audio-filtro__container {
+  /* height: 200px; */
+  background-color: #000;
+}
+
+.audio-filtro__imagen {
+  width: 100%;
+}
+.audio-frame {
+  height: 500px;
+  width: 70%;
+  margin-inline: auto;
+  /* padding-block: 50px; */
+  /* background-color: #989898; */
+  border: 1px solid red;
+}
+
+.audio-info {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.audio-info__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.audio-filtro__title {
+  & h3 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  & p {
+    color: #8c8f8e;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+}
+.audio-filtro__hr {
+  border: 1px solid #8c8f8e;
+}
+
+.audio-filtro__length {
+  color: #8c8f8e;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-block: auto;
+}
+
+.audio-info__subtitle {
+  padding-block: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  color: #8c8f8e;
+  gap: 10rem;
+  .bold {
+    font-weight: 600;
+  }
+}
+
+.audio-filtro__footer {
+  width: 70%;
+  margin: 0 auto;
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+}

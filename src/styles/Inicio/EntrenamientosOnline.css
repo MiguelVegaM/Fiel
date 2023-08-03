@@ -82,8 +82,10 @@
   .entrenamiento-online__image {
     width: 40%;
   }
+  .entrenamiento__button-container-box {
+    margin-right: 0px;
+  }
 }
-
 /* CARD---------------------------------------------------- */
 
 .entrenamiento__card {

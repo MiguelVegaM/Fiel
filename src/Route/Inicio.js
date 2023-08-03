@@ -33,6 +33,7 @@ import "../styles/Inicio/ContactoWhats.css";
 import "../styles/Inicio/Footer.css";
 import "../styles/Inicio/DisclaimerDonar.css";
 import "../styles/Inicio/MiniFooter.css";
+import { HashLink } from "react-router-hash-link";
 
 export function MiniHeader() {
   return (
@@ -45,6 +46,7 @@ export function MiniHeader() {
             <li>
               <div className="header__icon-circle">
                 <a
+                  target="_blank"
                   className="header__icon-link"
                   href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
                 >
@@ -55,6 +57,7 @@ export function MiniHeader() {
             <li>
               <div className="header__icon-circle">
                 <a
+                  target="_blank"
                   className="header__icon-link"
                   href="https://twitter.com/PredicaFiel"
                 >
@@ -65,6 +68,7 @@ export function MiniHeader() {
             <li>
               <div className="header__icon-circle">
                 <a
+                  target="_blank"
                   className="header__icon-link"
                   href="https://www.facebook.com/EntrenandoExpositores/"
                 >
@@ -75,6 +79,7 @@ export function MiniHeader() {
             <li>
               <div className="header__icon-circle">
                 <a
+                  target="_blank"
                   className="header__icon-link"
                   href="https://www.instagram.com/predicafiel/"
                 >
@@ -122,40 +127,10 @@ export function Navbar(props) {
             </li>
             {/* //! No jala el dropdown --------------------- ya jalo quitando un import en App.js */}
             {/* //! El dropdown siempre aparece con la class active */}
-            <li className="nav-item dropdown navbar__list-item">
-              <NavLink
-                className="dropdown-toggle  navbar__link"
-                to="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            <li className="nav-item navbar__list-item">
+              <NavLink className="navbar__link" to="/nosotros">
                 NOSOTROS
               </NavLink>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/declaracion-doctrinal"
-                  >
-                    DECLARACIÓN DOCTRINAL
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-item" to="/equipo">
-                    EQUIPO
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-item" to="/alianzas">
-                    ALIANZAS
-                  </NavLink>
-                </li>
-              </ul>
             </li>
             <li className="nav-item navbar__list-item">
               <NavLink className="navbar__link" to="/entrenamientos">
@@ -172,9 +147,9 @@ export function Navbar(props) {
                 RECURSOS
               </NavLink>
             </li>
-            <NavLink className="dropdown-item" to="/contacto">
+            <a className="dropdown-item" to="/contacto" href="#contacto">
               <Button specificClass="btn__navbar">CONTACTO</Button>
-            </NavLink>
+            </a>
           </ul>
         </div>
       </div>
@@ -195,7 +170,9 @@ export function MainBanner(props) {
           Fielmente comprometidos con la predicación de evangelio de Jesucristo,
           entrenando a expositores bíblicos en el mundo hispano parlante.
         </p>
-        <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
+        <NavLink to="/entrenamientos">
+          <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
+        </NavLink>
       </div>
     </section>
   );
@@ -225,12 +202,16 @@ export function EntrenamientosOnline(props) {
               alt="Fiel Logo"
             />
             <div className="entrenamiento__button-container-box">
-              <Button specificClass="btn__entrenamientos-online--gris">
-                EQUIPO
-              </Button>
-              <Button specificClass="btn__entrenamientos-online--red">
-                SOBRE NOSOTROS
-              </Button>
+              <HashLink to="/nosotros#nuestro-equipo">
+                <Button specificClass="btn__entrenamientos-online--gris">
+                  EQUIPO
+                </Button>
+              </HashLink>
+              <NavLink to="/nosotros">
+                <Button specificClass="btn__entrenamientos-online--rojo">
+                  SOBRE NOSOTROS
+                </Button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -264,12 +245,16 @@ export function EntrenamientosOnline(props) {
               retroalimentación.
             </p>
             <div className="entrenamiento__button-container-box">
-              <Button specificClass="btn__entrenamientos-online--rojo">
-                CONOCER MÁS
-              </Button>
-              <Button specificClass="btn__entrenamientos-online--gris">
-                APLICAR
-              </Button>
+              <NavLink to="/entrenamientos">
+                <Button specificClass="btn__entrenamientos-online-card--rojo">
+                  CONOCER MÁS
+                </Button>
+              </NavLink>
+              <a href="#contacto">
+                <Button specificClass="btn__entrenamientos-online--gris">
+                  APLICAR
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -300,10 +285,11 @@ export function EntrenamientosPresenciales(props) {
         </p>
         <div className="entrenamiento__button-container-banner">
           {/* //!Cambiarlo a blanco------------------- */}
-
-          <Button specificClass="btn__entrenamiento-presencial">
-            CONOCER MÁS
-          </Button>
+          <NavLink to="/entrenamientos">
+            <Button specificClass="btn__entrenamiento-presencial">
+              CONOCER MÁS
+            </Button>
+          </NavLink>
         </div>
       </div>
     </div>
@@ -368,7 +354,11 @@ export function RecursosVid(props) {
         </div>
       </div>
       <div className="recursos__button-container">
-        <Button specificClass="btn__recursosvid">VER TODOS LOS RECURSOS</Button>
+        <NavLink to="/recursos">
+          <Button specificClass="btn__recursosvid">
+            VER TODOS LOS RECURSOS
+          </Button>
+        </NavLink>
       </div>
     </div>
   );
@@ -548,7 +538,9 @@ export function Cobime(props) {
         preparate para este tiempo de aprendizaje
       </h4>
       <div className="cobime__button-container">
-        <Button>ANOTARME</Button>
+        <a href="#contacto">
+          <Button>ANOTARME</Button>
+        </a>
       </div>
     </div>
   );
@@ -556,12 +548,16 @@ export function Cobime(props) {
 
 export function Alianzas(props) {
   return (
-    <div className="alianzas">
+    <div className="alianzas" id="alianzas">
       <div className="alianzas__text">ALIANZAS</div>
       <ul className="alianzas__icons-list">
         <div className="list-items1">
           <li className="alianzas__list-item">
-            <a className="alianzas__link" href="https://simeontrust.org/es">
+            <a
+              className="alianzas__link"
+              href="https://simeontrust.org/es"
+              target="_blank"
+            >
               <img
                 className="alianzas__image"
                 src="/images/inicio/simeon-trust.jpg"
@@ -570,7 +566,11 @@ export function Alianzas(props) {
             </a>
           </li>
           <li className="alianzas__list-item">
-            <a className="alianzas__link" href="https://es.9marks.org/">
+            <a
+              className="alianzas__link"
+              href="https://es.9marks.org/"
+              target="_blank"
+            >
               <img
                 className="alianzas__image"
                 src="/images/inicio/9marks.jpg"
@@ -579,7 +579,11 @@ export function Alianzas(props) {
             </a>
           </li>
           <li className="alianzas__list-item">
-            <a className="alianzas__link" href="https://www.sbts.edu/">
+            <a
+              className="alianzas__link"
+              href="https://www.sbts.edu/"
+              target="_blank"
+            >
               <img
                 className="alianzas__image"
                 src="/images/inicio/sbts.jpg"
@@ -590,7 +594,11 @@ export function Alianzas(props) {
         </div>
         <div className="list-items2">
           <li className="alianzas__list-item">
-            <a className="alianzas__link" href="https://www.crosslinks.org/">
+            <a
+              className="alianzas__link"
+              href="https://www.crosslinks.org/"
+              target="_blank"
+            >
               <img
                 className="alianzas__image"
                 src="/images/inicio/crosslinks.jpg"
@@ -602,6 +610,7 @@ export function Alianzas(props) {
             <a
               className="alianzas__link"
               href="https://www.coalicionporelevangelio.org/"
+              target="_blank"
             >
               <img
                 className="alianzas__image"
@@ -611,7 +620,11 @@ export function Alianzas(props) {
             </a>
           </li>
           <li className="alianzas__list-item">
-            <a className="alianzas__link" href="https://www.proctrust.org.uk/">
+            <a
+              className="alianzas__link"
+              href="https://www.proctrust.org.uk/"
+              target="_blank"
+            >
               <img
                 className="alianzas__image"
                 src="/images/inicio/pt.jpg"
@@ -625,6 +638,7 @@ export function Alianzas(props) {
             <a
               className="alianzas__link"
               href="https://www.crossconnections.org.uk/"
+              target="_blank"
             >
               <img
                 className="alianzas__image"
@@ -651,7 +665,7 @@ export function ContactoWhats(props) {
   };
 
   return (
-    <div className="contacto">
+    <div id="contacto" className="contacto">
       <div className="contacto__container">
         <div className="contacto__text">
           <div className="contacto__logo">
@@ -669,7 +683,11 @@ export function ContactoWhats(props) {
             <span className="contacto__paragraph--bold">Biblia.</span>
           </p>
           <button className="contacto__whatsapp">
-            <a className="whatsapp-link" href="https://www.whatsapp.com">
+            <a
+              className="whatsapp-link"
+              href="https://www.whatsapp.com"
+              target="_blank"
+            >
               <IconContext.Provider value={{ className: "whatsapp-icon" }}>
                 <div>
                   <FaWhatsapp />
@@ -806,6 +824,7 @@ export function Footer(props) {
                 <li>
                   <div className="footer__icon-circle">
                     <a
+                      target="_blank"
                       className="footer__icon-link"
                       href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
                     >
@@ -816,6 +835,7 @@ export function Footer(props) {
                 <li>
                   <div className="footer__icon-circle">
                     <a
+                      target="_blank"
                       className="footer__icon-link"
                       href="https://twitter.com/PredicaFiel"
                     >
@@ -826,6 +846,7 @@ export function Footer(props) {
                 <li>
                   <div className="footer__icon-circle">
                     <a
+                      target="_blank"
                       className="footer__icon-link"
                       href="https://www.facebook.com/EntrenandoExpositores/"
                     >
@@ -836,6 +857,7 @@ export function Footer(props) {
                 <li>
                   <div className="footer__icon-circle">
                     <a
+                      target="_blank"
                       className="footer__icon-link"
                       href="https://www.instagram.com/predicafiel/"
                     >
@@ -858,7 +880,10 @@ export function Footer(props) {
                   </NavLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <NavLink to="#" className="footer__accesos-directos-link">
+                  <NavLink
+                    to="/nosotros"
+                    className="footer__accesos-directos-link"
+                  >
                     Nosotros
                   </NavLink>
                 </li>
@@ -899,38 +924,45 @@ export function Footer(props) {
             <div className="footer__accesos-directos2">
               <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/declaracion-doctrinal"
+                  <HashLink
+                    smooth
+                    to="/nosotros#declaracion-doctrinal"
+                    href="#declaracion-doctrinal"
                     className="footer__accesos-directos-link"
                   >
                     Declaración Doctrinal
-                  </NavLink>
+                  </HashLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/equipo"
+                  <HashLink
+                    to="/nosotros#nuestro-equipo"
                     className="footer__accesos-directos-link"
                   >
                     Equipo
-                  </NavLink>
+                  </HashLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/alianzas"
+                  <a href="#alianzas" className="footer__accesos-directos-link">
+                    Alianzas
+                  </a>
+                </li>
+                <li className="footer__accesos-directos-list-item">
+                  <HashLink
+                    to="/entrenamientos#talleres"
+                    href=""
                     className="footer__accesos-directos-link"
                   >
-                    Alianzas
-                  </NavLink>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
                     Talleres
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
-                  <a href="" className="footer__accesos-directos-link">
+                  <HashLink
+                    to="/entrenamientos#plan-habana"
+                    href=""
+                    className="footer__accesos-directos-link"
+                  >
                     Plan Habana
-                  </a>
+                  </HashLink>
                 </li>
                 <li className="footer__accesos-directos-list-item">
                   <a href="" className="footer__accesos-directos-link">

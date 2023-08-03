@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -30,6 +34,53 @@
 .entrenamientos__paragraph {
   font-size: max(1.5vw, 1rem);
   font-weight: 200;
+}
+
+/* ^ SIDEBAR ON BANNER */
+.sidenav {
+  height: 100%;
+  width: 0;
+  /* position: fixed; */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #66011fc1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* text-align: center;*/
+  padding-top: 120px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #cecdcd;
+  text-decoration: underline;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 120px;
+  left: 170px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /*! ENTRENAMIENOT ONLINE<----------- */

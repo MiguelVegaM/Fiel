@@ -8,26 +8,61 @@ import {
   DisclaimerDonar,
   Footer,
   MiniHeader,
+  MiniFooter,
+  Navbar,
 } from "./Inicio";
-import { Navbar } from "./Inicio";
-import { MiniFooter } from "./Inicio";
 
 import Button from "../UI/Buttons/Button";
 
 import "../styles/Entrenamientos/Capacitacion.css";
+import { NavLink } from "react-router-dom";
 
 export function EntrenamientosHeader() {
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    // console.log("holas");
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    // console.log("adios");
+  }
+
   return (
-    <div className="capacitacion container-fluid">
+    <div
+      onMouseOver={openNav}
+      onMouseOut={closeNav}
+      className="capacitacion container-fluid"
+    >
+      <div id="mySidenav" className="sidenav">
+        {/* <a
+          href="javascript:void(0)"
+          className="closebtn"
+          onClick={closeNav}
+        >
+          &times;
+        </a> */}
+        <a href="#entrenamientos-online">Entrenamientos Online</a>
+        <a href="#entrenamientos-presenciales">Entrenamientos Presenciales</a>
+        <a href="#talleres">Talleres</a>
+      </div>
       <div className="capacitacion-container">
+        {/* <span
+          style={{ fontSize: "30px", cursor: "pointer" }}
+          onCLick={openNav}
+        >
+          &#9776; menu
+        </span> */}
         <h1 className="entrenamientos__header">CAPACITACIÓN</h1>
         <p className="entrenamientos__paragraph">
           Fielmente comprometidos con la predicación de evangelio de Jesucristo,
           entrenando a expositores bíblicos en el mundo hispano parlante.
         </p>
-        <Button specificClass="btn__capacitacion-main-banner">
-          CONTÁCTANOS
-        </Button>
+        <a href="#contacto">
+          <Button specificClass="btn__capacitacion-main-banner">
+            CONTÁCTANOS
+          </Button>
+        </a>
       </div>
     </div>
   );
@@ -38,7 +73,10 @@ export function EntrenamientosHeader() {
 export function EntrenamientosEntrenamientosOnline() {
   return (
     <div className="container-fluid-xl">
-      <div className="entrenamientos__entrenamientos-online row">
+      <div
+        className="entrenamientos__entrenamientos-online row"
+        id="entrenamientos-online"
+      >
         <div className="col-12 col-md-6 no padding">
           <img
             className="entrenamientos-entrenamiento__card-image"
@@ -71,12 +109,16 @@ export function EntrenamientosEntrenamientosOnline() {
               retroalimentación.
             </p>
             <div className="entrenamientos-entrenamiento__button-container-box">
-              <Button specificClass="btn__entrenamientos-entrenamientos-online--rojo">
-                ACCESO A RECURSOS
-              </Button>
-              <Button specificClass="btn__entrenamientos-entrenamientos-online--gris">
-                APLICAR AHORA
-              </Button>
+              <NavLink to="/recursos">
+                <Button specificClass="btn__entrenamientos-entrenamientos-online--rojo">
+                  ACCESO A RECURSOS
+                </Button>
+              </NavLink>
+              <a href="#contacto">
+                <Button specificClass="btn__entrenamientos-entrenamientos-online--gris">
+                  APLICAR AHORA
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -87,7 +129,7 @@ export function EntrenamientosEntrenamientosOnline() {
 
 export function PlanHabana() {
   return (
-    <div className="plan-habana">
+    <div className="plan-habana" id="plan-habana">
       <div className="plan-habana-banner container-fluid">
         <div className="row">
           <div className="plan-habana-banner__text col-lg-6">
@@ -183,9 +225,11 @@ export function PlanHabana() {
             proporcionándole más detalles.
           </p>
         </div>
-        <Button specificClass="btn-plan-habana-exposicion">
-          INSCRÍBETE AHORA
-        </Button>
+        <a href="#contacto">
+          <Button specificClass="btn-plan-habana-exposicion">
+            INSCRÍBETE AHORA
+          </Button>
+        </a>
       </div>
     </div>
   );
@@ -225,7 +269,9 @@ export function Internado() {
           </p>
         </div>
         <div className="internado__footer">
-          <Button specificClass="btn__internado">APLICAR AHORA</Button>
+          <a href="#contacto">
+            <Button specificClass="btn__internado">APLICAR AHORA</Button>
+          </a>
           <div className="internado__footer-text">
             Plan Habana, Modalidad Presencial, Cuba
           </div>
@@ -247,7 +293,7 @@ export function Internado() {
           </div>
         </div>
       </div>
-      <div className="talleres row">
+      <div id="talleres" className="talleres row" id="talleres">
         <div className="talleres__text col-12 col-lg-8 nopadding">
           <div className="talleres__header">TALLERES</div>
           <div className="talleres__paragraph">
@@ -257,7 +303,9 @@ export function Internado() {
             la Palabra de Dios es poderosa, y con entusiasmo de enseñarla a sus
             congregaciones.
           </div>
-          <Button specificClass="btn__talleres">MÁS INFORMACIÓN</Button>
+          <a href="#contacto">
+            <Button specificClass="btn__talleres">MÁS INFORMACIÓN</Button>
+          </a>
         </div>
 
         <div className="col-12 col-lg-4 nopadding">
@@ -271,6 +319,8 @@ export function Internado() {
     </div>
   );
 }
+
+// ? <-------------------------------------
 
 function Entrenamientos(props) {
   return (

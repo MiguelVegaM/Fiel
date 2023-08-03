@@ -1,0 +1,48 @@
+.modal-content {
+  border-radius: 50px;
+}
+
+.modal-header {
+  flex-direction: column;
+  padding-top: 80px;
+  border-bottom-width: 0px;
+}
+
+.btn-close {
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #61e9cc;
+  opacity: inherit;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  right: 75px;
+  padding: 10px !important;
+  filter: invert();
+}
+
+.nuestro-equipo-modal__img {
+  width: 270px;
+  border-radius: 50%;
+}
+.modal-title {
+  color: #830731;
+  padding-top: 30px;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.modal-body {
+  font-size: 1.5rem;
+  color: #555555;
+  padding-inline: 10%;
+  padding-bottom: 50px;
+  text-align: justify;
+}
+
+@media (min-width: 992px) {
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: 1300px;
+  }
+}

@@ -9,20 +9,31 @@ import Contacto from "./Route/Contacto";
 import DeclaracionDoctrinal from "./Route/DeclaracionDoctrinal";
 import Equipo from "./Route/Equipo";
 import Alianzas from "./Route/Alianzas";
+import { VideoFiltro } from "./Route/VideoFiltro";
+import { AudioFiltro } from "./Route/AudioFiltro";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Inicio />} />
-      <Route path="nosotros" element={<Nosotros />} />
-      <Route path="entrenamientos" element={<Entrenamientos />} />
-      <Route path="eventos" element={<Eventos />} />
-      <Route path="recursos" element={<Recursos />} />
-      <Route path="contacto" element={<Contacto />} />
-      <Route path="declaracion-doctrinal" element={<DeclaracionDoctrinal />} />
-      <Route path="equipo" element={<Equipo />} />
-      <Route path="alianzas" element={<Alianzas />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="nosotros" element={<Nosotros />} />
+        <Route path="entrenamientos" element={<Entrenamientos />} />
+        <Route path="eventos" element={<Eventos />} />
+        <Route path="recursos" element={<Recursos />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route
+          path="declaracion-doctrinal"
+          element={<DeclaracionDoctrinal />}
+        />
+        <Route path="equipo" element={<Equipo />} />
+        <Route path="alianzas" element={<Alianzas />} />
+        <Route path="video" element={<VideoFiltro />} />
+        <Route path="audio" element={<AudioFiltro />} />
+      </Routes>
+      <ScrollToTop />
+    </>
   );
 }
 

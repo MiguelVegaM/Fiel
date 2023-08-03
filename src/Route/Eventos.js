@@ -2,9 +2,17 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 
-import { MiniHeader } from "./Inicio";
-import { Navbar } from "./Inicio";
-import { MiniFooter } from "./Inicio";
+import {
+  Alianzas,
+  ContactoWhats,
+  DisclaimerDonar,
+  Footer,
+  MiniHeader,
+  Navbar,
+  MiniFooter,
+} from "./Inicio";
+import { VideoFiltro } from "./VideoFiltro";
+import { AudioFiltro } from "./AudioFiltro";
 
 function Eventos(props) {
   return (
@@ -14,7 +22,10 @@ function Eventos(props) {
       </Helmet>
       <MiniHeader />
       <Navbar />
-      <h1>Eventos</h1>
+      <Alianzas />
+      <ContactoWhats />
+      <Footer />
+      <DisclaimerDonar />
       <MiniFooter />
     </div>
   );

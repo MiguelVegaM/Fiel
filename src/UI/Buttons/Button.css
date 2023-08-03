@@ -32,6 +32,14 @@
 .btn__entrenamientos-online--gris {
   background-color: #3a3a3a;
   font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.btn__entrenamientos-online--rojo {
+  font-size: 0.9rem;
+}
+.btn__entrenamientos-online-card--rojo {
+  font-size: 0.9rem;
 }
 
 .btn__recursosvid {

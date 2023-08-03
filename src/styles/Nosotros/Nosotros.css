@@ -1,0 +1,222 @@
+.nosotros-banner--rojo {
+  background: linear-gradient(90deg, #830731 0%, #63011e 100%);
+  color: #fff;
+  display: flex;
+  padding-inline: 17%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 545px;
+  padding-top: 100px;
+
+  & p {
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-bottom: 0;
+  }
+  & h1 {
+    font-size: 5rem;
+    font-weight: 800;
+  }
+}
+
+.btn__nosotros-banner--rojo {
+  background-color: #fff;
+  color: #830731;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.nosotros__flotante--negro {
+  background-image: url(../../../public/images/nosotros/Cajas\ Negras.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 30px;
+  height: 750px;
+  width: 85%;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    font-size: 3.2rem;
+    margin: 0 auto;
+    line-height: 1.05em;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .light {
+    font-weight: 200;
+  }
+
+  .text-sub {
+    font-size: 2.5rem;
+    font-weight: 200;
+    padding-top: 40px;
+  }
+  .text-footer {
+    font-size: 1.7rem;
+    font-weight: 200;
+  }
+}
+
+.nosotros__biblia {
+  margin-top: 430px;
+
+  .biblia-banner {
+    background-image: url(../../../public/images/nosotros/Banner\ Biblia.png);
+    height: 575px;
+    background-size: cover;
+  }
+
+  .biblia-banner-logo {
+    width: 500px;
+    position: relative;
+    top: 270px;
+    left: 280px;
+  }
+
+  .biblia-text {
+    padding-block: 68px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    width: 65%;
+    margin-inline: auto;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .text-sub {
+    width: 65%;
+    margin-inline: auto;
+    font-size: 2.2rem;
+    font-weight: 200;
+  }
+  .btn__biblia-banner {
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 296px;
+    padding: 18px 54px;
+  }
+}
+
+.declaracion-doctrinal {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-block: 140px 175px;
+  .declaracion-doctrinal__text {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .declaracion-doctrinal--supertitle {
+    color: #777777;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: -5px;
+  }
+  .declaracion-doctrinal--title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .declaracion-doctrinal__logo {
+    height: 45px;
+    margin-block: auto;
+  }
+
+  .declaracion-doctrinal__cuerpo-mostrado {
+    width: 65%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #979797;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .declaracion-doctrinal__cuerpo-oculto {
+    width: 65%;
+    margin: 0 auto;
+    text-align: justify;
+    color: #979797;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .btn__declaracion-doctrinal {
+    background-color: #850e30 !important;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+}
+
+.nuestro-equipo {
+  padding-top: 110px;
+  padding-bottom: 70px;
+  text-align: center;
+  .title {
+    color: #830731;
+    font-size: 3.2rem;
+    font-weight: 800;
+  }
+  .subtitle {
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-bottom: 85px;
+  }
+  .nuestro-equipo__cards {
+    display: flex;
+    max-width: 75%;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    .nuestro-equipo__card {
+      width: 25%;
+      padding: 20px;
+      & img {
+        width: 275px;
+        border-radius: 50%;
+      }
+      & h3 {
+        color: #830731;
+        font-weight: 700;
+        margin-top: 30px;
+      }
+      & p {
+        color: #555555;
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+      .nuestro-equipo__card-button {
+        background-color: #fff;
+        color: #808080;
+        font-size: 1.1rem;
+        font-weight: 300;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 15px 20px;
+      }
+    }
+  }
+}
