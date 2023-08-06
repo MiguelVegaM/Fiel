@@ -43,23 +43,6 @@
   width: 100%;
 }
 
-/* #miniImgAudio {
-  background-image: url(../../../public/images/recursos/IMAGEN\ AUDIO.png);
-  background-size: cover;
-  height: 208px;
-}
-#miniImgVideo {
-  background-image: url(../../../public/images/recursos/IMAGEN\ VIDEO.png);
-  background-size: cover;
-  height: 208px;
-}
-
-#miniImgArticulo {
-  background-image: url(../../../public/images/recursos/IMAGEN\ ARTICULOS.png);
-  background-size: cover;
-  height: 208px;
-} */
-
 .recursos__miniatura-text {
   position: absolute;
   top: 50%;
@@ -81,8 +64,14 @@
   background-color: #000000;
 }
 
+.recursos__filtros {
+  align-items: center;
+}
+
 .recursos__checkboxes {
-  margin-block: 20px;
+  /* margin-block: 20px; 
+*/
+  align-items: center;
 }
 
 /* Round checksboxes <-------- */
@@ -188,8 +177,10 @@
 
 .recursos__card-title {
   margin-left: 50px;
-  /* & h3 {
-  } */
+  margin-block: 10px;
+  & h3 {
+    width: 90%;
+  }
   & p {
     color: #8c8e8e;
   }
@@ -197,7 +188,7 @@
 
 .recrusos__card-length {
   color: #8c8e8e;
-  margin-right: 90px;
+  margin-right: 5%;
   margin-left: auto;
 }
 
@@ -246,4 +237,62 @@
   background-color: #000;
   border: none;
   align-items: center;
+}
+
+@media (max-width: 991px) {
+  .recursos__checkboxes {
+    margin: 0 auto;
+  }
+  .recursos__main-container {
+    width: 90%;
+  }
+  .recursos__selectors-pair {
+    margin-left: 50px;
+  }
+  .recursos__filtros {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recursos__checkboxes {
+    /* border: 1px solid rgb(23, 0, 173); */
+  }
+  .recursos__selectors {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recursos__selectors label {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .recursos__filtros {
+    flex-direction: column;
+  }
+
+  .recursos__checkboxes-container {
+    display: flex;
+    /* margin-right: 30px; */
+  }
+
+  .round {
+    margin-right: 10px;
+  }
+
+  .recursos__selectors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .recursos__card-title {
+    & h3 {
+      font-size: 1rem;
+    }
+    & p {
+      color: #8c8e8e;
+    }
+  }
 }

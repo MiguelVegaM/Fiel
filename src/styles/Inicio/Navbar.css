@@ -53,6 +53,10 @@
   font-weight: 700;
 }
 
+.navbar__dropdown {
+  text-align: center;
+}
+
 .dropdown-toggle {
   text-decoration: none !important;
 

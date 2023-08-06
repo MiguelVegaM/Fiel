@@ -25,6 +25,7 @@
   height: 60px;
   font-size: 1.2rem;
   font-weight: 500;
+  margin-top: 30px;
 }
 
 .nosotros__flotante--negro {
@@ -60,6 +61,7 @@
     font-size: 2.5rem;
     font-weight: 200;
     padding-top: 40px;
+    margin: 0 auto;
   }
   .text-footer {
     font-size: 1.7rem;
@@ -74,6 +76,7 @@
     background-image: url(../../../public/images/nosotros/Banner\ Biblia.png);
     height: 575px;
     background-size: cover;
+    background-position: center;
   }
 
   .biblia-banner-logo {
@@ -117,26 +120,27 @@
   display: flex;
   flex-direction: column;
   padding-block: 140px 175px;
+
   .declaracion-doctrinal__text {
     display: flex;
     justify-content: space-between;
     width: 65%;
     margin: 0 auto;
-  }
 
-  .declaracion-doctrinal--supertitle {
-    color: #777777;
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: -5px;
-  }
-  .declaracion-doctrinal--title {
-    font-size: 3.5rem;
-    font-weight: 700;
-  }
-  .declaracion-doctrinal__logo {
-    height: 45px;
-    margin-block: auto;
+    .declaracion-doctrinal--supertitle {
+      color: #777777;
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: -5px;
+    }
+    .declaracion-doctrinal--title {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    .declaracion-doctrinal__logo {
+      height: 45px;
+      margin-block: auto;
+    }
   }
 
   .declaracion-doctrinal__cuerpo-mostrado {
@@ -185,14 +189,19 @@
     font-weight: 200;
     margin-bottom: 85px;
   }
+  .nuestro-equipo__pair-cards {
+    display: flex;
+    /* flex-direction: row; */
+  }
   .nuestro-equipo__cards {
     display: flex;
+    /* flex-direction: row; */
     max-width: 75%;
     margin: 0 auto;
     justify-content: space-around;
 
     .nuestro-equipo__card {
-      width: 25%;
+      /* width: 25%; */
       padding: 20px;
       & img {
         width: 275px;
@@ -218,5 +227,145 @@
         padding: 15px 20px;
       }
     }
+  }
+}
+
+@media (max-width: 1500px) {
+  .nosotros__flotante--negro {
+    .text {
+      font-size: 2.8rem;
+    }
+
+    .text-sub {
+      font-size: 2.2rem;
+    }
+    .text-footer {
+      font-size: 1.5rem;
+    }
+  }
+
+  .nosotros__biblia {
+    .biblia-banner-logo {
+      top: 270px;
+      left: 150px;
+    }
+  }
+  .nuestro-equipo__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nuestro-equipo__pair-cards {
+  }
+}
+
+@media (max-width: 1025px) {
+  .nosotros-banner--rojo {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+
+    & p {
+      font-size: 1.2rem;
+    }
+    & h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .nosotros__flotante--negro {
+    .text {
+      width: 90%;
+      font-size: 2.5rem;
+    }
+
+    .text-sub {
+      font-size: 2rem;
+    }
+    .text-footer {
+      font-size: 1.5rem;
+    }
+  }
+
+  .nosotros__biblia {
+    .biblia-banner-logo {
+      top: 270px;
+      left: 150px;
+    }
+  }
+  .declaracion-doctrinal {
+    .declaracion-doctrinal__cuerpo-mostrado {
+      width: 80%;
+    }
+    .declaracion-doctrinal__cuerpo-oculto {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nosotros-banner--rojo {
+    & h1 {
+      font-size: 10vw;
+      font-weight: 800;
+    }
+  }
+  .nosotros__biblia {
+    margin-top: 280px;
+
+    .biblia-banner-logo {
+      width: 80%;
+      top: 270px;
+      left: 50px;
+    }
+    .biblia-text {
+      .text {
+        width: 80%;
+        font-size: 2rem;
+      }
+      .text-sub {
+        width: 80%;
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .nosotros__flotante--negro {
+    .text {
+      width: 90%;
+      font-size: 2rem;
+    }
+
+    .text-sub {
+      width: 90%;
+      font-size: 1.5rem;
+    }
+    .text-footer {
+      font-size: 1.2rem;
+    }
+  }
+  .declaracion-doctrinal {
+    .declaracion-doctrinal__text {
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .declaracion-doctrinal__logo {
+      width: 50px;
+      margin: 0 auto;
+    }
+  }
+  .nuestro-equipo {
+    .title {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .subtitle {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .nuestro-equipo__pair-cards {
+    display: flex;
+    flex-direction: column;
   }
 }

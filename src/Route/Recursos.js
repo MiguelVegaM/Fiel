@@ -596,91 +596,99 @@ export function RecursosMain() {
       <div className="recursos__main">
         <div className="recursos__main-container">
           <div className="row recursos__main-row">
-            <div className="col-4">
-              <h1>Filtros</h1>
+            <div className="col-lg-3">
               <form action="">
-                <div className="recursos__heckboxes">
-                  <div className="round">
-                    <input
-                      onChange={handleOnCheckbox}
-                      className="checkbox"
-                      type="checkbox"
-                      name="video"
-                      id="video"
-                      value="video"
-                    />
-                    <label htmlFor="video"></label>
-                    <p>Video</p>
+                <div className="recursos__filtros">
+                  <div className="recursos__checkboxes">
+                    <h1>Filtros</h1>
+                    <div className="recursos__checkboxes-container">
+                      <div className="round">
+                        <input
+                          onChange={handleOnCheckbox}
+                          className="checkbox"
+                          type="checkbox"
+                          name="video"
+                          id="video"
+                          value="video"
+                        />
+                        <label htmlFor="video"></label>
+                        <p>Video</p>
+                      </div>
+                      <div className="round">
+                        <input
+                          onChange={handleOnCheckbox}
+                          className="checkbox"
+                          type="checkbox"
+                          name="audio"
+                          id="audio"
+                          value="audio"
+                        />
+                        <label htmlFor="audio"></label>
+                        <p>Audio</p>
+                      </div>
+                      <div className="round">
+                        <input
+                          onChange={handleOnCheckbox}
+                          className="checkbox"
+                          type="checkbox"
+                          name="articulo"
+                          id="articulo"
+                          value="articulo"
+                        />
+                        <label htmlFor="articulo"></label>
+                        <p>Artículo</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="round">
-                    <input
-                      onChange={handleOnCheckbox}
-                      className="checkbox"
-                      type="checkbox"
-                      name="audio"
-                      id="audio"
-                      value="audio"
-                    />
-                    <label htmlFor="audio"></label>
-                    <p>Audio</p>
+                  <div className="recursos__selectors">
+                    <div className="recursos__selectors-pair">
+                      <label htmlFor="Libros">Libros de la Biblia</label>
+                      <select name="Libros" id="Libros">
+                        <option value="todos">Todos</option>
+                        <option value="salmos">Salmos</option>
+                        <option value="salmos">Marcos</option>
+                        <option value="salmos">Lucas</option>
+                        <option value="salmos">2 Timoteo</option>
+                        <option value="salmos">Apocalipsis</option>
+                      </select>
+                      <label htmlFor="Generos">Generos literarios</label>
+                      <select name="Generos" id="Generos">
+                        <option value="todos">Todos</option>
+                        <option value="narrativa">Narrativa</option>
+                        <option value="sabiduria">Sabiduría</option>
+                        <option value="profecia">Profecía</option>
+                        <option value="evangelios">Evangelios</option>
+                        <option value="epistolas">Epístolas</option>
+                        <option value="apocaliptica">Apocalíptica</option>
+                      </select>
+                    </div>
+                    <div className="recursos__selectors-pair">
+                      <label htmlFor="Eventos">Eventos</label>
+                      <select name="Eventos" id="Eventos">
+                        <option value="todos">Todos</option>
+                        <option value="cobime12">COBIME 2012</option>
+                        <option value="cobime15">COBIME 2015</option>
+                        <option value="cobime18">COBIME 2018</option>
+                      </select>
+                      <label htmlFor="Talletes">Talleres</label>
+                      <select name="Talletes" id="Talletes">
+                        <option value="todos">Todos</option>
+                        <option value="taller-marcos">
+                          Marcos, La Habana, 2019
+                        </option>
+                        <option value="taller-2-timoteo">
+                          2 Timoteo, La Habana, 2019
+                        </option>
+                        <option value="taller-apocalipsis">
+                          Apocalipsis, La Habana, 2019
+                        </option>
+                      </select>
+                    </div>
                   </div>
-                  <div className="round">
-                    <input
-                      onChange={handleOnCheckbox}
-                      className="checkbox"
-                      type="checkbox"
-                      name="articulo"
-                      id="articulo"
-                      value="articulo"
-                    />
-                    <label htmlFor="articulo"></label>
-                    <p>Artículo</p>
-                  </div>
-                </div>
-                <div className="recursos__selectors">
-                  <label htmlFor="Libros">Libros de la Biblia</label>
-                  <select name="Libros" id="Libros">
-                    <option value="todos">Todos</option>
-                    <option value="salmos">Salmos</option>
-                    <option value="salmos">Marcos</option>
-                    <option value="salmos">Lucas</option>
-                    <option value="salmos">2 Timoteo</option>
-                    <option value="salmos">Apocalipsis</option>
-                  </select>
-                  <label htmlFor="Generos">Generos literarios</label>
-                  <select name="Generos" id="Generos">
-                    <option value="todos">Todos</option>
-                    <option value="narrativa">Narrativa</option>
-                    <option value="sabiduria">Sabiduría</option>
-                    <option value="profecia">Profecía</option>
-                    <option value="evangelios">Evangelios</option>
-                    <option value="epistolas">Epístolas</option>
-                    <option value="apocaliptica">Apocalíptica</option>
-                  </select>
-                  <label htmlFor="Eventos">Eventos</label>
-                  <select name="Eventos" id="Eventos">
-                    <option value="todos">Todos</option>
-                    <option value="cobime12">COBIME 2012</option>
-                    <option value="cobime15">COBIME 2015</option>
-                    <option value="cobime18">COBIME 2018</option>
-                  </select>
-                  <label htmlFor="Talletes">Talleres</label>
-                  <select name="Talletes" id="Talletes">
-                    <option value="todos">Todos</option>
-                    <option value="taller-marcos">
-                      Marcos, La Habana, 2019
-                    </option>
-                    <option value="taller-2-timoteo">
-                      2 Timoteo, La Habana, 2019
-                    </option>
-                    <option value="taller-apocalipsis">
-                      Apocalipsis, La Habana, 2019
-                    </option>
-                  </select>
                 </div>
               </form>
             </div>
-            <div className="col-8">
+            <div className="col-lg-9">
               {datosFiltrados.map((recursosObj, i) => (
                 <NavLink
                   to={recursosObj.type === "video" ? "/video" : "/audio"}
