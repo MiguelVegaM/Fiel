@@ -11,7 +11,7 @@ import Equipo from "./Route/Equipo";
 import Alianzas from "./Route/Alianzas";
 import { VideoFiltro } from "./Route/VideoFiltro";
 import { AudioFiltro } from "./Route/AudioFiltro";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
