@@ -137,11 +137,11 @@ export function Navbar(props) {
                 ENTRENAMIENTOS
               </NavLink>
             </li>
-            <li className="nav-item navbar__list-item">
+            {/* <li className="nav-item navbar__list-item">
               <NavLink className="navbar__link" to="/eventos">
                 EVENTOS
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item navbar__list-item">
               <NavLink className="navbar__link" to="/recursos">
                 RECURSOS
@@ -163,7 +163,8 @@ export function MainBanner(props) {
       <div className="main-banner__text">
         <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
         <h1 className="main-banner__title">
-          Generación de <span>Expositores</span> de <span>la Biblia.</span>
+          Generación de <span>Expositores</span> <br></br> de{" "}
+          <span>la Biblia.</span>
         </h1>
         <div className="main-banner__line"></div>
         <p className="main-banner__paragraph">
@@ -442,7 +443,7 @@ export function Testimonios(props) {
                     alt="Usiel Abreu"
                   />
                   <div className="testimonios__text-container">
-                    <div className="testimonios__paragraph">
+                    <div className="testimonios__paragraph testimonios__paragraph-usiel ">
                       Prédica Fiel ha significado mucho, no solo por el
                       entrenamiento personal, sino por el descanso que otorga al
                       predicador sabiendo que está dando de manera sana un
@@ -895,14 +896,14 @@ export function Footer(props) {
                     Entrenamientos
                   </NavLink>
                 </li>
-                <li className="footer__accesos-directos-list-item">
+                {/* <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/eventos"
                     className="footer__accesos-directos-link"
                   >
                     Eventos
                   </NavLink>
-                </li>
+                </li> */}
                 <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/recursos"
@@ -911,18 +912,14 @@ export function Footer(props) {
                     Recursos
                   </NavLink>
                 </li>
-                <li className="footer__accesos-directos-list-item">
+                {/* <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/cobime"
                     className="footer__accesos-directos-link"
                   >
                     COBIME
                   </NavLink>
-                </li>
-              </ul>
-            </div>
-            <div className="footer__accesos-directos2">
-              <ul className="footer__accesos-directos-list">
+                </li> */}
                 <li className="footer__accesos-directos-list-item">
                   <HashLink
                     smooth
@@ -933,6 +930,10 @@ export function Footer(props) {
                     Declaración Doctrinal
                   </HashLink>
                 </li>
+              </ul>
+            </div>
+            <div className="footer__accesos-directos2">
+              <ul className="footer__accesos-directos-list">
                 <li className="footer__accesos-directos-list-item">
                   <HashLink
                     to="/nosotros#nuestro-equipo"
@@ -1040,7 +1041,7 @@ function Inicio(props) {
       <EntrenamientosPresenciales />
       <RecursosVid />
       <Testimonios />
-      <Cobime />
+      {/* <Cobime /> */}
       <Alianzas />
       <ContactoWhats />
       <Footer />

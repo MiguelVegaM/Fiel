@@ -1,12 +1,22 @@
 import React from "react";
 
 import "../styles/Recursos/Filtros.css";
+import { useParams } from "react-router-dom";
+import { recursosObj } from "./Recursos";
 
 export function AudioFiltro() {
+  let { audioId } = useParams();
+  console.log(audioId);
+
+  let recursoSeleccionado = recursosObj.find(
+    (recurso) => recurso.id === audioId
+  );
+  console.log(recursoSeleccionado);
+
   return (
     <div>
       <div className="barra-direccion">
-        Inicio / Audios / La supremacía de Dios a través de su Palabra
+        Inicio / Audios / {recursoSeleccionado.title}
       </div>
       <div className="audio-filtro__container">
         <div className="audio-frame">
@@ -20,10 +30,12 @@ export function AudioFiltro() {
         <div className="audio-info">
           <div className="audio-info__title">
             <div className="audio-filtro__title">
-              <h3>La supremacía de Dios a través de su Palabra</h3>
-              <p>David Jackman</p>
+              <h3>{recursoSeleccionado.title}</h3>
+              <p>{recursoSeleccionado.fuente}</p>
             </div>
-            <div className="audio-filtro__length">1:27:00 Min</div>
+            <div className="audio-filtro__length">
+              {recursoSeleccionado.length}
+            </div>
           </div>
           <hr className="audio-filtro__hr" />
           <div className="audio-info__subtitle">

@@ -146,6 +146,8 @@
   margin-bottom: 25px;
 }
 
+/* Card <-------------------- */
+
 .recursos__card {
   /* position: absolute; */
   background-color: #0e0e0e;
@@ -179,7 +181,7 @@
   margin-left: 50px;
   margin-block: 10px;
   & h3 {
-    width: 90%;
+    /* width: 90%; */
   }
   & p {
     color: #8c8e8e;

@@ -18,18 +18,19 @@
 .entrenamiento-online__box-text {
   text-align: start;
   padding-left: 5rem;
-  padding-right: 9rem;
+  padding-right: 12rem;
+  padding-block: 50px;
 }
 
 .entrnamiento-online__text--normal {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 100%;
   font-weight: 200;
 }
 .entrenamiento-online__text--bold {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   width: 100%;
   font-weight: 500;
 }

@@ -14,10 +14,9 @@ import React, { useState } from "react";
 import Pagination from "react-bootstrap/Pagination";
 
 import "../styles/Recursos/Recursos.css";
-import { NavLink } from "react-router-dom";
-import { type } from "@testing-library/user-event/dist/type";
+import { NavLink, Link } from "react-router-dom";
 
-export let recursosObj = [
+export const recursosObj = [
   {
     id: "1",
     link: "https://vimeo.com/523000492",
@@ -690,8 +689,13 @@ export function RecursosMain() {
             </div>
             <div className="col-lg-9">
               {datosFiltrados.map((recursosObj, i) => (
-                <NavLink
-                  to={recursosObj.type === "video" ? "/video" : "/audio"}
+                <Link
+                  // to={`/video/${recursosObj.id}`}
+                  to={
+                    recursosObj.type === "video"
+                      ? `/video/${recursosObj.id}`
+                      : `/audio/${recursosObj.id}`
+                  }
                   className="recursos__card-link"
                   aria-current="page"
                 >
@@ -711,7 +715,7 @@ export function RecursosMain() {
                       {recursosObj.length} Min
                     </div>
                   </div>
-                </NavLink>
+                </Link>
               ))}
             </div>
           </div>

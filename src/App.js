@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Inicio from "./Route/Inicio";
 import Nosotros from "./Route/Nosotros";
 import Entrenamientos from "./Route/Entrenamientos";
@@ -11,7 +11,7 @@ import Equipo from "./Route/Equipo";
 import Alianzas from "./Route/Alianzas";
 import { VideoFiltro } from "./Route/VideoFiltro";
 import { AudioFiltro } from "./Route/AudioFiltro";
-import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
@@ -29,8 +29,9 @@ function App() {
         />
         <Route path="equipo" element={<Equipo />} />
         <Route path="alianzas" element={<Alianzas />} />
-        <Route path="video" element={<VideoFiltro />} />
-        <Route path="audio" element={<AudioFiltro />} />
+        <Route path="video/:videoId" element={<VideoFiltro />} />
+        <Route path="audio/:audioId" element={<AudioFiltro />} />
+        {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
       <ScrollToTop />
     </>

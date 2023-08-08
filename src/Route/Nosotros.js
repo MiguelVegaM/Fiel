@@ -527,7 +527,7 @@ function Nosotros(props) {
       <Navbar />
       <NosotrosBanner />
       <Alianzas />
-      <Cobime />
+      {/* <Cobime /> */}
       <ContactoWhats id="ContactoWhats" />
       <Footer />
       <DisclaimerDonar />

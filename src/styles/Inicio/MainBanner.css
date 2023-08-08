@@ -13,7 +13,8 @@
   padding-inline: 5rem;
   max-width: 900px;
   /* height: 100%; */
-  padding: 190px 40px;
+  padding-block: 190px;
+  padding-right: 100px;
 }
 
 .main-banner__subtitle {
