@@ -44,7 +44,7 @@ export function VideoFiltro() {
             </a>{" "}
             from{" "}
             <a href="https://vimeo.com/user107639892">Pr&eacute;dica Fiel</a> on{" "}
-            <a href="https://vimeo.com">Vimeo</a>.
+            <a href="https://vimeo.com">Vimeo</a>
           </p>
         </div>
         <div className="video-info">
