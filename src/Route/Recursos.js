@@ -15,475 +15,664 @@ import Pagination from "react-bootstrap/Pagination";
 
 import "../styles/Recursos/Recursos.css";
 import { NavLink, Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const recursosObj = [
   {
     id: "1",
-    link: "https://vimeo.com/523000492",
+    tags: [""],
+    url: "https://vimeo.com/523000492",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Aplicaciones",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "",
     length: "44:32",
   },
 
   {
     id: "2",
-    link: "https://vimeo.com/521519103",
+    tags: [""],
+    url: "https://vimeo.com/521519103",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Introducción a la Literatura Apocalíptica",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "",
     length: "54:20",
   },
 
   {
     id: "3",
-    link: "https://vimeo.com/442830557",
+    tags: [""],
+    url: "https://vimeo.com/442830557",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 21",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "26:38",
   },
 
   {
     id: "4",
-    link: "https://vimeo.com/445249725",
+    tags: [""],
+    url: "https://vimeo.com/445249725",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Del Texto al Sermón",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "1:13:11",
   },
 
   {
     id: "5",
-    link: "https://vimeo.com/442826558",
+    tags: [""],
+    url: "https://vimeo.com/442826558",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicando a Cristo",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "49:48",
   },
 
   {
     id: "6",
-    link: "https://vimeo.com/442818395",
+    tags: [""],
+    url: "https://vimeo.com/442818395",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 14",
     fuente: "David Helm",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "26:41",
   },
 
   {
     id: "7",
-    link: "https://vimeo.com/445228715",
+    tags: [""],
+    url: "https://vimeo.com/445228715",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Línea Melódica",
     fuente: "Rubén Rodríguez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "41:08",
   },
 
   {
     id: "8",
-    link: "https://vimeo.com/442800308",
+    tags: [""],
+    url: "https://vimeo.com/442800308",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "39:18",
   },
 
   {
     id: "9",
-    link: "https://vimeo.com/442812601",
+    tags: [""],
+    url: "https://vimeo.com/442812601",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 3.14-22",
     fuente: "Rubén Rodríguez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "30:20",
   },
 
   {
     id: "10",
-    link: "https://vimeo.com/442794221",
+    tags: [""],
+    url: "https://vimeo.com/442794221",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
     fuente: "Andy Quesada",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "52:51",
   },
 
   {
     id: "11",
-    link: "https://vimeo.com/442473784",
+    tags: [""],
+    url: "https://vimeo.com/442473784",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Introducción a la Literatura Apocalíptica",
     fuente: "Alexis Pérez",
+    libro: "apocalipsis",
+    genero: "apocaliptica",
+    taller: "taller-apocalipsis",
     length: "56:29",
   },
 
   {
     id: "12",
-    link: "https://vimeo.com/417747652",
+    tags: [""],
+    url: "https://vimeo.com/417747652",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
     fuente: "David Helm",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "taller-2-timoteo",
     length: "46:11",
   },
 
   {
     id: "13",
-    link: "https://vimeo.com/417737115",
+    tags: [""],
+    url: "https://vimeo.com/417737115",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
     fuente: "David Helm",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "taller-2-timoteo",
     length: "49:04",
   },
 
   {
     id: "14",
-    link: "https://vimeo.com/417726354",
+    tags: [""],
+    url: "https://vimeo.com/417726354",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Manteniéndonos en la Línea",
     fuente: "Alexis Pérez",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "taller-2-timoteo",
     length: "28:55",
   },
 
   {
     id: "15",
-    link: "https://vimeo.com/419933778",
+    tags: [""],
+    url: "https://vimeo.com/419933778",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicando a Cristo",
     fuente: "Collen McFadden",
+    libro: "marcos",
+    genero: "evangelios",
+    taller: "",
     length: "47:45",
   },
 
   {
     id: "16",
-    link: "https://vimeo.com/419949258",
+    tags: [""],
+    url: "https://vimeo.com/419949258",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Línea Melódica",
     fuente: "Marjorie Meeks",
+    libro: "marcos",
+    genero: "evangelios",
+    taller: "",
     length: "41:19",
   },
 
   {
     id: "17",
-    link: "https://vimeo.com/417787819",
+    tags: [""],
+    url: "https://vimeo.com/417787819",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
     fuente: "Marjorie Meeks",
+    libro: "marcos",
+    genero: "evangelios",
+    taller: "taller-marcos",
     length: "50:49",
   },
 
   {
     id: "18",
-    link: "https://vimeo.com/417771886",
+    tags: [""],
+    url: "https://vimeo.com/417771886",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
     fuente: "Collen McFadden",
+    libro: "marcos",
+    genero: "evangelios",
+    taller: "taller-marcos",
     length: "45:18",
   },
 
   {
     id: "19",
-    link: "https://vimeo.com/417759651",
+    tags: [""],
+    url: "https://vimeo.com/417759651",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Manteniéndonos en la Línea",
     fuente: "Lourdes LLorens",
+    libro: "marcos",
+    genero: "evangelios",
+    taller: "taller-marcos",
     length: "36:11",
   },
 
   {
     id: "20",
-    link: "https://vimeo.com/461684057",
+    tags: [""],
+    url: "https://vimeo.com/461684057",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Panel de Preguntas y Respuestas",
     fuente: "Varios",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "56:46",
   },
 
   {
     id: "21",
-    link: "https://vimeo.com/461596077",
+    tags: [""],
+    url: "https://vimeo.com/461596077",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La aplicación y la adoración",
     fuente: "Robert Kinney",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "52:45",
   },
 
   {
     id: "22",
-    link: "https://vimeo.com/460173805",
+    tags: [""],
+    url: "https://vimeo.com/460173805",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en el Salmo 16",
     fuente: "Alexis Pérez",
+    libro: "salmos",
+    genero: "sabiduria",
+    taller: "",
     length: "33:18",
   },
 
   {
     id: "23",
-    link: "https://vimeo.com/460227088",
+    tags: [""],
+    url: "https://vimeo.com/460227088",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Adoración Verdadera",
     fuente: "Juan Sánchez",
+    libro: "lucas",
+    genero: "evangelios",
+    taller: "",
     length: "37:44",
   },
 
   {
     id: "24",
-    link: "https://vimeo.com/460192662",
+    tags: [""],
+    url: "https://vimeo.com/460192662",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "El proceso de hacer aplicaciones en predicación expositiva",
     fuente: "Bryan Chapell",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "44:49",
   },
 
   {
     id: "25",
-    link: "https://vimeo.com/460218906",
+    tags: [""],
+    url: "https://vimeo.com/460218906",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en el Salmo 2",
     fuente: "Juan Sánchez",
+    libro: "salmos",
+    genero: "sabiduria",
+    taller: "",
     length: "32:14",
   },
 
   {
     id: "26",
-    link: "https://vimeo.com/460235684",
+    tags: [""],
+    url: "https://vimeo.com/460235684",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Teología Bíblica de la Adoración",
     fuente: "Miguel Núñez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:26:03",
   },
 
   {
     id: "27",
-    link: "https://vimeo.com/464423852",
+    tags: [""],
+    url: "https://vimeo.com/464423852",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 4",
     fuente: "David Helm",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "",
     length: "1:19:47",
   },
 
   {
     id: "28",
-    link: "https://vimeo.com/464426493",
+    tags: [""],
+    url: "https://vimeo.com/464426493",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable IV",
     fuente: "Ryan Townsend",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:33:44",
   },
 
   {
     id: "29",
-    link: "https://vimeo.com/464392395",
+    tags: [""],
+    url: "https://vimeo.com/464392395",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva VI",
     fuente: "David Helm",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:48:13",
   },
 
   {
     id: "30",
-    link: "https://vimeo.com/464344643",
+    tags: [""],
+    url: "https://vimeo.com/464344643",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva V",
     fuente: "Miguel Núñez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:06:50",
   },
 
   {
     id: "31",
-    link: "https://vimeo.com/464040232",
+    tags: [""],
+    url: "https://vimeo.com/464040232",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable III",
     fuente: "Juan Sánchez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:42:41",
   },
 
   {
     id: "32",
-    link: "https://vimeo.com/462825307",
+    tags: [""],
+    url: "https://vimeo.com/462825307",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 3",
     fuente: "Alexis Pérez",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "",
     length: "1:07:44",
   },
 
   {
     id: "33",
-    link: "https://vimeo.com/462831217",
+    tags: [""],
+    url: "https://vimeo.com/462831217",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva IV",
     fuente: "Miguel Núñez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "57:23",
   },
 
   {
     id: "34",
-    link: "https://vimeo.com/464009342",
+    tags: [""],
+    url: "https://vimeo.com/464009342",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable II",
     fuente: "Juan Sánchez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "38:18",
   },
 
   {
     id: "35",
-    link: "https://vimeo.com/462890853",
+    tags: [""],
+    url: "https://vimeo.com/462890853",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva III",
     fuente: "David Helm",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "51:20",
   },
 
   {
     id: "36",
-    link: "/public/audios/Exposición en 2 Timoteo 2.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/Exposicio%CC%81n_en_2_Timoteo_2_Delvis_Acun%CC%83a-COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Exposición en 2 Timoteo 2 ",
     fuente: "Delvis Acuña",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "47:36",
   },
 
   {
     id: "37",
-    link: "https://vimeo.com/462816691",
+    tags: [""],
+    url: "https://vimeo.com/462816691",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 1",
     fuente: "David Helm",
+    libro: "2timoteo",
+    genero: "epistolas",
+    taller: "",
     length: "37:59",
   },
 
   {
     id: "38",
-    link: "/public/audios/Predicación Expositiva II.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/4.Predicacio%CC%81n_Expositiva_2_David_Helm_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva II",
     fuente: "David Helm",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "53:23",
   },
 
   {
     id: "39",
-    link: "/public/audios/La Iglesia Saludable I.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/La_Iglesia_Saludable_Juan_Sa%CC%81nchez_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La Iglesia Saludable I",
     fuente: "Juan Sánchez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "39:38",
   },
 
   {
     id: "40",
-    link: "/public/audios/Predicación Expositiva I.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/2.Predicacio%CC%81n_Expositiva_1_David%20Helm_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva I",
     fuente: "David Helm",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:02:53",
   },
 
   {
     id: "41",
-    link: "https://youtu.be/RWP8K3stZQs",
+    tags: [""],
+    url: "https://youtu.be/RWP8K3stZQs",
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Una visión bíblica de la iglesia",
     fuente: "Miguel Núñez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:01:00",
   },
 
   {
     id: "42",
-    link: "/public/audios/La supremacía de Dios a través de su Palabra-Día 3 Juan.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-Juan-Sa%CC%81nchez-COBIME-2012-D3_1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
     fuente: "Juan Sánchez",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "57:06",
   },
 
   {
     id: "43",
-    link: "/public/audios/La supremacía de Dios a través de su Palabra-Día 3 David.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-David-Jackman-COBIME-2012-D3_1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
     fuente: "David Jackman ",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:28:26",
   },
 
   {
     id: "44",
-    link: "/public/audios/La supremacía de Dios a través de su Palabra-Día 3 Peter.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-Peter-Sholl-COBIME2012-D3.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
     fuente: "Peter Sholl",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "42:14",
   },
 
   {
     id: "45",
-    link: "/public/audios/La supremacía de Dios a través de su Palabra-Día 2 Peter.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/audio3.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
     fuente: "Peter Sholl",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "31:27",
   },
 
   {
     id: "46",
-    link: "/public/audios/La supremacía de Dios a través de su Palabra-Día 2 David.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/audioa2dj.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
     fuente: "David Jackman",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "1:27:59",
   },
 
   {
     id: "47",
-    link: "/public/audios/La supremacía de Dios a través de su palabra-Día 1.mp3",
+    tags: [""],
+    url: "https://www.predicafiel.org/audios/audio1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su palabra-Día 1",
     fuente: "Peter Sholl",
+    libro: "",
+    genero: "",
+    taller: "",
     length: "38:18",
   },
 ];
@@ -509,28 +698,34 @@ export function RecursosMain() {
       [e.target.value]: e.target.checked,
     });
 
+    console.log(e.target.value);
+
     if (e.target.checked) {
       const resultadoFiltrado = recursosObj.filter(
         (item) => item.type === e.target.value
       );
       setDatosFiltrados([...resultadoFiltrado]);
-      // document.miniImgVideo.src =
-      //   "/images/recursos/FILTROS/RECURSOS VIDEOS/SELECCIÓN FILTRO VIDEO.png";
     } else {
-      // const resultadoFiltrado = datosFiltrados.filter(
-      //   (item) => item.type !== e.target.value
-      // );
       setDatosFiltrados(recursosObj);
-      // document.miniImgVideo.src = "/images/recursos/IMAGEN VIDEO.png";
     }
+    // if (true) {
+    //   const resultadoFiltrado = recursosObj.filter(
+    //     (item) => item.libro === e.target.value
+    //   );
+    //   setDatosFiltrados([...resultadoFiltrado]);
+    // } else {
+    //   setDatosFiltrados(recursosObj);
+    // }
   };
+
+  // if()
 
   // console.log(datosFiltrados);
   // console.log(recursoFiltrado);
 
   return (
     <>
-      <div className="recursos__miniaturas">
+      <div className="recursos__miniaturas" id="recursos__miniaturas">
         <div className="barra-direccion">Inicio / Todos los recursos</div>
         <p className="recursos__paragraph">
           Disponemos de una gran variedad de recursos en video, audio y
@@ -641,17 +836,26 @@ export function RecursosMain() {
                   </div>
                   <div className="recursos__selectors">
                     <div className="recursos__selectors-pair">
-                      <label htmlFor="Libros">Libros de la Biblia</label>
-                      <select name="Libros" id="Libros">
+                      <label htmlFor="libros">Libros de la Biblia</label>
+                      <select
+                        name="libros"
+                        id="libros"
+                        onChange={handleOnCheckbox}
+                      >
                         <option value="todos">Todos</option>
                         <option value="salmos">Salmos</option>
-                        <option value="salmos">Marcos</option>
-                        <option value="salmos">Lucas</option>
-                        <option value="salmos">2 Timoteo</option>
-                        <option value="salmos">Apocalipsis</option>
+                        <option value="marcos">Marcos</option>
+                        <option value="lucas">Lucas</option>
+                        <option value="2timoteo">2 Timoteo</option>
+                        <option value="apocalipsis">Apocalipsis</option>
                       </select>
-                      <label htmlFor="Generos">Generos literarios</label>
-                      <select name="Generos" id="Generos">
+                      <label htmlFor="generos">Género literários</label>
+
+                      <select
+                        name="generos"
+                        id="generos"
+                        onChange={handleOnCheckbox}
+                      >
                         <option value="todos">Todos</option>
                         <option value="narrativa">Narrativa</option>
                         <option value="sabiduria">Sabiduría</option>
@@ -662,15 +866,19 @@ export function RecursosMain() {
                       </select>
                     </div>
                     <div className="recursos__selectors-pair">
-                      <label htmlFor="Eventos">Eventos</label>
+                      {/* <label htmlFor="Eventos">Eventos</label>
                       <select name="Eventos" id="Eventos">
                         <option value="todos">Todos</option>
                         <option value="cobime12">COBIME 2012</option>
                         <option value="cobime15">COBIME 2015</option>
                         <option value="cobime18">COBIME 2018</option>
-                      </select>
-                      <label htmlFor="Talletes">Talleres</label>
-                      <select name="Talletes" id="Talletes">
+                      </select> */}
+                      <label htmlFor="talleres">Talleres</label>
+                      <select
+                        name="talleres"
+                        id="talleres"
+                        onChange={handleOnCheckbox}
+                      >
                         <option value="todos">Todos</option>
                         <option value="taller-marcos">
                           Marcos, La Habana, 2019
@@ -690,7 +898,6 @@ export function RecursosMain() {
             <div className="col-lg-9">
               {datosFiltrados.map((recursosObj, i) => (
                 <Link
-                  // to={`/video/${recursosObj.id}`}
                   to={
                     recursosObj.type === "video"
                       ? `/video/${recursosObj.id}`
@@ -724,12 +931,14 @@ export function RecursosMain() {
               <div className="col-4">
                 <img
                   className="recursos__footer-logo"
-                  src="images/recursos/logo gris inferior.png"
+                  src="/images/recursos/logo-gris-inferior.png"
                   alt="Logo Predica Fiel"
                 />
               </div>
               <div className="col-4 recursos__footer-btn">
-                <button>Inicio</button>
+                <HashLink to="/recursos#recursos__miniaturas">
+                  <button>Inicio</button>
+                </HashLink>
               </div>
               <div className="col-4 recursos__footer-navigation">
                 <Pagination size="sm" className="recursos__footer-pagination">

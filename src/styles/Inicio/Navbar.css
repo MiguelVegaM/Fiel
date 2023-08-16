@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  height: 113px;
+  min-height: 113px;
   /* margin: 0px 8% 3px 8%; */
 }
 
@@ -51,7 +51,7 @@
 
 .navbar a.active {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .navbar__dropdown {

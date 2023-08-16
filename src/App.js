@@ -9,8 +9,8 @@ import Contacto from "./Route/Contacto";
 import DeclaracionDoctrinal from "./Route/DeclaracionDoctrinal";
 import Equipo from "./Route/Equipo";
 import Alianzas from "./Route/Alianzas";
-import { VideoFiltro } from "./Route/VideoFiltro";
-import { AudioFiltro } from "./Route/AudioFiltro";
+import PaginaVideo from "./Route/VideoFiltro";
+import PaginaAudio from "./Route/AudioFiltro";
 import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
@@ -29,8 +29,8 @@ function App() {
         />
         <Route path="equipo" element={<Equipo />} />
         <Route path="alianzas" element={<Alianzas />} />
-        <Route path="video/:videoId" element={<VideoFiltro />} />
-        <Route path="audio/:audioId" element={<AudioFiltro />} />
+        <Route path="video/:videoId" element={<PaginaVideo />} />
+        <Route path="audio/:audioId" element={<PaginaAudio />} />
         {/* <Route path="*" element={<Navigate to="/" />} /> */}
       </Routes>
       <ScrollToTop />
