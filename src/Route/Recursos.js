@@ -14,7 +14,7 @@ import React, { useState } from "react";
 import Pagination from "react-bootstrap/Pagination";
 
 import "../styles/Recursos/Recursos.css";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export const recursosObj = [
