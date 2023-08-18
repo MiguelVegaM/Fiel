@@ -129,7 +129,7 @@ export function EntrenamientosEntrenamientosOnline() {
 
 export function PlanHabana() {
   return (
-    <div className="plan-habana" id="entrenamientos-presenciales">
+    <div className="plan-habana" id="plan-habana">
       <div className="plan-habana-banner container-fluid">
         <div className="row">
           <div className="plan-habana-banner__text col-lg-6">
