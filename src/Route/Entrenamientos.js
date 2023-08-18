@@ -43,7 +43,7 @@ export function EntrenamientosHeader() {
           &times;
         </a> */}
         <a href="#entrenamientos-online">Entrenamientos Online</a>
-        <a href="#entrenamientos-presenciales">Entrenamientos Presenciales</a>
+        <a href="#plan-habana">Entrenamientos Presenciales</a>
         <a href="#talleres">Talleres</a>
       </div>
       <div className="capacitacion-container">
@@ -293,7 +293,7 @@ export function Internado() {
           </div>
         </div>
       </div>
-      <div id="talleres" className="talleres row" id="talleres">
+      <div className="talleres row" id="talleres">
         <div className="talleres__text col-12 col-lg-8 nopadding">
           <div className="talleres__header">TALLERES</div>
           <div className="talleres__paragraph">
