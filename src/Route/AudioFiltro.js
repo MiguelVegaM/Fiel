@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { recursosObj } from "./Recursos";
 import { MiniHeader, Navbar } from "./Inicio";
 
-// import Player from "@madzadev/audio-player";
+import Player from "@madzadev/audio-player";
 
 const colors = `html {
   --tagsBackground: #860F30;
@@ -62,14 +62,14 @@ export function AudioFiltro() {
             src="/images/recursos/FILTROS/RECURSOS_AUDIOS/Barra-de-Audio-con-logo.jpg"
             alt=""
           />
-          {/* <Player
+          <Player
             trackList={track}
             customColorScheme={colors}
             includeTags={false}
             includeSearch={false}
             showPlaylist={true}
             autoPlayNextTrack={true}
-          /> */}
+          />
         </div>
         <div className="audio-info">
           <div className="audio-info__title">

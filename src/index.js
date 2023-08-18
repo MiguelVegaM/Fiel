@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
-// import "@madzadev/audio-player/dist/index.css";
+import "@madzadev/audio-player/dist/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
