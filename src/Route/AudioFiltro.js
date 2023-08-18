@@ -23,7 +23,7 @@ const colors = `html {
   --volumeUsed: #860F30;
   --volumeLeft:  #151616;
   --playlistBackground: #0E0E0E;
-  --playlistText: #575a77;
+  --playlistText: #575a76;
   --playlistBackgroundHoverActive:  #0E0E0E;
   --playlistTextHoverActive: #ffffff;
 }`;
