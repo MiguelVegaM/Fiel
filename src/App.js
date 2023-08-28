@@ -29,9 +29,9 @@ function App() {
         />
         <Route path="equipo" element={<Equipo />} />
         <Route path="alianzas" element={<Alianzas />} />
-        <Route path="video/:videoId" element={<PaginaVideo />} />
-        <Route path="audio/:audioId" element={<PaginaAudio />} />
-        {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="recursos/video/:videoId" element={<PaginaVideo />} />
+        <Route path="recursos/audio/:audioId" element={<PaginaAudio />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <ScrollToTop />
     </>

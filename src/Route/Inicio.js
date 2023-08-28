@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
@@ -147,9 +148,13 @@ export function Navbar(props) {
                 RECURSOS
               </NavLink>
             </li>
-            <a className="dropdown-item" to="/contacto" href="#contacto">
+            <HashLink
+              className="dropdown-item"
+              to="/#contacto"
+              href="#contacto"
+            >
               <Button specificClass="btn__navbar">CONTACTO</Button>
-            </a>
+            </HashLink>
           </ul>
         </div>
       </div>
@@ -665,6 +670,32 @@ export function ContactoWhats(props) {
     console.log(data);
   };
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const btn__form = document.getElementById("btn__form");
+
+    emailjs
+      .sendForm(
+        "service_nvx5h12",
+        "template_0xq23fl",
+        form.current,
+        "67xUYJ6zrwMgo-AtQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text, "wuuuuu");
+          // alert("Wuuuuu");
+          btn__form.value = "ENVIADO 🙏";
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div id="contacto" className="contacto">
       <div className="contacto__container">
@@ -705,15 +736,21 @@ export function ContactoWhats(props) {
           </p>
 
           {/*----------------------------------------FORMULARIO */}
-          <form onSubmit={handleSubmit(onSubmit)} className="contacto__form">
+          <form
+            ref={form}
+            onSubmit={handleSubmit(onSubmit)}
+            className="contacto__form"
+          >
             <div className="contacto__inputs-container">
               <input
                 {...register("nombre", {
                   required: true,
                 })}
+                id="de_nombre"
                 className="contacto__input"
                 type="text"
                 placeholder="Nombre"
+                name="de_nombre"
               />
               {errors.nombre?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
@@ -722,9 +759,11 @@ export function ContactoWhats(props) {
                 {...register("apellido", {
                   required: true,
                 })}
+                id="de_apellido"
                 className="contacto__input"
                 type="text"
                 placeholder="Apellido"
+                name="de_apellido"
               />
               {errors.apellido?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
@@ -733,9 +772,11 @@ export function ContactoWhats(props) {
                 {...register("teléfono", {
                   required: true,
                 })}
+                id="de_telefono"
                 className="contacto__input"
                 type="tel"
                 placeholder="Teléfono"
+                name="de_telefono"
               />
               {errors.teléfono?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
@@ -746,9 +787,11 @@ export function ContactoWhats(props) {
                   pattern:
                     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                 })}
+                id="de_mail"
                 className="contacto__input"
                 type="email"
                 placeholder="E-mail"
+                name="de_mail"
               />
               {errors.email?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
@@ -759,9 +802,11 @@ export function ContactoWhats(props) {
                 required: true,
                 maxLength: 140,
               })}
+              id="mensaje"
               className="contacto__input-large"
               type="text"
               placeholder="Mensaje"
+              name="mensaje"
             ></textarea>
             {errors.mensaje?.type === "required" && (
               <p className="input-errors">Este campo es requerido</p>
@@ -771,9 +816,11 @@ export function ContactoWhats(props) {
             )}
             <div className="contacto__button-container form_button">
               <input
+                onClick={sendEmail}
                 className="button-component"
                 type="submit"
                 value="ENVIAR"
+                id="btn__form"
               />
             </div>
           </form>

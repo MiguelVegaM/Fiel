@@ -14,7 +14,7 @@ export function VideoFiltro() {
     (recurso) => recurso.id === videoId
   );
 
-  console.log(recursoSeleccionado);
+  // console.log(recursoSeleccionado);
 
   const navigate = useNavigate();
   const goBack = () => {
@@ -28,39 +28,31 @@ export function VideoFiltro() {
       </div>
       <div className="video-filtro__container">
         <div className="video-frame">
-          {/* <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+          <div
+            style={{
+              padding: "900px 0 0 0",
+              position: "relative",
+              width: "70%",
+              height: "100%",
+              margin: "0 auto",
+            }}
+          >
             <iframe
-              src="https://player.vimeo.com/video/523000492?h=5a7077eebc&title=0&byline=0&portrait=0"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-              }}
+              src={recursoSeleccionado.url}
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture"
-              allowfullscreen
+              style={{
+                position: "absolute",
+                top: "0",
+                left: "0",
+                width: "100%",
+                margin: "0 auto",
+                height: "80%",
+              }}
+              title={recursoSeleccionado.title}
             ></iframe>
           </div>
           <script src="https://player.vimeo.com/api/player.js"></script>
-          <p>
-            <a href="https://vimeo.com/523000492">
-              Aplicaciones-Literatura Apocalíptica-Alexis Pérez.mp4
-            </a>{" "}
-            from{" "}
-            <a href="https://vimeo.com/user107639892">Pr&eacute;dica Fiel</a> on{" "}
-            <a href="https://vimeo.com">Vime</a>
-          </p> */}
-          <iframe
-            width="70%"
-            height="739"
-            src="https://www.youtube.com/embed/RWP8K3stZQs"
-            title="Un Visión Bíblica De La Iglesia-Miguel Núñez-Cobime 2015"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
         </div>
         <div className="video-info">
           <div className="video-info__title">
@@ -75,8 +67,8 @@ export function VideoFiltro() {
           <hr className="video-filtro__hr" />
           <div className="video-info__subtitle">
             <div className="video-filtro__genero">
-              <span className="bold">Género/Tema:</span> Literatura
-              Aplocalíptica
+              <span className="bold">Género/Tema:</span>{" "}
+              {recursoSeleccionado.genero}
             </div>
             <div className="video-filtro__fecha">
               <span className="bold">Fecha:</span>06-02-2020

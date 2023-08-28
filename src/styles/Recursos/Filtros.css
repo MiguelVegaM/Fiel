@@ -1,21 +1,20 @@
 .video-filtro__container {
-  /* height: 200px; */
+  /* height: 100%; */
   background-color: #000;
 }
 .video-frame {
-  /* height: 700px;
-  width: 70%;
+  height: 750px;
+  /* width: 100%; */
   margin-inline: auto;
-  padding-block: 50px;
-  background-color: #989898;
-  border: 1px solid red; */
+  padding-top: 35px;
+
   display: flex;
   flex-direction: column;
 }
 
 iframe {
   /* width: 70%; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .video-info {
@@ -74,6 +73,7 @@ iframe {
 .recursos__footer-btn button {
   background-color: red;
 }
+
 /* AUDIO <--------------------- */
 
 .audio-filtro__container {
@@ -93,26 +93,61 @@ iframe {
   /* border: 1px solid red; */
 }
 
-._3q4Ah {
-  display: none;
+.player-container {
+  /* border: 1px solid blue; */
+  background-color: #0e0e0e;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
-._tAQkw {
-  display: none;
+.media-buttons {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 1rem;
+  width: 15%;
+
+  & :hover {
+    color: #7b7b7b;
+    cursor: pointer;
+  }
 }
 
-._RZMQZ {
-  /* {display: none;} */
+.navigation-bar {
+  /* border: 1px solid #575757; */
+  width: 72%;
 }
 
-._8c4KL {
-  display: none;
+.navigation-wrapper {
+  /* width: 72%; */
+  height: 5px;
+  border-radius: 30px;
+  background-color: #575757;
+  cursor: pointer;
 }
 
-._RZMQZ {
-  display: none;
+.seek-bar {
+  height: 100%;
+  border-radius: 30px;
+  background-color: #a0002f;
 }
 
+.other-buttons {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  font-size: 1rem;
+  width: 12%;
+  & :hover {
+    color: #7b7b7b;
+    cursor: pointer;
+  }
+}
 .audio-info {
   width: 70%;
   margin-inline: auto;

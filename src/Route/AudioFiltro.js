@@ -1,48 +1,49 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/Recursos/Filtros.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { recursosObj } from "./Recursos";
 import { MiniHeader, Navbar } from "./Inicio";
 
-import Player from "@madzadev/audio-player";
+import Player from "../Components/Player";
 
-const colors = `html {
-  --tagsBackground: #860F30;
-  --tagsText: #ffffff;
-  --tagsBackgroundHoverActive: #2cc0a0;
-  --tagsTextHoverActive: #ffffff;
-  --searchBackground: #0E0E0E;
-  --searchText: #ffffff;
-  --searchPlaceHolder: #575a77;
-  --playerBackground: #0E0E0E;
-  --titleColor: #ffffff;
-  --timeColor: #ffffff;
-  --progressSlider: #860F30;
-  --progressUsed: #860F30;
-  --progressLeft: #ffffff;
-  --volumeSlider: #860F30;
-  --volumeUsed: #860F30;
-  --volumeLeft:  #151616;
-  --playlistBackground: #0E0E0E;
-  --playlistText: #575a76;
-  --playlistBackgroundHoverActive:  #0E0E0E;
-  --playlistTextHoverActive: #ffffff;
-}`;
+export const tracks = recursosObj.filter((recurso) => recurso.type === "audio");
+
+// console.log(tracks);
 
 export function AudioFiltro() {
-  let { audioId } = useParams();
+  const [songs, setSongs] = useState(tracks);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentSong, setCurrentSong] = useState(tracks[0]);
 
+  const audioElem = useRef();
+
+  useEffect(() => {
+    if (isPlaying) {
+      audioElem.current.play();
+    } else {
+      audioElem.current.pause();
+    }
+  }, [isPlaying]);
+
+  const onPlaying = () => {
+    const duration = audioElem.current.duration;
+    const ct = audioElem.current.currentTime;
+
+    setCurrentSong({
+      ...currentSong,
+      progress: (ct / duration) * 100,
+      length: duration,
+    });
+  };
+
+  let { audioId } = useParams();
   let recursoSeleccionado = recursosObj.find(
     (recurso) => recurso.id === audioId
   );
 
-  const tracks = recursosObj.filter((recurso) => recurso.type === "audio");
+  // console.log("currentSong", currentSong);
 
-  console.log(tracks);
-
-  const track = tracks.filter((trackId) => trackId.id === audioId);
-
-  console.log(track);
+  // console.log(recursoSeleccionado.url);
 
   const navigate = useNavigate();
   const goBack = () => {
@@ -62,13 +63,20 @@ export function AudioFiltro() {
             src="/images/recursos/FILTROS/RECURSOS_AUDIOS/Barra-de-Audio-con-logo.jpg"
             alt=""
           />
+          <audio
+            src={recursoSeleccionado.url}
+            ref={audioElem}
+            onTimeUpdate={onPlaying}
+          />
           <Player
-            trackList={track}
-            customColorScheme={colors}
-            includeTags={false}
-            includeSearch={false}
-            showPlaylist={true}
-            autoPlayNextTrack={true}
+            songs={songs}
+            setSongs={setSongs}
+            isPlaying={isPlaying}
+            setIsPlaying={setIsPlaying}
+            currentSong={currentSong}
+            setCurrentSong={setCurrentSong}
+            audioElem={audioElem}
+            recursoSeleccionado={recursoSeleccionado}
           />
         </div>
         <div className="audio-info">
@@ -84,7 +92,8 @@ export function AudioFiltro() {
           <hr className="audio-filtro__hr" />
           <div className="audio-info__subtitle">
             <div className="audio-filtro__genero">
-              <span className="bold">Género/Tema:</span> Literatura Bíblica
+              <span className="bold">Género/Tema:</span>{" "}
+              {recursoSeleccionado.genero}
             </div>
             <div className="audio-filtro__fecha">
               <span className="bold">Fecha:</span>23-10-2012
