@@ -67,13 +67,13 @@ function Player({
   return (
     <div className="player-container">
       <div className="media-buttons">
-        <IoPlaySkipBack onClick={skipBack} />
+        <IoPlaySkipBack onClick={skipBack} style={{ display: "none" }} />
         {isPlaying ? (
           <IoPause style={{ fontSize: "1.5rem" }} onClick={PlayPause} />
         ) : (
           <IoPlay style={{ fontSize: "1.5rem" }} onClick={PlayPause} />
         )}
-        <IoPlaySkipForward onClick={skipForward} />
+        <IoPlaySkipForward onClick={skipForward} style={{ display: "none" }} />
       </div>
       <div className="navigation-bar">
         <div className="navigation-wrapper" onClick={checkWidth} ref={clickRef}>

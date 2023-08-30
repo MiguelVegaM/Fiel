@@ -3,7 +3,7 @@
   background-size: cover;
   /* height: 80vh; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   /* align-items: center; */
   overflow-x: hidden;
 }

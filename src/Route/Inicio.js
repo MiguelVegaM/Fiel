@@ -38,7 +38,7 @@ import { HashLink } from "react-router-hash-link";
 
 export function MiniHeader() {
   return (
-    <div className="header">
+    <div id="header" className="header">
       <ul className="header__list">
         <li className="header__item">+00000000000</li>
         <li className="header__item">info@predicafiel.com</li>
@@ -48,6 +48,7 @@ export function MiniHeader() {
               <div className="header__icon-circle">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className="header__icon-link"
                   href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
                 >
@@ -59,6 +60,7 @@ export function MiniHeader() {
               <div className="header__icon-circle">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className="header__icon-link"
                   href="https://twitter.com/PredicaFiel"
                 >
@@ -70,6 +72,7 @@ export function MiniHeader() {
               <div className="header__icon-circle">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className="header__icon-link"
                   href="https://www.facebook.com/EntrenandoExpositores/"
                 >
@@ -81,6 +84,7 @@ export function MiniHeader() {
               <div className="header__icon-circle">
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   className="header__icon-link"
                   href="https://www.instagram.com/predicafiel/"
                 >
@@ -291,11 +295,11 @@ export function EntrenamientosPresenciales(props) {
         </p>
         <div className="entrenamiento__button-container-banner">
           {/* //!Cambiarlo a blanco------------------- */}
-          <NavLink to="/entrenamientos">
+          <HashLink to="/entrenamientos#plan-habana">
             <Button specificClass="btn__entrenamiento-presencial">
               CONOCER MÁS
             </Button>
-          </NavLink>
+          </HashLink>
         </div>
       </div>
     </div>
@@ -563,6 +567,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://simeontrust.org/es"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -576,6 +581,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://es.9marks.org/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -589,6 +595,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://www.sbts.edu/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -604,6 +611,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://www.crosslinks.org/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -617,6 +625,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://www.coalicionporelevangelio.org/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -630,6 +639,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://www.proctrust.org.uk/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -645,6 +655,7 @@ export function Alianzas(props) {
               className="alianzas__link"
               href="https://www.crossconnections.org.uk/"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 className="alianzas__image"
@@ -687,7 +698,7 @@ export function ContactoWhats(props) {
         (result) => {
           console.log(result.text, "wuuuuu");
           // alert("Wuuuuu");
-          btn__form.value = "ENVIADO 🙏";
+          btn__form.value = "ENVIADO";
           form.current.reset();
         },
         (error) => {
@@ -719,6 +730,7 @@ export function ContactoWhats(props) {
               className="whatsapp-link"
               href="https://www.whatsapp.com"
               target="_blank"
+              rel="noreferrer"
             >
               <IconContext.Provider value={{ className: "whatsapp-icon" }}>
                 <div>
@@ -738,7 +750,9 @@ export function ContactoWhats(props) {
           {/*----------------------------------------FORMULARIO */}
           <form
             ref={form}
-            onSubmit={handleSubmit(onSubmit)}
+            onSubmit={() => {
+              handleSubmit(onSubmit);
+            }}
             className="contacto__form"
           >
             <div className="contacto__inputs-container">
@@ -873,6 +887,7 @@ export function Footer(props) {
                   <div className="footer__icon-circle">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="footer__icon-link"
                       href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
                     >
@@ -884,6 +899,7 @@ export function Footer(props) {
                   <div className="footer__icon-circle">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="footer__icon-link"
                       href="https://twitter.com/PredicaFiel"
                     >
@@ -895,6 +911,7 @@ export function Footer(props) {
                   <div className="footer__icon-circle">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="footer__icon-link"
                       href="https://www.facebook.com/EntrenandoExpositores/"
                     >
@@ -906,6 +923,7 @@ export function Footer(props) {
                   <div className="footer__icon-circle">
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       className="footer__icon-link"
                       href="https://www.instagram.com/predicafiel/"
                     >
@@ -1012,19 +1030,19 @@ export function Footer(props) {
                     Plan Habana
                   </HashLink>
                 </li>
-                <li className="footer__accesos-directos-list-item">
+                {/* <li className="footer__accesos-directos-list-item">
                   <a href="" className="footer__accesos-directos-link">
                     Residentes (SEND)
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
         </div>
         <div className="footer__button-up">
-          <a href="#">
+          <HashLink to="/#header">
             <FaChevronCircleUp className="footer__button-up-icon" />
-          </a>
+          </HashLink>
         </div>
       </div>
     </div>

@@ -708,6 +708,7 @@ export function RecursosMain() {
     } else {
       setDatosFiltrados(recursosObj);
     }
+
     // if () {
     //   const resultadoFiltrado = recursosObj.filter(
     //     (item) => item.libro === e.target.value
@@ -718,10 +719,8 @@ export function RecursosMain() {
     // }
   };
 
-  // if()
-
-  // console.log(datosFiltrados);
-  // console.log(recursoFiltrado);
+  console.log(datosFiltrados);
+  console.log(recursoFiltrado);
 
   return (
     <>

@@ -76,14 +76,14 @@
 
 .footer__accesos-directos-container {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 .footer__accesos-directos-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .footer__accesos-directos-link {

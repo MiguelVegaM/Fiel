@@ -13,7 +13,7 @@
   margin-bottom: 0px;
   height: 40px;
   width: min(90rem);
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .header__item {

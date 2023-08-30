@@ -30,10 +30,10 @@ export function VideoFiltro() {
         <div className="video-frame">
           <div
             style={{
-              padding: "900px 0 0 0",
+              padding: "56.25% 0 0 0",
               position: "relative",
-              width: "70%",
-              height: "100%",
+              width: "100%",
+              height: "0",
               margin: "0 auto",
             }}
           >
@@ -46,8 +46,8 @@ export function VideoFiltro() {
                 top: "0",
                 left: "0",
                 width: "100%",
-                margin: "0 auto",
-                height: "80%",
+                // margin: "0 auto",
+                height: "100%",
               }}
               title={recursoSeleccionado.title}
             ></iframe>

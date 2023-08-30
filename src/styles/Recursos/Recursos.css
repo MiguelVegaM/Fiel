@@ -274,6 +274,10 @@
 }
 
 @media (max-width: 768px) {
+  .barra-direccion {
+    font-size: 3vw;
+    padding-block: 15px;
+  }
   .recursos__filtros {
     flex-direction: column;
   }
