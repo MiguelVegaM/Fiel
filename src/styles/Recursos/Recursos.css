@@ -200,6 +200,8 @@
   /* border: 1px solid red; */
   margin-inline: auto;
   padding-block: 50px;
+  justify-content: space-between;
+
   /* width: 100%; */
 }
 
@@ -278,6 +280,9 @@
     font-size: 3vw;
     padding-block: 15px;
   }
+  .recursos__paragraph {
+    font-size: 1.5rem;
+  }
   .recursos__filtros {
     flex-direction: column;
   }
@@ -304,5 +309,18 @@
     & p {
       color: #8c8e8e;
     }
+  }
+
+  .recursos__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recursos__footer-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .recursos__footer-btn {
+    margin: 0 auto;
   }
 }
