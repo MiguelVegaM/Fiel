@@ -943,11 +943,11 @@ export function RecursosMain() {
                 </HashLink>
               </div>
               <div className="col-4 recursos__footer-navigation">
-                <Pagination size="sm" className="recursos__footer-pagination">
+                {/* <Pagination size="sm" className="recursos__footer-pagination">
                   <Pagination.Prev />
                   {items}
                   <Pagination.Next />
-                </Pagination>
+                </Pagination> */}
               </div>
             </div>
           </div>

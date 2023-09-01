@@ -43,6 +43,7 @@ export function NosotrosBanner(props) {
           </Button>
         </a>
       </div>
+
       <div className="nosotros__flotante--negro">
         <div className="nosotros__flotante--negro__text">
           <p className="text">
@@ -426,9 +427,9 @@ export function NosotrosBanner(props) {
               <img src="../images/nosotros/alexis.png" alt="Alexis Pérez" />
               <h3>Alexis Pérez</h3>
               <p>
-                Director del Ministerio Prédica <br></br>Fiel. Ha servido como
-                pastor en Cuba desde 1999. En el <br></br>2008-2009 cursó
-                estudios en Cornhill Training Course, que pertenece a...
+                Director del Ministerio Prédica Fiel. Ha servido como pastor en
+                Cuba desde 1999. En el >2008-2009 cursó estudios en Cornhill
+                Training Course, que pertenece a...
               </p>
               {/* //?               Modal */}
               <AlexisModal
@@ -449,8 +450,8 @@ export function NosotrosBanner(props) {
               <h3>Andy Quesada</h3>
               <p>
                 Andy sirve como Director de Entrenamiento. Ha servido como
-                pastor enCuba desde el 2014 y <br></br>ha estado involucrado{" "}
-                <br></br>en los ministerios de enseñanza y adoración...
+                pastor enCuba desde el 2014 y ha estado involucrado en los
+                ministerios de enseñanza y adoración...
               </p>
               {/* //?               Modal */}
               <AndyModal
