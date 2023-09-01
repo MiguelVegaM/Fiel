@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 
 import {
   Alianzas,
@@ -324,7 +325,12 @@ export function Internado() {
 
 function Entrenamientos(props) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <Helmet>
         <title>Fiel | Entrenamientos</title>
       </Helmet>
@@ -339,7 +345,7 @@ function Entrenamientos(props) {
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
-    </div>
+    </motion.div>
   );
 }
 

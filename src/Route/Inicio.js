@@ -35,6 +35,7 @@ import "../styles/Inicio/Footer.css";
 import "../styles/Inicio/DisclaimerDonar.css";
 import "../styles/Inicio/MiniFooter.css";
 import { HashLink } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 export function MiniHeader() {
   return (
@@ -1082,7 +1083,12 @@ export function MiniFooter(props) {
 
 function Inicio(props) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <Helmet>
         <title>Fiel | Inicio</title>
       </Helmet>
@@ -1099,7 +1105,7 @@ function Inicio(props) {
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
-    </div>
+    </motion.div>
   );
 }
 

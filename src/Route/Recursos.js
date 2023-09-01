@@ -16,6 +16,7 @@ import Pagination from "react-bootstrap/Pagination";
 import "../styles/Recursos/Recursos.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { motion } from "framer-motion";
 
 export const recursosObj = [
   {
@@ -896,32 +897,34 @@ export function RecursosMain() {
             </div>
             <div className="col-lg-9">
               {datosFiltrados.map((recursosObj, i) => (
-                <Link
-                  to={
-                    recursosObj.type === "video"
-                      ? `video/${recursosObj.id}`
-                      : `audio/${recursosObj.id}`
-                  }
-                  className="recursos__card-link"
-                  aria-current="page"
-                >
-                  <div key={recursosObj.id} className="recursos__card">
-                    <div className="recrusos__card-imgntitle">
-                      <img
-                        className="recursos__card-img"
-                        src={recursosObj.icon}
-                        alt="Video Icon"
-                      />
-                      <div className="recursos__card-title">
-                        <h3>{recursosObj.title}</h3>
-                        <p>{recursosObj.fuente}</p>
+                <motion.div whileHover={{ scale: 1.05 }} className="">
+                  <Link
+                    to={
+                      recursosObj.type === "video"
+                        ? `video/${recursosObj.id}`
+                        : `audio/${recursosObj.id}`
+                    }
+                    className="recursos__card-link"
+                    aria-current="page"
+                  >
+                    <div key={recursosObj.id} className="recursos__card">
+                      <div className="recrusos__card-imgntitle">
+                        <img
+                          className="recursos__card-img"
+                          src={recursosObj.icon}
+                          alt="Video Icon"
+                        />
+                        <div className="recursos__card-title">
+                          <h3>{recursosObj.title}</h3>
+                          <p>{recursosObj.fuente}</p>
+                        </div>
+                      </div>
+                      <div className="recrusos__card-length">
+                        {recursosObj.length} Min
                       </div>
                     </div>
-                    <div className="recrusos__card-length">
-                      {recursosObj.length} Min
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -957,7 +960,12 @@ export function RecursosMain() {
 // ^ ------------------------------------------
 function Recursos(props) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <Helmet>
         <title>Fiel | Recursos</title>
       </Helmet>
@@ -969,7 +977,7 @@ function Recursos(props) {
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
-    </div>
+    </motion.div>
   );
 }
 

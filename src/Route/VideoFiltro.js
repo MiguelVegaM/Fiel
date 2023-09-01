@@ -5,6 +5,7 @@ import "../styles/Recursos/Filtros.css";
 import { recursosObj } from "./Recursos";
 import { useNavigate, useParams } from "react-router-dom";
 import { MiniHeader, Navbar } from "./Inicio";
+import { motion } from "framer-motion";
 
 export function VideoFiltro() {
   let { videoId } = useParams();
@@ -76,13 +77,12 @@ export function VideoFiltro() {
           </div>
         </div>
         <div className="video-filtro__footer">
-          {/* <div className=""> */}
           <img
             className="recursos__footer-logo"
             src="/images/recursos/logo-gris-inferior.png"
             alt="Logo Predica Fiel"
           />
-          {/* </div> */}
+
           <div className=" recursos__footer-btn">
             <button onClick={goBack}>Regresar</button>
           </div>
@@ -94,11 +94,16 @@ export function VideoFiltro() {
 
 function PaginaVideo() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <MiniHeader />
       <Navbar />
       <VideoFiltro />
-    </>
+    </motion.div>
   );
 }
 

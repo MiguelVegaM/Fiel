@@ -1,16 +1,20 @@
 import React from "react";
 import "./Button.css";
 
+import { motion } from "framer-motion";
+
 function Button({ children, specificClass }) {
   return (
-    <button
-      type="button"
-      className={`button-component ${
-        specificClass === undefined ? "" : specificClass
-      }`}
-    >
-      {children}
-    </button>
+    <motion.div whileHover={{ scale: 1.05 }} className="">
+      <button
+        type="button"
+        className={`button-component ${
+          specificClass === undefined ? "" : specificClass
+        }`}
+      >
+        {children}
+      </button>
+    </motion.div>
   );
 }
 

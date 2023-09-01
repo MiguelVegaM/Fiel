@@ -5,6 +5,7 @@ import { recursosObj } from "./Recursos";
 import { MiniHeader, Navbar } from "./Inicio";
 
 import Player from "../Components/Player";
+import { motion } from "framer-motion";
 
 export const tracks = recursosObj.filter((recurso) => recurso.type === "audio");
 
@@ -101,13 +102,12 @@ export function AudioFiltro() {
           </div>
         </div>
         <div className="audio-filtro__footer">
-          <div className="">
-            <img
-              className="recursos__footer-logo"
-              src="/images/recursos/logo-gris-inferior.png"
-              alt="Logo Predica Fiel"
-            />
-          </div>
+          <img
+            className="recursos__footer-logo"
+            src="/images/recursos/logo-gris-inferior.png"
+            alt="Logo Predica Fiel"
+          />
+
           <div className=" recursos__footer-btn">
             <button onClick={goBack}>Regresar</button>
           </div>
@@ -119,11 +119,16 @@ export function AudioFiltro() {
 
 function PaginaAudio() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <MiniHeader />
       <Navbar />
       <AudioFiltro />
-    </>
+    </motion.div>
   );
 }
 

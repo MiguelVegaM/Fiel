@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 
 import {
   Alianzas,
@@ -14,7 +15,12 @@ import {
 
 function Eventos(props) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <Helmet>
         <title>Fiel | Eventos</title>
       </Helmet>
@@ -25,7 +31,7 @@ function Eventos(props) {
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
-    </div>
+    </motion.div>
   );
 }
 

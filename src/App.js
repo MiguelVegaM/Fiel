@@ -1,38 +1,31 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
 import Inicio from "./Route/Inicio";
 import Nosotros from "./Route/Nosotros";
 import Entrenamientos from "./Route/Entrenamientos";
 import Eventos from "./Route/Eventos";
 import Recursos from "./Route/Recursos";
-import Contacto from "./Route/Contacto";
-import DeclaracionDoctrinal from "./Route/DeclaracionDoctrinal";
-import Equipo from "./Route/Equipo";
-import Alianzas from "./Route/Alianzas";
 import PaginaVideo from "./Route/VideoFiltro";
 import PaginaAudio from "./Route/AudioFiltro";
 import ScrollToTop from "./Components/ScrollToTop";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="nosotros" element={<Nosotros />} />
-        <Route path="entrenamientos" element={<Entrenamientos />} />
-        <Route path="eventos" element={<Eventos />} />
-        <Route path="recursos" element={<Recursos />} />
-        <Route path="contacto" element={<Contacto />} />
-        <Route
-          path="declaracion-doctrinal"
-          element={<DeclaracionDoctrinal />}
-        />
-        <Route path="equipo" element={<Equipo />} />
-        <Route path="alianzas" element={<Alianzas />} />
-        <Route path="recursos/video/:videoId" element={<PaginaVideo />} />
-        <Route path="recursos/audio/:audioId" element={<PaginaAudio />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Inicio />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="entrenamientos" element={<Entrenamientos />} />
+          <Route path="eventos" element={<Eventos />} />
+          <Route path="recursos" element={<Recursos />} />
+          <Route path="recursos/video/:videoId" element={<PaginaVideo />} />
+          <Route path="recursos/audio/:audioId" element={<PaginaAudio />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </AnimatePresence>
       <ScrollToTop />
     </>
   );

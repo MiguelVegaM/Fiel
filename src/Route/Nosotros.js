@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import Modal from "react-bootstrap/Modal";
 import Collapse from "react-bootstrap/Collapse";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 
 import {
   Alianzas,
@@ -518,7 +519,12 @@ export function NosotrosBanner(props) {
 // ^ ------------------------------------------
 function Nosotros(props) {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0.75 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      // exit={{ opacity: 0 }}
+    >
       <Helmet>
         <title>Fiel | Nosotros</title>
       </Helmet>
@@ -531,7 +537,7 @@ function Nosotros(props) {
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
-    </div>
+    </motion.div>
   );
 }
 
