@@ -38,9 +38,9 @@ function Player({
   console.log(currentSong);
 
   const skipBack = () => {
-    const index = tracks.findIndex((x) => x.id == currentSong.id);
+    const index = tracks.findIndex((x) => x.id === currentSong.id);
     console.log(index);
-    if (index == 0) {
+    if (index === 0) {
       setCurrentSong(tracks[tracks.length - 1]);
     } else {
       setCurrentSong(tracks[index - 1]);
@@ -51,10 +51,10 @@ function Player({
   };
 
   const skipForward = () => {
-    const index = tracks.findIndex((x) => x.id == currentSong.id);
+    const index = tracks.findIndex((x) => x.id === currentSong.id);
     console.log(index);
 
-    if (index == tracks.length - 1) {
+    if (index === tracks.length - 1) {
       setCurrentSong(tracks[0]);
     } else {
       setCurrentSong(tracks[index + 1]);

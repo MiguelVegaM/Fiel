@@ -11,8 +11,6 @@ import {
   Navbar,
   MiniFooter,
 } from "./Inicio";
-import { VideoFiltro } from "./VideoFiltro";
-import { AudioFiltro } from "./AudioFiltro";
 
 function Eventos(props) {
   return (

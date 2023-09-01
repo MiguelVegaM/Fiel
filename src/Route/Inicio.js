@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -169,20 +169,23 @@ export function Navbar(props) {
 export function MainBanner(props) {
   return (
     <section className="main-banner">
-      <div className="main-banner__text">
-        <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
-        <h1 className="main-banner__title">
-          Generación de <span>Expositores</span> <br></br> de{" "}
-          <span>la Biblia.</span>
-        </h1>
-        <div className="main-banner__line"></div>
-        <p className="main-banner__paragraph">
-          Fielmente comprometidos con la predicación de evangelio de Jesucristo,
-          entrenando a expositores bíblicos en el mundo hispano parlante.
-        </p>
-        <NavLink to="/entrenamientos">
-          <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
-        </NavLink>
+      <div className="main-banner__mask">
+        <div className="main-banner__text">
+          <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
+          <h1 className="main-banner__title">
+            Generación de <span>Expositores</span> <br></br> de{" "}
+            <span>la Biblia.</span>
+          </h1>
+          <div className="main-banner__line"></div>
+          <p className="main-banner__paragraph">
+            Fielmente comprometidos con la predicación de evangelio de
+            Jesucristo, entrenando a expositores bíblicos en el mundo hispano
+            parlante.
+          </p>
+          <NavLink to="/entrenamientos">
+            <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
+          </NavLink>
+        </div>
       </div>
     </section>
   );
@@ -673,38 +676,29 @@ export function Alianzas(props) {
 export function ContactoWhats(props) {
   const {
     register,
-    formState: { errors },
     handleSubmit,
-  } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data);
-  };
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    const btn__form = document.getElementById("btn__form");
-
+    reset,
+    formState: { errors },
+  } = useForm({
+    defaultValues: { yes_i_understand: false },
+  });
+  const sendEmail = (formData) => {
     emailjs
-      .sendForm(
+      .send(
         "service_nvx5h12",
         "template_0xq23fl",
-        form.current,
+        formData,
         "67xUYJ6zrwMgo-AtQ"
       )
       .then(
         (result) => {
-          console.log(result.text, "wuuuuu");
-          // alert("Wuuuuu");
-          btn__form.value = "ENVIADO";
-          form.current.reset();
+          console.log(result.text);
         },
         (error) => {
           console.log(error.text);
         }
       );
+    reset();
   };
 
   return (
@@ -748,16 +742,10 @@ export function ContactoWhats(props) {
           </p>
 
           {/*----------------------------------------FORMULARIO */}
-          <form
-            ref={form}
-            onSubmit={() => {
-              handleSubmit(onSubmit);
-            }}
-            className="contacto__form"
-          >
+          <form onSubmit={handleSubmit(sendEmail)} className="contacto__form">
             <div className="contacto__inputs-container">
               <input
-                {...register("nombre", {
+                {...register("de_nombre", {
                   required: true,
                 })}
                 id="de_nombre"
@@ -766,11 +754,11 @@ export function ContactoWhats(props) {
                 placeholder="Nombre"
                 name="de_nombre"
               />
-              {errors.nombre?.type === "required" && (
+              {errors.de_nombre?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
               )}
               <input
-                {...register("apellido", {
+                {...register("de_apellido", {
                   required: true,
                 })}
                 id="de_apellido"
@@ -779,11 +767,11 @@ export function ContactoWhats(props) {
                 placeholder="Apellido"
                 name="de_apellido"
               />
-              {errors.apellido?.type === "required" && (
+              {errors.de_apellido?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
               )}
               <input
-                {...register("teléfono", {
+                {...register("de_telefono", {
                   required: true,
                 })}
                 id="de_telefono"
@@ -792,11 +780,11 @@ export function ContactoWhats(props) {
                 placeholder="Teléfono"
                 name="de_telefono"
               />
-              {errors.teléfono?.type === "required" && (
+              {errors.de_telefono?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
               )}
               <input
-                {...register("email", {
+                {...register("de_mail", {
                   required: true,
                   pattern:
                     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
@@ -807,7 +795,7 @@ export function ContactoWhats(props) {
                 placeholder="E-mail"
                 name="de_mail"
               />
-              {errors.email?.type === "required" && (
+              {errors.de_mail?.type === "required" && (
                 <p className="input-errors">Este campo es requerido</p>
               )}
             </div>
@@ -830,7 +818,6 @@ export function ContactoWhats(props) {
             )}
             <div className="contacto__button-container form_button">
               <input
-                onClick={sendEmail}
                 className="button-component"
                 type="submit"
                 value="ENVIAR"
@@ -961,7 +948,7 @@ export function Footer(props) {
                     Entrenamientos
                   </NavLink>
                 </li>
-                {/* <li className="footer__accesos-directos-list-item">
+                {/* ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/eventos"
                     className="footer__accesos-directos-link"
@@ -977,7 +964,7 @@ export function Footer(props) {
                     Recursos
                   </NavLink>
                 </li>
-                {/* <li className="footer__accesos-directos-list-item">
+                {/*  ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/cobime"
                     className="footer__accesos-directos-link"

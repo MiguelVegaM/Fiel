@@ -1,11 +1,12 @@
 .main-banner {
   background-image: url(/public/images/inicio/mainBanner-bg.png);
   background-size: cover;
-  /* height: 80vh; */
-  display: flex;
-  justify-content: flex-end;
+  height: 70vh;
+  /* display: flex;
+  justify-content: flex-end; */
   /* align-items: center; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  position: relative;
 }
 
 .main-banner__text {
@@ -15,6 +16,17 @@
   /* height: 100%; */
   padding-block: 190px;
   padding-right: 100px;
+  position: fixed;
+}
+
+.main-banner__mask {
+  position: absolute;
+  inset: 0;
+  /* background: rgba(255, 0, 0, 0.25); */
+  -webkit-mask: url(/public/images/inicio/mainBanner-bg.png);
+  mask: url(/public/images/inicio/mainBanner-bg.png);
+  display: flex;
+  justify-content: flex-end;
 }
 
 .main-banner__subtitle {

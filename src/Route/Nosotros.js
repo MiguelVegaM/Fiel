@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 
 import {
   Alianzas,
-  Cobime,
   ContactoWhats,
   DisclaimerDonar,
   Footer,
