@@ -21,19 +21,8 @@ import { IconContext } from "react-icons";
 
 import Button from "../UI/Buttons/Button";
 
-import "../styles/Inicio/MiniHeader.css";
-import "../styles/Inicio/Navbar.css";
-import "../styles/Inicio/MainBanner.css";
-import "../styles/Inicio/EntrenamientosOnline.css";
-import "../styles/Inicio/EntrenamientosPresenciales.css";
-import "../styles/Inicio/RecursosVid.css";
-import "../styles/Inicio/Testimonios.css";
-import "../styles/Inicio/Cobime.css";
-import "../styles/Inicio/Alianzas.css";
-import "../styles/Inicio/ContactoWhats.css";
-import "../styles/Inicio/Footer.css";
-import "../styles/Inicio/DisclaimerDonar.css";
-import "../styles/Inicio/MiniFooter.css";
+import "../styles/Inicio/Inicio.css";
+
 import { HashLink } from "react-router-hash-link";
 import { motion } from "framer-motion";
 
@@ -170,23 +159,21 @@ export function Navbar(props) {
 export function MainBanner(props) {
   return (
     <section className="main-banner">
-      <div className="main-banner__mask">
-        <div className="main-banner__text">
-          <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
-          <h1 className="main-banner__title">
-            Generación de <span>Expositores</span> <br></br> de{" "}
-            <span>la Biblia.</span>
-          </h1>
-          <div className="main-banner__line"></div>
-          <p className="main-banner__paragraph">
-            Fielmente comprometidos con la predicación de evangelio de
-            Jesucristo, entrenando a expositores bíblicos en el mundo hispano
-            parlante.
-          </p>
-          <NavLink to="/entrenamientos">
-            <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
-          </NavLink>
-        </div>
+      <img src="/images/inicio/mainBanner-bg.png" alt="" />
+      <div className="main-banner__text">
+        <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
+        <h1 className="main-banner__title">
+          Generación de <span>Expositores</span> <br></br> de{" "}
+          <span>la Biblia.</span>
+        </h1>
+        <div className="main-banner__line"></div>
+        <p className="main-banner__paragraph">
+          Fielmente comprometidos con la predicación de evangelio de Jesucristo,
+          entrenando a expositores bíblicos en el mundo hispano parlante.
+        </p>
+        <NavLink to="/entrenamientos">
+          <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
+        </NavLink>
       </div>
     </section>
   );
@@ -280,6 +267,7 @@ export function EntrenamientosOnline(props) {
 export function EntrenamientosPresenciales(props) {
   return (
     <div className="entrenamiento-presencial">
+      <img src="/images/inicio/banner-3.png" alt="" />
       <div className="entrenamiento-presencial__text">
         <h1>ENTRENAMIENTOS PRESENCIALES</h1>
         <p className="entrenamieto-presencial__paragraph">Plan Habana, Cuba.</p>
@@ -1028,9 +1016,9 @@ export function Footer(props) {
           </div>
         </div>
         <div className="footer__button-up">
-          <HashLink to="/#header">
+          <a href="#top">
             <FaChevronCircleUp className="footer__button-up-icon" />
-          </HashLink>
+          </a>
         </div>
       </div>
     </div>
@@ -1084,9 +1072,10 @@ export function MiniFooter(props) {
 function Inicio(props) {
   return (
     <motion.div
+      className="inicio__scroll-wrapper"
       initial={{ opacity: 0.75 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ delay: 0.25, duration: 1 }}
       // exit={{ opacity: 0 }}
     >
       <Helmet>

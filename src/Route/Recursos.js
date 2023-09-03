@@ -963,7 +963,7 @@ function Recursos(props) {
     <motion.div
       initial={{ opacity: 0.75 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      transition={{ deley: 0.25, duration: 1 }}
       // exit={{ opacity: 0 }}
     >
       <Helmet>
