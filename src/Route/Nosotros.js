@@ -33,15 +33,17 @@ export function NosotrosBanner(props) {
   return (
     <>
       <div className="nosotros-banner--rojo">
-        <div className="nosotros-banner__text">
-          <p>Conoce más sobre</p>
-          <h1>NOSOTROS</h1>
+        <div className="nosotros-banner--rojo__wrapper">
+          <div className="nosotros-banner__text">
+            <p>Conoce más sobre</p>
+            <h1>NOSOTROS</h1>
+          </div>
+          <a href="#contacto">
+            <Button specificClass="btn__nosotros-banner--rojo">
+              CONTÁCTANOS
+            </Button>
+          </a>
         </div>
-        <a href="#contacto">
-          <Button specificClass="btn__nosotros-banner--rojo">
-            CONTÁCTANOS
-          </Button>
-        </a>
       </div>
 
       <div className="nosotros__flotante--negro">
@@ -414,102 +416,106 @@ export function NosotrosBanner(props) {
         </button>
       </div>
       <div id="nuestro-equipo" className="nuestro-equipo">
-        <div className="nuestro-equipo__title">
-          <h1 className="title">NUESTRO EQUIPO</h1>
-          <p className="subtitle">
-            Comprometidos con la Fiel Predicación de la Palabra
-          </p>
-        </div>
-        <div className="nuestro-equipo__cards">
-          <div className="nuestro-equipo__pair-cards">
-            {/* // ^ card <-------------------- */}
-            <div className="nuestro-equipo__card">
-              <img src="../images/nosotros/alexis.png" alt="Alexis Pérez" />
-              <h3>Alexis Pérez</h3>
-              <p>
-                Director del Ministerio Prédica Fiel. Ha servido como pastor en
-                Cuba desde 1999. En el >2008-2009 cursó estudios en Cornhill
-                Training Course, que pertenece a...
-              </p>
-              {/* //?               Modal */}
-              <AlexisModal
-                show={modalShowAlexis}
-                onHide={() => setModalShowAlexis(false)}
-              />
-              <button
-                className="nuestro-equipo__card-button"
-                onClick={() => setModalShowAlexis(true)}
-              >
-                SABER MÁS
-              </button>
-              {/* //?               Modal */}
-            </div>
-            {/* // ^ card <-------------------- */}
-            <div className="nuestro-equipo__card">
-              <img src="../images/nosotros/andy.png" alt="Andy Quesada" />
-              <h3>Andy Quesada</h3>
-              <p>
-                Andy sirve como Director de Entrenamiento. Ha servido como
-                pastor enCuba desde el 2014 y ha estado involucrado en los
-                ministerios de enseñanza y adoración...
-              </p>
-              {/* //?               Modal */}
-              <AndyModal
-                show={modalShowAndy}
-                onHide={() => setModalShowAndy(false)}
-              />
-              <button
-                className="nuestro-equipo__card-button"
-                onClick={() => setModalShowAndy(true)}
-              >
-                SABER MÁS
-              </button>
-              {/* //?               Modal */}
-            </div>
-            {/* // ^ card <-------------------- */}
+        <div className="nuestro-equipo__wrapper">
+          <div className="nuestro-equipo__title">
+            <h1 className="title">NUESTRO EQUIPO</h1>
+            <p className="subtitle">
+              Comprometidos con la Fiel Predicación de la Palabra
+            </p>
           </div>
-          <div className="nuestro-equipo__pair-cards">
-            <div className="nuestro-equipo__card">
-              <img src="../images/nosotros/lourdes.png" alt="Lourdes Llorens" />
-              <h3>Lourdes Llorens</h3>
-              <p>
-                Lourdes Llorens supervisa nuestras iniciativas para mujeres.
-                Sirve junto a su esposo Alexis Pérez en Cuba. Desde 1999, luego
-                de haberse graduado en el Seminario Teológico...
-              </p>
-              <LourdesModal
-                show={modalShowLourdes}
-                onHide={() => setModalShowLourdes(false)}
-              />
-              <button
-                className="nuestro-equipo__card-button"
-                onClick={() => setModalShowLourdes(true)}
-              >
-                SABER MÁS
-              </button>
+          <div className="nuestro-equipo__cards">
+            <div className="nuestro-equipo__pair-cards">
+              {/* // ^ card <-------------------- */}
+              <div className="nuestro-equipo__card">
+                <img src="../images/nosotros/alexis.png" alt="Alexis Pérez" />
+                <h3>Alexis Pérez</h3>
+                <p>
+                  Director del Ministerio Prédica Fiel. Ha servido como pastor
+                  en Cuba desde 1999. En el 2008-2009 cursó estudios en Cornhill
+                  Training Course, que pertenece a...
+                </p>
+                {/* //?               Modal */}
+                <AlexisModal
+                  show={modalShowAlexis}
+                  onHide={() => setModalShowAlexis(false)}
+                />
+                <button
+                  className="nuestro-equipo__card-button"
+                  onClick={() => setModalShowAlexis(true)}
+                >
+                  SABER MÁS
+                </button>
+                {/* //?               Modal */}
+              </div>
+              {/* // ^ card <-------------------- */}
+              <div className="nuestro-equipo__card">
+                <img src="../images/nosotros/andy.png" alt="Andy Quesada" />
+                <h3>Andy Quesada</h3>
+                <p>
+                  Andy sirve como Director de Entrenamiento. Ha servido como
+                  pastor enCuba desde el 2014 y ha estado involucrado en los
+                  ministerios de enseñanza y adoración...
+                </p>
+                {/* //?               Modal */}
+                <AndyModal
+                  show={modalShowAndy}
+                  onHide={() => setModalShowAndy(false)}
+                />
+                <button
+                  className="nuestro-equipo__card-button"
+                  onClick={() => setModalShowAndy(true)}
+                >
+                  SABER MÁS
+                </button>
+                {/* //?               Modal */}
+              </div>
+              {/* // ^ card <-------------------- */}
             </div>
-            {/* // ^ card <-------------------- */}
-
-            <div className="nuestro-equipo__card">
-              <img src="../images/nosotros/dayan.png" alt="Dayán Frontela" />
-              <h3>Dayán Frontela</h3>
-              <p>
-                Dayán Frontela sirve como Administrador. Desde su conversión ha
-                estado involucrado en el servicio dentro de la iglesia. Es
-                diácono en la Iglesia Bautista Nueva Vida...
-              </p>
-              <DayanModal
-                show={modalShowDayan}
-                onHide={() => setModalShowDayan(false)}
-              />
-              <button
-                className="nuestro-equipo__card-button"
-                onClick={() => setModalShowDayan(true)}
-              >
-                SABER MÁS
-              </button>
+            <div className="nuestro-equipo__pair-cards">
+              <div className="nuestro-equipo__card">
+                <img
+                  src="../images/nosotros/lourdes.png"
+                  alt="Lourdes Llorens"
+                />
+                <h3>Lourdes Llorens</h3>
+                <p>
+                  Lourdes Llorens supervisa nuestras iniciativas para mujeres.
+                  Sirve junto a su esposo Alexis Pérez en Cuba. Desde 1999,
+                  luego de haberse graduado en el Seminario Teológico...
+                </p>
+                <LourdesModal
+                  show={modalShowLourdes}
+                  onHide={() => setModalShowLourdes(false)}
+                />
+                <button
+                  className="nuestro-equipo__card-button"
+                  onClick={() => setModalShowLourdes(true)}
+                >
+                  SABER MÁS
+                </button>
+              </div>
+              {/* // ^ card <-------------------- */}
+              <div className="nuestro-equipo__card">
+                <img src="../images/nosotros/dayan.png" alt="Dayán Frontela" />
+                <h3>Dayán Frontela</h3>
+                <p>
+                  Dayán Frontela sirve como Administrador. Desde su conversión
+                  ha estado involucrado en el servicio dentro de la iglesia. Es
+                  diácono en la Iglesia Bautista Nueva Vida...
+                </p>
+                <DayanModal
+                  show={modalShowDayan}
+                  onHide={() => setModalShowDayan(false)}
+                />
+                <button
+                  className="nuestro-equipo__card-button"
+                  onClick={() => setModalShowDayan(true)}
+                >
+                  SABER MÁS
+                </button>
+              </div>
+              {/* // ^ card <-------------------- */}
             </div>
-            {/* // ^ card <-------------------- */}
           </div>
         </div>
       </div>
@@ -521,6 +527,7 @@ export function NosotrosBanner(props) {
 function Nosotros(props) {
   return (
     <motion.div
+      className="nosotros__scroll-wrapper"
       initial={{ opacity: 0.75 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

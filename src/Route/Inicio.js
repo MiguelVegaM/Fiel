@@ -159,7 +159,11 @@ export function Navbar(props) {
 export function MainBanner(props) {
   return (
     <section className="main-banner">
-      <img src="/images/inicio/mainBanner-bg.png" alt="" />
+      <img
+        className="main-banner__bg"
+        src="/images/inicio/mainBanner-bg.png"
+        alt=""
+      />
       <div className="main-banner__text">
         <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
         <h1 className="main-banner__title">
