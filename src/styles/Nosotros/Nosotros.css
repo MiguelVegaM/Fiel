@@ -236,8 +236,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        display: flex;
 
-        /* justify-content: center; */
+        justify-content: center;
         & img {
           width: 275px;
           border-radius: 50%;
