@@ -15,7 +15,7 @@ import {
 
 import Button from "../UI/Buttons/Button";
 
-import "../styles/Entrenamientos/Capacitacion.css";
+import "../styles/Entrenamientos/Entrenamientos.css";
 import { NavLink } from "react-router-dom";
 
 export function EntrenamientosHeader() {
@@ -48,12 +48,6 @@ export function EntrenamientosHeader() {
         <a href="#talleres">Talleres</a>
       </div>
       <div className="capacitacion-container">
-        {/* <span
-          style={{ fontSize: "30px", cursor: "pointer" }}
-          onCLick={openNav}
-        >
-          &#9776; menu
-        </span> */}
         <h1 className="entrenamientos__header">CAPACITACIÓN</h1>
         <p className="entrenamientos__paragraph">
           Fielmente comprometidos con la predicación de evangelio de Jesucristo,
@@ -295,6 +289,7 @@ export function Internado() {
         </div>
       </div>
       <div className="talleres row" id="talleres">
+        {/* <div className="talleres__wrapper"> */}
         <div className="talleres__text col-12 col-lg-8 nopadding">
           <div className="talleres__header">TALLERES</div>
           <div className="talleres__paragraph">
@@ -318,6 +313,7 @@ export function Internado() {
         </div>
       </div>
     </div>
+    // </div>
   );
 }
 
@@ -326,6 +322,7 @@ export function Internado() {
 function Entrenamientos(props) {
   return (
     <motion.div
+      className="entrenamientos__scroll-wrapper"
       initial={{ opacity: 0.75 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

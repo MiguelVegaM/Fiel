@@ -10,6 +10,13 @@ html {
 
 /* ! CAPACITACION BANNER<-------------- */
 
+.entrenamientos__scroll-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
 .capacitacion {
   background-image: url(/public/images/entrenamientos/Banner-1.jpg);
   background-size: cover;
@@ -320,14 +327,7 @@ html {
 }
 
 .talleres {
-  /* padding: 150px 300px 90px 300px; */
-  padding: 150px 15% 100px 15%;
-  /* margin-top: 150px;
-  margin-bottom: 100px; */
-  /* width: 65%; */
-
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; */
+  padding: 15% 15% 100px 15%;
   align-items: center;
   background: linear-gradient(#fff, #fbfbfb);
   overflow-x: hidden;
