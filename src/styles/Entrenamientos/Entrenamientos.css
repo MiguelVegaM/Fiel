@@ -21,9 +21,11 @@ html {
   background-image: url(/public/images/entrenamientos/Banner-1.jpg);
   background-size: cover;
   color: #fff;
-  height: 470px;
-  /* width: 100vw; */
+  padding-block: 75px;
   display: flex;
+  position: relative;
+  transform: translateZ(-10px) scale(2.08);
+  z-index: -1;
 }
 
 .capacitacion-container {
@@ -93,15 +95,24 @@ html {
 /*! ENTRENAMIENOT ONLINE<----------- */
 
 .entrenamientos__entrenamientos-online {
+  background-color: #fff;
+}
+
+.entrenamientos-entrenamiento__card-image-container {
+  display: flex;
+  align-items: center;
 }
 
 .entrenamientos-entrenamiento__card-image {
-  /* display: block; */
-  /* border-radius: 0; */
   width: 100%;
+  height: 100%;
   aspect-ratio: 10/9;
-  /* width: 45vw; */
   object-fit: cover;
+  object-position: -250px;
+}
+
+.entrenamientos-entrenamiento__card-text-container {
+  margin-block: auto;
 }
 
 .entrenamientos-entrenamiento__card-text {
@@ -243,16 +254,6 @@ html {
   padding: 15px 40px;
 }
 
-/* MEDIA QUERIES <------- */
-@media (max-width: 950px) {
-  .plan-habana-exposicion__header {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 30px;
-  }
-}
-
 /* ! INTERNADO <---------------- */
 .internado {
   background: linear-gradient(#81062d, #6c0526);
@@ -356,6 +357,26 @@ html {
 }
 
 /* MEDIA QUERIES <---------------- */
+
+@media (max-width: 950px) {
+  .plan-habana-exposicion__header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .entrenamientos-entrenamiento__card-image {
+    object-position: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .entrenamientos-entrenamiento__card-image {
+    object-position: center;
+  }
+}
+
 @media (max-width: 700px) {
   .entrenamientos__header {
     font-size: 10vw;
@@ -366,6 +387,10 @@ html {
   .row {
     max-width: 100%;
     gap: 1rem;
+  }
+
+  .entrenamientos-entrenamiento__card-image {
+    object-position: center;
   }
 
   .internado__images-container {

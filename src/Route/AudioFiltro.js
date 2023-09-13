@@ -87,7 +87,7 @@ export function AudioFiltro() {
               <p>{recursoSeleccionado.fuente}</p>
             </div>
             <div className="audio-filtro__length">
-              {recursoSeleccionado.length}
+              {recursoSeleccionado.length} Min
             </div>
           </div>
           <hr className="audio-filtro__hr" />
@@ -97,7 +97,8 @@ export function AudioFiltro() {
               {recursoSeleccionado.genero}
             </div>
             <div className="audio-filtro__fecha">
-              <span className="bold">Fecha:</span>23-10-2012
+              <span className="bold">Fecha: </span>
+              {recursoSeleccionado.fecha}
             </div>
           </div>
         </div>

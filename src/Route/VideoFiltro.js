@@ -72,7 +72,8 @@ export function VideoFiltro() {
               {recursoSeleccionado.genero}
             </div>
             <div className="video-filtro__fecha">
-              <span className="bold">Fecha:</span>06-02-2020
+              <span className="bold">Fecha: </span>
+              {recursoSeleccionado.fecha}
             </div>
           </div>
         </div>

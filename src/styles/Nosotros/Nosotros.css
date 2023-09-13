@@ -230,15 +230,12 @@
       justify-content: space-around;
 
       .nuestro-equipo__card {
-        /* width: 25%; */
-        padding: 20px;
-        position: relative;
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: center;
-        display: flex;
-
         justify-content: center;
+        padding: 20px;
         & img {
           width: 275px;
           border-radius: 50%;

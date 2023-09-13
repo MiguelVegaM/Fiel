@@ -72,14 +72,14 @@ export function EntrenamientosEntrenamientosOnline() {
         className="entrenamientos__entrenamientos-online row"
         id="entrenamientos-online"
       >
-        <div className="col-12 col-md-6 no padding">
+        <div className="col-12 col-md-6 nopadding entrenamientos-entrenamiento__card-image-container">
           <img
             className="entrenamientos-entrenamiento__card-image"
             src="/images/entrenamientos/estudiante-sonriente-tiro-medio-estudiando-laptop.jpg"
             alt="Men on laptop"
           />
         </div>
-        <div className="col-12 col-md-6 nopadding">
+        <div className="col-12 col-md-6 nopadding entrenamientos-entrenamiento__card-text-container">
           <div className="entrenamientos-entrenamiento__card-text">
             <h1 className="entrenamiento__card-title">Entrenamientos</h1>
             <div className="entrenamiento__modalidad">

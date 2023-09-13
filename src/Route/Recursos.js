@@ -11,7 +11,7 @@ import {
 
 import React, { useState } from "react";
 
-import Pagination from "react-bootstrap/Pagination";
+// import Pagination from "react-bootstrap/Pagination";
 
 import "../styles/Recursos/Recursos.css";
 import { Link } from "react-router-dom";
@@ -26,6 +26,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Aplicaciones",
+    fecha: "25-02-2021",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -40,6 +41,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Introducción a la Literatura Apocalíptica",
+    fecha: "24-02-2021",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -54,6 +56,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 21",
+    fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -68,6 +71,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Del Texto al Sermón",
+    fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -82,6 +86,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicando a Cristo",
+    fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -96,6 +101,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 14",
+    fecha: "05-02-2020",
     fuente: "David Helm",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -110,6 +116,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Línea Melódica",
+    fecha: "05-02-2020",
     fuente: "Rubén Rodríguez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -124,6 +131,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
+    fecha: "",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -138,6 +146,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en Apocalipsis 3.14-22",
+    fecha: "04-02-2020",
     fuente: "Rubén Rodríguez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -152,6 +161,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
+    fecha: "04-02-2020",
     fuente: "Andy Quesada",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -166,6 +176,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Introducción a la Literatura Apocalíptica",
+    fecha: "04-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
     genero: "Apocaliptica",
@@ -180,6 +191,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
+    fecha: "04-02-2019",
     fuente: "David Helm",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -194,6 +206,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
+    fecha: "03-02-2019",
     fuente: "David Helm",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -208,6 +221,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Manteniéndonos en la Línea",
+    fecha: "03-02-2019",
     fuente: "Alexis Pérez",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -222,6 +236,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicando a Cristo",
+    fecha: "06-02-2019",
     fuente: "Collen McFadden",
     libro: "marcos",
     genero: "Evangelios",
@@ -236,6 +251,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Línea Melódica",
+    fecha: "06-02-2019",
     fuente: "Marjorie Meeks",
     libro: "marcos",
     genero: "Evangelios",
@@ -250,6 +266,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Estructura",
+    fecha: "05-02-2019",
     fuente: "Marjorie Meeks",
     libro: "marcos",
     genero: "Evangelios",
@@ -264,6 +281,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Contexto",
+    fecha: "04-02-2019",
     fuente: "Collen McFadden",
     libro: "marcos",
     genero: "Evangelios",
@@ -278,6 +296,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Manteniéndonos en la Línea",
+    fecha: "04-02-2019",
     fuente: "Lourdes LLorens",
     libro: "marcos",
     genero: "Evangelios",
@@ -292,6 +311,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Panel de Preguntas y Respuestas",
+    fecha: "09-02-2018",
     fuente: "Varios",
     libro: "",
     genero: "",
@@ -306,6 +326,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La aplicación y la adoración",
+    fecha: "09-02-2018",
     fuente: "Robert Kinney",
     libro: "",
     genero: "",
@@ -320,6 +341,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en el Salmo 16",
+    fecha: "09-02-2018",
     fuente: "Alexis Pérez",
     libro: "salmos",
     genero: "Sabiduria",
@@ -334,6 +356,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Adoración Verdadera",
+    fecha: "08-02-2018",
     fuente: "Juan Sánchez",
     libro: "lucas",
     genero: "Evangelios",
@@ -348,6 +371,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "El proceso de hacer aplicaciones en predicación expositiva",
+    fecha: "08-02-2018",
     fuente: "Bryan Chapell",
     libro: "",
     genero: "",
@@ -362,6 +386,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en el Salmo 2",
+    fecha: "07-02-2018",
     fuente: "Juan Sánchez",
     libro: "salmos",
     genero: "Sabiduria",
@@ -376,6 +401,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Teología Bíblica de la Adoración",
+    fecha: "07-02-2018",
     fuente: "Miguel Núñez",
     libro: "",
     genero: "",
@@ -390,6 +416,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 4",
+    fecha: "18-02-2018",
     fuente: "David Helm",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -404,6 +431,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable IV",
+    fecha: "",
     fuente: "Ryan Townsend",
     libro: "",
     genero: "",
@@ -418,6 +446,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva VI",
+    fecha: "18-02-2018",
     fuente: "David Helm",
     libro: "",
     genero: "",
@@ -432,6 +461,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva V",
+    fecha: "18-02-2018",
     fuente: "Miguel Núñez",
     libro: "",
     genero: "",
@@ -446,6 +476,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable III",
+    fecha: "18-02-2018",
     fuente: "Juan Sánchez",
     libro: "",
     genero: "",
@@ -460,6 +491,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 3",
+    fecha: "17-02-2015",
     fuente: "Alexis Pérez",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -474,6 +506,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva IV",
+    fecha: "17-02-2015",
     fuente: "Miguel Núñez",
     libro: "",
     genero: "",
@@ -488,6 +521,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "La Iglesia Saludable II",
+    fecha: "17-02-2015",
     fuente: "Juan Sánchez",
     libro: "",
     genero: "",
@@ -502,6 +536,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Predicación Expositiva III",
+    fecha: "17-02-2015",
     fuente: "David Helm",
     libro: "",
     genero: "",
@@ -516,6 +551,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Exposición en 2 Timoteo 1",
+    fecha: "16-02-2015",
     fuente: "David Helm",
     libro: "2timoteo",
     genero: "Epistolas",
@@ -530,6 +566,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_VIDEO.png",
     type: "video",
     title: "Una visión bíblica de la iglesia",
+    fecha: "16-02-2015",
     fuente: "Miguel Núñez",
     libro: "",
     genero: "",
@@ -544,6 +581,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Exposición en 2 Timoteo 2 ",
+    fecha: "17-02-2015",
     fuente: "Delvis Acuña",
     libro: "",
     genero: "",
@@ -558,6 +596,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La Iglesia Saludable I",
+    fecha: "16-02-2015",
     fuente: "Juan Sánchez",
     libro: "",
     genero: "",
@@ -572,6 +611,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva I",
+    fecha: "16-02-2015",
     fuente: "David Helm",
     libro: "",
     genero: "",
@@ -586,6 +626,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva II",
+    fecha: "16-02-2015",
     fuente: "David Helm",
     libro: "",
     genero: "",
@@ -600,6 +641,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
+    fecha: "23-10-2012",
     fuente: "Juan Sánchez",
     libro: "",
     genero: "",
@@ -614,6 +656,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
+    fecha: "23-10-2012",
     fuente: "David Jackman ",
     libro: "",
     genero: "",
@@ -628,6 +671,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
+    fecha: "24-10-2012",
     fuente: "Peter Sholl",
     libro: "",
     genero: "",
@@ -642,6 +686,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
+    fecha: "23-10-2012",
     fuente: "Peter Sholl",
     libro: "",
     genero: "",
@@ -656,6 +701,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
+    fecha: "23-10-2012",
     fuente: "David Jackman",
     libro: "",
     genero: "",
@@ -670,6 +716,7 @@ export const recursosObj = [
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su palabra-Día 1",
+    fecha: "22-10-2012",
     fuente: "Peter Sholl",
     libro: "",
     genero: "",
@@ -679,10 +726,10 @@ export const recursosObj = [
 ];
 
 // let active = 2;
-let items = [];
-for (let number = 1; number <= 5; number++) {
-  items.push(<Pagination.Item key={number}>{number}</Pagination.Item>);
-}
+// let items = [];
+// for (let number = 1; number <= 5; number++) {
+//   items.push(<Pagination.Item key={number}>{number}</Pagination.Item>);
+// }
 
 export function RecursosMain() {
   const [recursoFiltrado, setRecursoFiltrado] = useState({
@@ -691,6 +738,7 @@ export function RecursosMain() {
     articulo: false,
   });
 
+  //Lista de todos los recursos
   const [datosFiltrados, setDatosFiltrados] = useState(recursosObj);
 
   const handleOnCheckbox = (e) => {
@@ -709,19 +757,19 @@ export function RecursosMain() {
     } else {
       setDatosFiltrados(recursosObj);
     }
-
-    // if () {
-    //   const resultadoFiltrado = recursosObj.filter(
-    //     (item) => item.libro === e.target.value
-    //   );
-    //   setDatosFiltrados([...resultadoFiltrado]);
-    // } else {
-    //   setDatosFiltrados(recursosObj);
-    // }
   };
 
-  console.log(datosFiltrados);
-  console.log(recursoFiltrado);
+  // const handleOnLibroSelector = (e) => {
+  //   setDatosFiltrados(e.target.value);
+  //   console.log(e.target.value);
+
+  //   datosFiltrados = !datosFiltrados
+  //     ? recursosObj
+  //     : recursosObj.filter((item) => item.libro === e.target.value);
+  // };
+
+  // console.log(datosFiltrados);
+  // console.log(recursoFiltrado);
 
   return (
     <>
@@ -840,7 +888,7 @@ export function RecursosMain() {
                       <select
                         name="libros"
                         id="libros"
-                        onChange={handleOnCheckbox}
+                        // onChange={handleOnLibroSelector}
                       >
                         <option value="todos">Todos</option>
                         <option value="salmos">Salmos</option>
@@ -854,7 +902,7 @@ export function RecursosMain() {
                       <select
                         name="generos"
                         id="generos"
-                        onChange={handleOnCheckbox}
+                        // onChange={handleOnGeneroSelector}
                       >
                         <option value="todos">Todos</option>
                         <option value="narrativa">Narrativa</option>
@@ -877,7 +925,7 @@ export function RecursosMain() {
                       <select
                         name="talleres"
                         id="talleres"
-                        onChange={handleOnCheckbox}
+                        // onChange={handleOnTallerSelector}
                       >
                         <option value="todos">Todos</option>
                         <option value="taller-marcos">
