@@ -29,7 +29,7 @@ export const recursosObj = [
     fecha: "25-02-2021",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "",
     length: "44:32",
   },
@@ -44,7 +44,7 @@ export const recursosObj = [
     fecha: "24-02-2021",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "",
     length: "54:20",
   },
@@ -59,7 +59,7 @@ export const recursosObj = [
     fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "26:38",
   },
@@ -74,7 +74,7 @@ export const recursosObj = [
     fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "1:13:11",
   },
@@ -89,7 +89,7 @@ export const recursosObj = [
     fecha: "06-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "49:48",
   },
@@ -104,7 +104,7 @@ export const recursosObj = [
     fecha: "05-02-2020",
     fuente: "David Helm",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "26:41",
   },
@@ -119,7 +119,7 @@ export const recursosObj = [
     fecha: "05-02-2020",
     fuente: "Rubén Rodríguez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "41:08",
   },
@@ -134,7 +134,7 @@ export const recursosObj = [
     fecha: "",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "39:18",
   },
@@ -149,7 +149,7 @@ export const recursosObj = [
     fecha: "04-02-2020",
     fuente: "Rubén Rodríguez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "30:20",
   },
@@ -164,7 +164,7 @@ export const recursosObj = [
     fecha: "04-02-2020",
     fuente: "Andy Quesada",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "52:51",
   },
@@ -179,7 +179,7 @@ export const recursosObj = [
     fecha: "04-02-2020",
     fuente: "Alexis Pérez",
     libro: "apocalipsis",
-    genero: "Apocaliptica",
+    genero: "apocaliptica",
     taller: "taller-apocalipsis",
     length: "56:29",
   },
@@ -194,7 +194,7 @@ export const recursosObj = [
     fecha: "04-02-2019",
     fuente: "David Helm",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "taller-2-timoteo",
     length: "46:11",
   },
@@ -209,7 +209,7 @@ export const recursosObj = [
     fecha: "03-02-2019",
     fuente: "David Helm",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "taller-2-timoteo",
     length: "49:04",
   },
@@ -224,7 +224,7 @@ export const recursosObj = [
     fecha: "03-02-2019",
     fuente: "Alexis Pérez",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "taller-2-timoteo",
     length: "28:55",
   },
@@ -239,7 +239,7 @@ export const recursosObj = [
     fecha: "06-02-2019",
     fuente: "Collen McFadden",
     libro: "marcos",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "",
     length: "47:45",
   },
@@ -254,7 +254,7 @@ export const recursosObj = [
     fecha: "06-02-2019",
     fuente: "Marjorie Meeks",
     libro: "marcos",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "",
     length: "41:19",
   },
@@ -269,7 +269,7 @@ export const recursosObj = [
     fecha: "05-02-2019",
     fuente: "Marjorie Meeks",
     libro: "marcos",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "taller-marcos",
     length: "50:49",
   },
@@ -284,7 +284,7 @@ export const recursosObj = [
     fecha: "04-02-2019",
     fuente: "Collen McFadden",
     libro: "marcos",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "taller-marcos",
     length: "45:18",
   },
@@ -299,7 +299,7 @@ export const recursosObj = [
     fecha: "04-02-2019",
     fuente: "Lourdes LLorens",
     libro: "marcos",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "taller-marcos",
     length: "36:11",
   },
@@ -344,7 +344,7 @@ export const recursosObj = [
     fecha: "09-02-2018",
     fuente: "Alexis Pérez",
     libro: "salmos",
-    genero: "Sabiduria",
+    genero: "sabiduria",
     taller: "",
     length: "33:18",
   },
@@ -359,7 +359,7 @@ export const recursosObj = [
     fecha: "08-02-2018",
     fuente: "Juan Sánchez",
     libro: "lucas",
-    genero: "Evangelios",
+    genero: "evangelios",
     taller: "",
     length: "37:44",
   },
@@ -389,7 +389,7 @@ export const recursosObj = [
     fecha: "07-02-2018",
     fuente: "Juan Sánchez",
     libro: "salmos",
-    genero: "Sabiduria",
+    genero: "sabiduria",
     taller: "",
     length: "32:14",
   },
@@ -419,7 +419,7 @@ export const recursosObj = [
     fecha: "18-02-2018",
     fuente: "David Helm",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "",
     length: "1:19:47",
   },
@@ -494,7 +494,7 @@ export const recursosObj = [
     fecha: "17-02-2015",
     fuente: "Alexis Pérez",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "",
     length: "1:07:44",
   },
@@ -554,7 +554,7 @@ export const recursosObj = [
     fecha: "16-02-2015",
     fuente: "David Helm",
     libro: "2timoteo",
-    genero: "Epistolas",
+    genero: "epistolas",
     taller: "",
     length: "37:59",
   },
@@ -741,6 +741,8 @@ export function RecursosMain() {
   //Lista de todos los recursos
   const [datosFiltrados, setDatosFiltrados] = useState(recursosObj);
 
+  // ^ -------------------------------------- SELECTORES DE FILTROS CON CHECKBOX
+
   const handleOnCheckbox = (e) => {
     setRecursoFiltrado({
       ...recursoFiltrado,
@@ -759,16 +761,51 @@ export function RecursosMain() {
     }
   };
 
-  // const handleOnLibroSelector = (e) => {
-  //   setDatosFiltrados(e.target.value);
-  //   console.log(e.target.value);
+  // ^ -------------------------------------------------------------------------
 
-  //   datosFiltrados = !datosFiltrados
-  //     ? recursosObj
-  //     : recursosObj.filter((item) => item.libro === e.target.value);
-  // };
+  // ^ -------------------------------------- SELECTORES DE FILTROS CON DROPDOWN
 
-  // console.log(datosFiltrados);
+  const handleOnLibroSelector = (libro, genero) => {
+    console.log(libro);
+    if (libro === "todos") {
+      setDatosFiltrados(recursosObj);
+    } else {
+      setDatosFiltrados(
+        recursosObj.filter((recurso) => {
+          return recurso.libro === libro;
+        })
+      );
+    }
+  };
+
+  const handleOnGeneroSelector = (genero) => {
+    console.log(genero);
+    if (genero === "todos") {
+      setDatosFiltrados(recursosObj);
+    } else {
+      setDatosFiltrados(
+        recursosObj.filter((recurso) => {
+          return recurso.genero === genero;
+        })
+      );
+    }
+  };
+
+  const handleOnTallerSelector = (taller) => {
+    if (taller === "todos") {
+      setDatosFiltrados(recursosObj);
+    } else {
+      setDatosFiltrados(
+        recursosObj.filter((recurso) => {
+          return recurso.taller === taller;
+        })
+      );
+    }
+  };
+
+  // ^ --------------------------------------------------------------------------
+
+  console.log(datosFiltrados.length);
   // console.log(recursoFiltrado);
 
   return (
@@ -888,7 +925,7 @@ export function RecursosMain() {
                       <select
                         name="libros"
                         id="libros"
-                        // onChange={handleOnLibroSelector}
+                        onChange={(e) => handleOnLibroSelector(e.target.value)}
                       >
                         <option value="todos">Todos</option>
                         <option value="salmos">Salmos</option>
@@ -897,12 +934,12 @@ export function RecursosMain() {
                         <option value="2timoteo">2 Timoteo</option>
                         <option value="apocalipsis">Apocalipsis</option>
                       </select>
-                      <label htmlFor="generos">Género literários</label>
 
+                      <label htmlFor="generos">Género literários</label>
                       <select
                         name="generos"
                         id="generos"
-                        // onChange={handleOnGeneroSelector}
+                        onChange={(e) => handleOnGeneroSelector(e.target.value)}
                       >
                         <option value="todos">Todos</option>
                         <option value="narrativa">Narrativa</option>
@@ -925,7 +962,7 @@ export function RecursosMain() {
                       <select
                         name="talleres"
                         id="talleres"
-                        // onChange={handleOnTallerSelector}
+                        onChange={(e) => handleOnTallerSelector(e.target.value)}
                       >
                         <option value="todos">Todos</option>
                         <option value="taller-marcos">
@@ -974,6 +1011,11 @@ export function RecursosMain() {
                   </Link>
                 </motion.div>
               ))}
+              {datosFiltrados.length === 0 && (
+                <div style={{ fontSize: "2rem", margin: "5% 0 0 10%" }}>
+                  No hay recursos disponibles
+                </div>
+              )}
             </div>
           </div>
           <div className="recursos__footer">

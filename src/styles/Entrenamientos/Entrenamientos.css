@@ -21,7 +21,7 @@ html {
   background-image: url(/public/images/entrenamientos/Banner-1.jpg);
   background-size: cover;
   color: #fff;
-  padding-block: 75px;
+  padding-block: 100px;
   display: flex;
   position: relative;
   transform: translateZ(-10px) scale(2.08);
@@ -49,20 +49,20 @@ html {
 .sidenav {
   height: 100%;
   width: 0;
-  /* position: fixed; */
-  z-index: 1;
+  position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
-  background-color: #66011fc1;
+  background-color: #66011fdc;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  /* text-align: center;*/
-  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 75px;
   text-decoration: none;
   font-size: 20px;
   color: #ffffff;

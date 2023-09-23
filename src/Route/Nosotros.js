@@ -406,6 +406,7 @@ export function NosotrosBanner(props) {
             </p>
           </div>
         </Collapse>
+
         <button
           className="btn__declaracion-doctrinal"
           onClick={() => setOpen(!open)}

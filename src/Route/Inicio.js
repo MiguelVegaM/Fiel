@@ -16,7 +16,7 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { FaChevronCircleUp } from "react-icons/fa";
+import { FaChevronCircleUp, FaPhoneAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 import Button from "../UI/Buttons/Button";
@@ -30,8 +30,16 @@ export function MiniHeader() {
   return (
     <div id="header" className="header">
       <ul className="header__list">
-        <li className="header__item">+00000000000</li>
-        <li className="header__item">info@predicafiel.com</li>
+        <li className="header__item">
+          <a className="header__item-link" href="tel:+1234567890">
+            +1234567890
+          </a>
+        </li>
+        <li className="header__item">
+          <a className="header__item-link" href="mailto:info@predicafiel.com">
+            info@predicafiel.com
+          </a>
+        </li>
         <li className="header__item">
           <ul className="header__list-icons">
             <li>
@@ -142,11 +150,7 @@ export function Navbar(props) {
                 RECURSOS
               </NavLink>
             </li>
-            <HashLink
-              className="dropdown-item"
-              to="/#contacto"
-              href="#contacto"
-            >
+            <HashLink className="dropdown-item" to="#contacto" href="#contacto">
               <Button specificClass="btn__navbar">CONTACTO</Button>
             </HashLink>
           </ul>
@@ -839,17 +843,30 @@ export function Footer(props) {
                   </div>
                 </IconContext.Provider>
               </div>
-              <div className="footer__contactanos-text">00 0000 0000</div>
+              <div className="footer__contactanos-text">
+                <a
+                  className="footer__item-link"
+                  href="https://www.whatsapp.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  00 0000 0000
+                </a>
+              </div>
             </li>
             <li className="footer__contactanos-list-item">
               <div className="footer__contactanos-icon">
                 <IconContext.Provider value={{ className: "whatsapp-icon" }}>
-                  <div>
-                    <FaWhatsapp />
+                  <div className="footer__contactanos-icon-phone">
+                    <FaPhoneAlt />
                   </div>
                 </IconContext.Provider>
               </div>
-              <div className="footer__contactanos-text">00 0000 0000</div>
+              <div className="footer__contactanos-text">
+                <a className="footer__item-link" href="tel:+1234567890">
+                  +1234567890
+                </a>
+              </div>
             </li>
             <li className="footer__contactanos-list-item">
               <div className="footer__contactanos-icon">
@@ -859,7 +876,14 @@ export function Footer(props) {
                   </div>
                 </IconContext.Provider>
               </div>
-              <div className="footer__contactanos-text">info@predicafiel</div>
+              <div className="footer__contactanos-text">
+                <a
+                  className="footer__item-link"
+                  href="mailto:info@predicafiel.com"
+                >
+                  info@predicafiel
+                </a>
+              </div>
             </li>
             <li className="footer__contactanos-list-item">
               <ul className="footer__list-icons">
@@ -1020,9 +1044,9 @@ export function Footer(props) {
           </div>
         </div>
         <div className="footer__button-up">
-          <a href="#top">
+          <HashLink to="#header">
             <FaChevronCircleUp className="footer__button-up-icon" />
-          </a>
+          </HashLink>
         </div>
       </div>
     </div>
