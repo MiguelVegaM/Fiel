@@ -37,17 +37,20 @@
   color: #fff;
   font-size: 300%;
   font-weight: 500;
+  & button {
+    border-radius: 15px;
+    border: none;
+  }
 }
-
-.recursos__miniatura-img {
-  width: 100%;
-}
-
 .recursos__miniatura-text {
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.recursos__miniatura-img {
+  width: 100%;
 }
 
 .recursos__main {
@@ -68,62 +71,26 @@
   align-items: center;
 }
 
-.recursos__checkboxes {
+.recursos__radio {
   /* margin-block: 20px; 
 */
   align-items: center;
 }
 
-/* Round checksboxes <-------- */
-
-.round {
-  position: relative;
+.recursos__radio-container {
   display: flex;
+  flex-direction: column;
 }
 
-.round label {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 15px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 15px;
+.recursos__radio-element {
+  & label {
+    font-size: 1.3rem;
+  }
 }
 
-.round label:after {
-  border: 2px solid #fff;
-  border-top: none;
-  border-right: none;
-  content: "";
-  height: 6px;
-  left: 2px;
-  opacity: 0;
-  position: absolute;
-  top: 3px;
-  transform: rotate(-45deg);
-  width: 9px;
-}
-
-.round input[type="checkbox"] {
-  visibility: hidden;
-}
-
-.round input[type="checkbox"]:checked + label {
-  background-color: #7f042d;
-  border-color: #ffffff;
-}
-
-.round input[type="checkbox"]:checked + label:after {
-  opacity: 1;
-}
-
-.round p {
-  margin-top: -8px;
-  margin-left: 15px;
-  font-size: 1.3rem;
+.radio-check {
+  margin-right: 10px;
+  accent-color: #850e30;
 }
 
 /* Selectors <---------------- */
@@ -248,7 +215,7 @@
 }
 
 @media (max-width: 991px) {
-  .recursos__checkboxes {
+  .recursos__radio {
     margin: 0 auto;
   }
   .recursos__main-container {
@@ -261,7 +228,7 @@
     display: flex;
     justify-content: space-between;
   }
-  /* .recursos__checkboxes {
+  /* .recursos__radio {
 
   } */
   .recursos__selectors {
@@ -287,10 +254,13 @@
     flex-direction: column;
   }
 
-  .recursos__checkboxes-container {
+  .recursos__radio-container {
     display: flex;
     /* margin-right: 30px; */
   }
+  /* .checkbox {
+    accent-color: #850e30;
+  } */
 
   .round {
     margin-right: 10px;

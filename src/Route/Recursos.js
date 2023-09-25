@@ -741,11 +741,11 @@ export function RecursosMain() {
   //Lista de todos los recursos
   const [datosFiltrados, setDatosFiltrados] = useState(recursosObj);
 
-  // ^ -------------------------------------- SELECTORES DE FILTROS CON CHECKBOX
+  // ^ -------------------------------------- SELECTORES DE FILTROS CON RADIO
 
-  const handleOnCheckbox = (e) => {
+  const handleOnRadio = (e) => {
     setRecursoFiltrado({
-      ...recursoFiltrado,
+      // ...recursoFiltrado,
       [e.target.value]: e.target.checked,
     });
 
@@ -760,12 +760,13 @@ export function RecursosMain() {
       setDatosFiltrados(recursosObj);
     }
   };
+  console.log(recursoFiltrado);
 
   // ^ -------------------------------------------------------------------------
 
   // ^ -------------------------------------- SELECTORES DE FILTROS CON DROPDOWN
 
-  const handleOnLibroSelector = (libro, genero) => {
+  const handleOnLibroSelector = (libro) => {
     console.log(libro);
     if (libro === "todos") {
       setDatosFiltrados(recursosObj);
@@ -822,6 +823,7 @@ export function RecursosMain() {
               id="miniImgVideo"
               className="col-12 col-md-4 recursos__miniatura-container"
             >
+              {/* <button value={"video"} id={"video"} onClick={handleOnRadio}> */}
               <img
                 className="recursos__miniatura-img"
                 id="miniImgVideo"
@@ -833,14 +835,16 @@ export function RecursosMain() {
                 alt="Miniatura sección videos"
               />
               <div className="recursos__miniatura-text">Videos</div>
+              {/* </button> */}
             </div>
             <div
               id="miniImgAudio"
               className="col-12 col-md-4 recursos__miniatura-container"
             >
+              {/* <button value={"audio"} id={"audio"} onClick={handleOnRadio}> */}
               <img
                 className="recursos__miniatura-img
-            "
+                            "
                 id="miniImgAudio"
                 src={
                   recursoFiltrado.audio
@@ -849,15 +853,17 @@ export function RecursosMain() {
                 }
                 alt="Miniatura sección audios"
               />
-              <div className="recursos__miniatura-text">Audio</div>
+              <div className="recursos__miniatura-text">Audios</div>
+              {/* </button> */}
             </div>
             <div
               id="miniImgArticulo"
               className="col-12 col-md-4 recursos__miniatura-container"
             >
+              {/* <button value={"articulo"} id={"articulo"} onClick={handleOnRadio}> */}
               <img
                 className="recursos__miniatura-img
-            "
+                            "
                 id="miniImgArticulo"
                 src="images/recursos/IMAGEN_ARTICULO.png"
                 // {
@@ -867,7 +873,8 @@ export function RecursosMain() {
                 // }
                 alt="Miniatura sección artículos"
               />
-              <div className="recursos__miniatura-text">Artículo</div>
+              <div className="recursos__miniatura-text">Artículos</div>
+              {/* </button> */}
             </div>
           </div>
         </div>
@@ -878,44 +885,42 @@ export function RecursosMain() {
             <div className="col-lg-3">
               <form action="">
                 <div className="recursos__filtros">
-                  <div className="recursos__checkboxes">
+                  <div className="recursos__radio">
                     <h1>Filtros</h1>
-                    <div className="recursos__checkboxes-container">
-                      <div className="round">
+                    <div className="recursos__radio-container">
+                      <div className="recursos__radio-element">
                         <input
-                          onChange={handleOnCheckbox}
-                          className="checkbox"
-                          type="checkbox"
-                          name="video"
+                          onChange={handleOnRadio}
+                          className="radio-check"
+                          type="radio"
+                          name="radiocheck"
                           id="video"
                           value="video"
                         />
-                        <label htmlFor="video"></label>
-                        <p>Video</p>
+                        <label htmlFor="video">Video</label>
                       </div>
-                      <div className="round">
+                      <div className="recursos__radio-element">
                         <input
-                          onChange={handleOnCheckbox}
-                          className="checkbox"
-                          type="checkbox"
-                          name="audio"
+                          onChange={handleOnRadio}
+                          className="radio-check"
+                          type="radio"
+                          name="radiocheck"
                           id="audio"
                           value="audio"
                         />
-                        <label htmlFor="audio"></label>
-                        <p>Audio</p>
+                        <label htmlFor="audio">Audio</label>
                       </div>
-                      <div className="round">
+
+                      <div className="recursos__radio-element">
                         <input
-                          onChange={handleOnCheckbox}
-                          className="checkbox"
-                          type="checkbox"
-                          name="articulo"
+                          onChange={handleOnRadio}
+                          className="radio-check"
+                          type="radio"
+                          name="radiocheck"
                           id="articulo"
                           value="articulo"
                         />
-                        <label htmlFor="articulo"></label>
-                        <p>Artículo</p>
+                        <label htmlFor="articulo">Artículo</label>
                       </div>
                     </div>
                   </div>
