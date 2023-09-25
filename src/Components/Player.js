@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import {
   IoPlay,
@@ -7,11 +7,12 @@ import {
   IoPlaySkipForward,
 } from "react-icons/io5";
 import {
-  RiFullscreenFill,
-  RiVolumeUpFill,
-  RiSettings5Fill,
-} from "react-icons/ri";
-import { tracks } from "../Route/AudioFiltro";
+  ImVolumeHigh,
+  ImVolumeMedium,
+  ImVolumeLow,
+  ImVolumeMute2,
+} from "react-icons/im";
+// import { tracks } from "../Route/AudioFiltro";
 
 function Player({
   audioElem,
@@ -35,45 +36,61 @@ function Player({
 
     // console.log(audioElem.current.currentTime);
   };
-  console.log(currentSong);
+  // console.log(currentSong);
 
-  const skipBack = () => {
-    const index = tracks.findIndex((x) => x.id === currentSong.id);
-    console.log(index);
-    if (index === 0) {
-      setCurrentSong(tracks[tracks.length - 1]);
-    } else {
-      setCurrentSong(tracks[index - 1]);
+  // const skipBack = () => {
+  //   const index = tracks.findIndex((x) => x.id === currentSong.id);
+  //   console.log(index);
+  //   if (index === 0) {
+  //     setCurrentSong(tracks[tracks.length - 1]);
+  //   } else {
+  //     setCurrentSong(tracks[index - 1]);
+  //   }
+
+  //   audioElem.current.currentTime = 0;
+  //   setIsPlaying((isPlaying = false));
+  // };
+
+  // const skipForward = () => {
+  //   const index = tracks.findIndex((x) => x.id === currentSong.id);
+  //   console.log(index);
+
+  //   if (index === tracks.length - 1) {
+  //     setCurrentSong(tracks[0]);
+  //   } else {
+  //     setCurrentSong(tracks[index + 1]);
+  //   }
+
+  //   audioElem.current.currentTime = 0;
+  //   setIsPlaying((isPlaying = false));
+  // };
+  const [muteVolume, setMuteVolume] = useState(false);
+
+  const [volume, setVolume] = useState(60);
+  useEffect(() => {
+    if (audioElem) {
+      audioElem.current.volume = volume / 100;
+      audioElem.current.muted = muteVolume;
+      // console.log(audioElem.current.volume);
     }
-
-    audioElem.current.currentTime = 0;
-    setIsPlaying((isPlaying = false));
-  };
-
-  const skipForward = () => {
-    const index = tracks.findIndex((x) => x.id === currentSong.id);
-    console.log(index);
-
-    if (index === tracks.length - 1) {
-      setCurrentSong(tracks[0]);
-    } else {
-      setCurrentSong(tracks[index + 1]);
-    }
-
-    audioElem.current.currentTime = 0;
-    setIsPlaying((isPlaying = false));
-  };
+  }, [volume, audioElem, muteVolume]);
 
   return (
     <div className="player-container">
       <div className="media-buttons">
-        <IoPlaySkipBack onClick={skipBack} style={{ display: "none" }} />
+        <IoPlaySkipBack
+          // onClick={skipBack}
+          style={{ display: "none" }}
+        />
         {isPlaying ? (
           <IoPause style={{ fontSize: "1.5rem" }} onClick={PlayPause} />
         ) : (
           <IoPlay style={{ fontSize: "1.5rem" }} onClick={PlayPause} />
         )}
-        <IoPlaySkipForward onClick={skipForward} style={{ display: "none" }} />
+        <IoPlaySkipForward
+          // onClick={skipForward}
+          style={{ display: "none" }}
+        />
       </div>
       <div className="navigation-bar">
         <div className="navigation-wrapper" onClick={checkWidth} ref={clickRef}>
@@ -84,9 +101,37 @@ function Player({
         </div>
       </div>
       <div className="other-buttons">
-        <RiVolumeUpFill />
-        <RiFullscreenFill />
-        <RiSettings5Fill />
+        <div className="volume">
+          <button
+            onClick={() => {
+              setMuteVolume((prev) => !prev);
+            }}
+          >
+            {muteVolume || volume < 5 ? (
+              <ImVolumeMute2 />
+            ) : volume < 30 ? (
+              <ImVolumeLow />
+            ) : volume < 70 ? (
+              <ImVolumeMedium />
+            ) : (
+              <ImVolumeHigh />
+            )}
+          </button>
+          <input
+            id="volumeInput"
+            className="volumeInput"
+            type="range"
+            min={0}
+            max={100}
+            value={volume}
+            onChange={(e) => setVolume(e.target.value)}
+            onClick={() => {
+              if (muteVolume) {
+                setMuteVolume((prev) => !prev);
+              }
+            }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/Recursos/Filtros.css";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { recursosObj } from "./Recursos";
 import { MiniHeader, Navbar } from "./Inicio";
 
@@ -54,7 +54,14 @@ export function AudioFiltro() {
   return (
     <div>
       <div className="barra-direccion">
-        Inicio / Audios / {recursoSeleccionado.title}
+        <NavLink className="barra-direccion__link" to="/">
+          Inicio
+        </NavLink>{" "}
+        /{" "}
+        <NavLink className="barra-direccion__link" to="/recursos">
+          Audios
+        </NavLink>{" "}
+        / {recursoSeleccionado.title}
       </div>
       <div className="audio-filtro__container">
         <div className="audio-frame">

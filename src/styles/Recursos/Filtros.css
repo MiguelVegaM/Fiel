@@ -64,8 +64,8 @@
   justify-content: space-between;
 }
 
-.recursos__footer-btn button {
-}
+/* .recursos__footer-btn button {
+} */
 
 @media (max-width: 1024px) {
   .video-frame {
@@ -149,11 +149,11 @@
 
 .navigation-bar {
   /* border: 1px solid #575757; */
-  width: 72%;
+  width: 100%;
 }
 
 .navigation-wrapper {
-  /* width: 72%; */
+  width: 100%;
   height: 5px;
   border-radius: 30px;
   background-color: #575757;
@@ -173,13 +173,26 @@
   justify-content: space-around;
   color: #fff;
   font-size: 1rem;
-  width: 15%;
+  width: 25%;
   /* margin-inline: 20px; */
   & :hover {
     color: #7b7b7b;
     cursor: pointer;
   }
+  .volume {
+    & button {
+      color: #fff;
+      border: none;
+      background-color: transparent;
+      margin-right: 10px;
+    }
+    .volumeInput {
+      accent-color: #a0002f;
+      height: 10px;
+    }
+  }
 }
+
 .audio-info {
   width: 70%;
   margin-inline: auto;

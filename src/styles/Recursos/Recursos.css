@@ -5,6 +5,10 @@
   font-weight: 300;
   padding-left: 12%;
   padding-block: 20px;
+  .barra-direccion__link {
+    text-decoration: none;
+    color: #6a6a6a;
+  }
 }
 
 .recursos__miniaturas {

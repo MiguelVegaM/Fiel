@@ -3,7 +3,7 @@ import React from "react";
 import "../styles/Recursos/Filtros.css";
 
 import { recursosObj } from "./Recursos";
-import { useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { MiniHeader, Navbar } from "./Inicio";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,14 @@ export function VideoFiltro() {
   return (
     <div>
       <div className="barra-direccion">
-        Inicio / Videos / {recursoSeleccionado.title}
+        <NavLink to="/" className="barra-direccion__link">
+          Inicio
+        </NavLink>{" "}
+        /{" "}
+        <NavLink to="/recursos" className="barra-direccion__link">
+          Videos
+        </NavLink>{" "}
+        / {recursoSeleccionado.title}
       </div>
       <div className="video-filtro__container">
         <div className="video-frame">
