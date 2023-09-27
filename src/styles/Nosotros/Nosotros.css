@@ -7,7 +7,7 @@
 }
 
 .nosotros-banner--rojo {
-  background: linear-gradient(90deg, #830731 0%, #63011e 100%);
+  background: linear-gradient(90deg, #850731 0%, #63011e 100%);
   color: #fff;
   height: 545px;
   padding-top: 100px;
@@ -181,7 +181,7 @@
   }
 
   .btn__declaracion-doctrinal {
-    background-color: #850e30 !important;
+    background-color: #850731 !important;
     color: white;
     font-size: 1rem;
     font-weight: 300;
@@ -213,7 +213,7 @@
 
   .nuestro-equipo__wrapper {
     .title {
-      color: #830731;
+      color: #850731;
       font-size: 3.2rem;
       font-weight: 800;
     }
@@ -247,7 +247,7 @@
       border-radius: 50%;
     }
     & h3 {
-      color: #830731;
+      color: #850731;
       font-weight: 700;
       margin-top: 30px;
     }
@@ -335,7 +335,7 @@
       }
       .btn__nosotros-banner--rojo {
         background-color: #fff;
-        color: #830731;
+        color: #850731;
         height: 60px;
         font-size: 1.2rem;
         font-weight: 500;
@@ -346,7 +346,7 @@
 
   /* .btn__nosotros-banner--rojo {
     background-color: #fff;
-    color: #830731;
+    color: #850731;
     height: 60px;
     font-size: 1.2rem;
     font-weight: 500;

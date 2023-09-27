@@ -9,7 +9,7 @@
 /* ?                           MiniHeader.css  */
 
 .header {
-  background-color: #850e30;
+  background-color: #850731;
   font-size: 0.8rem;
   color: #fff;
   display: flex;
@@ -56,11 +56,11 @@
 .header__icon-link {
   margin-top: -3px;
   font-size: 1rem;
-  color: #850e30;
+  color: #850731;
 }
 
 .header__icon-link:hover {
-  color: #850e30;
+  color: #850731;
 }
 
 @media (max-width: 768px) {
@@ -111,12 +111,12 @@
 
 /* how to just select the a inside the dropdown ------------------------ */
 .navbar a:active {
-  background-color: #850e30;
+  background-color: #850731;
   border-radius: 5px;
 }
 
 .dropdown-item.active {
-  background-color: #850e30;
+  background-color: #850731;
 }
 
 .navbar__logo-link:active {
@@ -262,7 +262,6 @@
 }
 
 .entrenamiento-online__container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
@@ -370,7 +369,7 @@
 .entrenamiento__card-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #850e30;
+  color: #850731;
 }
 
 .online-dot {
@@ -494,7 +493,7 @@
 .recursos__header-title {
   font-size: 3.2rem;
   font-weight: 900;
-  color: #860e30;
+  color: #850731;
 }
 
 .recursos__header-title span {
@@ -591,7 +590,7 @@
 }
 
 .carousel-indicators [data-bs-target] {
-  background-color: #86102f;
+  background-color: #850731;
   border-radius: 50%;
   width: 13px;
   height: 13px;
@@ -899,7 +898,7 @@
 }
 
 .contacto__input:hover {
-  border-color: #60071f;
+  border-color: #850731;
 }
 
 .contacto__input-large {
@@ -913,7 +912,7 @@
 }
 
 .contacto__input-large:hover {
-  border-color: #60071f;
+  border-color: #850731;
 }
 
 .form_button {
@@ -981,12 +980,12 @@
 
 .footer__header-contactanos {
   font-size: 1.2rem;
-  color: #6c0a27;
+  color: #850731;
 }
 .footer__header-accesos-directos {
   margin-left: 40px;
   font-size: 1.2rem;
-  color: #6c0a27;
+  color: #850731;
 }
 
 .footer__contactanos-list {
@@ -1135,7 +1134,7 @@
 /* ?                           MiniFooter.css   */
 
 .mini-footer {
-  background-color: #860f30;
+  background-color: #850731;
   color: #fff;
   /* position: fixed;
     bottom: 0; */

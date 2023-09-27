@@ -163,7 +163,7 @@
 .seek-bar {
   height: 100%;
   border-radius: 30px;
-  background-color: #a0002f;
+  background-color: #850731;
 }
 
 .other-buttons {
@@ -187,7 +187,7 @@
       margin-right: 10px;
     }
     .volumeInput {
-      accent-color: #a0002f;
+      accent-color: #850731;
       height: 10px;
     }
   }

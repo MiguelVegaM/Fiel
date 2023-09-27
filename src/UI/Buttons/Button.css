@@ -1,5 +1,5 @@
 .button-component {
-  background-color: #850e30;
+  background-color: #850731;
   color: white;
   font-size: 1rem;
   font-weight: 300;
@@ -50,13 +50,13 @@
 
 .btn__entrenamiento-presencial {
   background-color: #ffffff;
-  color: #8f2444;
+  color: #850731;
   font-size: 0.8rem;
 }
 
 .btn__capacitacion-main-banner {
   background-color: #ffffff;
-  color: #840731;
+  color: #850731;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 15px 30px;

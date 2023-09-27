@@ -256,7 +256,7 @@ html {
 
 /* ! INTERNADO <---------------- */
 .internado {
-  background: linear-gradient(#81062d, #6c0526);
+  background: linear-gradient(#850731, #6c0526);
   color: #fff;
   /* width: 80%; */
   padding-inline: 15%;
@@ -297,7 +297,7 @@ html {
 
 .btn__internado {
   background-color: #ffffff;
-  color: #82072e;
+  color: #850731;
   font-size: 1.1rem;
   padding: 15px 30px;
 }
@@ -337,7 +337,7 @@ html {
 .talleres__header {
   font-size: 3rem;
   font-weight: 700;
-  color: #830731;
+  color: #850731;
 }
 
 .talleres__paragraph {
