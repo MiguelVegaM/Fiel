@@ -10,7 +10,7 @@
   background: linear-gradient(90deg, #850731 0%, #63011e 100%);
   color: #fff;
   height: 545px;
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
   transform-style: preserve-3d;
   z-index: -1;
@@ -271,7 +271,7 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .nosotros-banner--rojo {
     padding-inline: 10%;
     .nosotros-banner--rojo__wrapper {

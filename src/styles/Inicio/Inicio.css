@@ -271,9 +271,9 @@
 
 .entrenamiento-online__box-text {
   text-align: start;
-  padding-left: 5rem;
-  padding-right: 12rem;
-  padding-block: 50px;
+  padding-left: 4rem;
+  padding-right: 10rem;
+  padding-block: 80px;
 }
 
 .entrnamiento-online__text--normal {
@@ -309,14 +309,14 @@
   /* margin-right: -125px; */
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   .entrenamiento-online__container {
     flex-direction: column;
   }
   .entrenamiento-online__box-text {
     justify-content: center;
     text-align: center;
-    padding-inline: 0px;
+    padding-inline: 100px;
   }
   .entrenamiento-online__box-logo {
     justify-content: center;
@@ -383,9 +383,10 @@
   font-weight: 700;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .entrenamiento__card {
     flex-direction: column;
+    width: 60%;
   }
   .entrenamiento__card-image {
     height: 550px;
@@ -649,9 +650,8 @@
   color: #7f7f7f;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
   .carousel .carousel-item {
-    /* height: 70vh; */
     background-color: #0f0f0f;
   }
   .testimonios__testimonio {
