@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 import {
   Alianzas,
-  ContactoWhats,
   DisclaimerDonar,
   Footer,
   MiniHeader,
@@ -16,36 +15,25 @@ import {
 import Button from "../UI/Buttons/Button";
 
 import "../styles/Entrenamientos/Entrenamientos.css";
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export function EntrenamientosHeader() {
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    // console.log("holas");
-  }
+  // function openNav() {
+  //   document.getElementById("mySidenav").style.width = "250px";
 
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    // console.log("adios");
-  }
+  // }
+
+  // function closeNav() {
+  //   document.getElementById("mySidenav").style.width = "0";
+
+  // }
 
   return (
-    <div
-      onMouseOver={openNav}
-      onMouseOut={closeNav}
-      className="capacitacion container-fluid"
-    >
-      <div id="mySidenav" className="sidenav">
-        {/* <a
-          href="javascript:void(0)"
-          className="closebtn"
-          onClick={closeNav}
-        >
-          &times;
-        </a> */}
-        <a href="#entrenamientos-online">Entrenamientos Online</a>
+    <div className="capacitacion container-fluid">
+      <div className="sidenav">
+        {/* <a href="#entrenamientos-online">Entrenamientos Online</a>
         <a href="#plan-habana">Entrenamientos Presenciales</a>
-        <a href="#talleres">Talleres</a>
+        <a href="#talleres">Talleres</a> */}
       </div>
       <div className="capacitacion-container">
         <h1 className="entrenamientos__header">CAPACITACIÓN</h1>
@@ -104,11 +92,11 @@ export function EntrenamientosEntrenamientosOnline() {
               retroalimentación.
             </p>
             <div className="entrenamientos-entrenamiento__button-container-box">
-              <NavLink to="/recursos">
+              <HashLink to="#contacto">
                 <Button specificClass="btn__entrenamientos-entrenamientos-online--rojo">
-                  ACCESO A RECURSOS
+                  PEDIR INFO
                 </Button>
-              </NavLink>
+              </HashLink>
               <a href="#contacto">
                 <Button specificClass="btn__entrenamientos-entrenamientos-online--gris">
                   APLICAR AHORA
@@ -128,7 +116,9 @@ export function PlanHabana() {
       <div className="plan-habana-banner container-fluid">
         <div className="row">
           <div className="plan-habana-banner__text col-lg-6">
-            <h1 className="plan-habana-banner__header">PLAN HABANA</h1>
+            <h1 className="plan-habana-banner__header">
+              Conoce nuestro trabajo en Cuba
+            </h1>
             <p className="modalidad">
               Modalidad:{" "}
               <span className="plan-habana-banner--bold">Presencial,</span>{" "}
@@ -233,64 +223,69 @@ export function PlanHabana() {
 export function Internado() {
   return (
     <div>
-      <div className="internado">
-        <div className="internado__header">
-          <h1 className="internado__header-text">Programa de Internado</h1>
-          <img
-            className="internado__header-logo"
-            src="/images/entrenamientos/logo-corto3.png"
-            alt="Logo corto Predica Fiel"
-          />
-        </div>
-        <div className="internado__text">
-          <p className="internado__paragraph">
-            El objetivo del programa de internado, patrocinado por Prédica Fiel
-            en alianza con Ministerios Nueva Vida, es proveer un entrenamiento
-            práctico a jóvenes que tengan inquietudes en cuanto al ministerio a
-            tiempo completo. Durante el tiempo de internado reciben un
-            entrenamiento intenso en el manejo adecuado de las Escrituras, algo
-            a lo cuál deberán entregarse por el resto de sus vidas si Dios les
-            ha llamado al ministerio. También serán expuestos a diferentes
-            facetas del ministerio, podrán experimentar los retos que el
-            ministerio del evangelio presupone para aquellos que son llamados
-            para esta tarea.
-          </p>
-          <p className="internado__paragraph">
-            Aquellos interesados, deben disponer de tiempo completo para este
-            programa. Las posibilidades de entrar son limitadas debido a los
-            recursos necesarios. No obstante, si usted es alguien que tiene
-            inquietudes en cuanto al ministerio, le animamos a comenzar el
-            proceso de aplicación mediante el enlace provisto a continuación.
-          </p>
-        </div>
-        <div className="internado__footer">
-          <a href="#contacto">
-            <Button specificClass="btn__internado">APLICAR AHORA</Button>
-          </a>
-          <div className="internado__footer-text">
-            Plan Habana, Modalidad Presencial, Cuba
+      <div className="container-fluid">
+        <div className="internado row">
+          <div className="col-12 col-md-6">
+            <div className="internado__header">
+              <h1 className="internado__header-text">Programa de Internado</h1>
+              <img
+                className="internado__header-logo"
+                src="/images/entrenamientos/logo-corto3.png"
+                alt="Logo corto Predica Fiel"
+              />
+            </div>
+            <div className="internado__text">
+              <p className="internado__paragraph">
+                El objetivo del programa de internado, patrocinado por Prédica
+                Fiel en alianza con Ministerios Nueva Vida, es proveer un
+                entrenamiento práctico a jóvenes que tengan inquietudes en
+                cuanto al ministerio a tiempo completo. Durante el tiempo de
+                internado reciben un entrenamiento intenso en el manejo adecuado
+                de las Escrituras, algo a lo cuál deberán entregarse por el
+                resto de sus vidas si Dios les ha llamado al ministerio. También
+                serán expuestos a diferentes facetas del ministerio, podrán
+                experimentar los retos que el ministerio del evangelio presupone
+                para aquellos que son llamados para esta tarea.
+              </p>
+              <p className="internado__paragraph">
+                Aquellos interesados, deben disponer de tiempo completo para
+                este programa. Las posibilidades de entrar son limitadas debido
+                a los recursos necesarios. No obstante, si usted es alguien que
+                tiene inquietudes en cuanto al ministerio, le animamos a
+                comenzar el proceso de aplicación mediante el enlace provisto a
+                continuación.
+              </p>
+            </div>
+            <div className="internado__footer row">
+              <a href="#contacto" className="col-12 col-lg-6">
+                <Button specificClass="btn__internado">APLICAR AHORA</Button>
+              </a>
+              <div className="internado__footer-text col-12 col-lg-6">
+                Plan Habana, Modalidad Presencial, Cuba
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="internado__images-container row">
-          <div className="col-6">
-            <img
-              className="internado__image"
-              src="/images/entrenamientos/banner10.jpg"
-              alt=""
-            />
-          </div>
-          <div className="col-6">
-            <img
-              className="internado__image"
-              src="/images/entrenamientos/Foto.jpg"
-              alt=""
-            />
+          <div className="internado__images-container col-12 col-md-6">
+            <div>
+              <img
+                className="internado__image"
+                src="/images/entrenamientos/banner10.jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                className="internado__image"
+                src="/images/entrenamientos/Foto.jpg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
       <div className="talleres row" id="talleres">
         {/* <div className="talleres__wrapper"> */}
-        <div className="talleres__text col-12 col-lg-8 nopadding">
+        <div className="talleres__text col-12 col-lg-7 nopadding">
           <div className="talleres__header">TALLERES</div>
           <div className="talleres__paragraph">
             El propósito de los talleres es ayudar a los participantes a crecer
@@ -299,15 +294,15 @@ export function Internado() {
             la Palabra de Dios es poderosa, y con entusiasmo de enseñarla a sus
             congregaciones.
           </div>
-          <a href="#contacto">
+          <a className="btn__talleres-container" href="#contacto">
             <Button specificClass="btn__talleres">MÁS INFORMACIÓN</Button>
           </a>
         </div>
 
-        <div className="col-12 col-lg-4 nopadding">
+        <div className="talleres__image-container col-12 col-lg-5 nopadding">
           <img
             className="talleres__image"
-            src="/images/entrenamientos/ponente-escenario-frente-sala-vista-posterior-audiencia-accion-puesta.png"
+            src="/images/entrenamientos/ponente-escenario-frente-sala-vista-posterior-audiencia-accion-puesta.jpg"
             alt=""
           />
         </div>
@@ -338,7 +333,7 @@ function Entrenamientos(props) {
       <PlanHabana />
       <Internado />
       <Alianzas />
-      <ContactoWhats />
+      {/* <ContactoWhats /> */}
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />

@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import {
   Alianzas,
-  ContactoWhats,
   DisclaimerDonar,
   Footer,
   MiniFooter,
@@ -856,26 +855,19 @@ export function RecursosMain() {
               <div className="recursos__miniatura-text">Audios</div>
               {/* </button> */}
             </div>
-            <div
+            {/* <div
               id="miniImgArticulo"
               className="col-12 col-md-4 recursos__miniatura-container"
             >
-              {/* <button value={"articulo"} id={"articulo"} onClick={handleOnRadio}> */}
               <img
                 className="recursos__miniatura-img
                             "
                 id="miniImgArticulo"
                 src="images/recursos/IMAGEN_ARTICULO.png"
-                // {
-                //   recursoFiltrado.articulo
-                //     ? "images/recursos/FILTROS/RECURSOS_ARTICULOS/IMAGEN_ARTICULO_FILTRADO.png"
-                //     : "images/recursos/IMAGEN_ARTICULO.png"
-                // }
                 alt="Miniatura sección artículos"
               />
               <div className="recursos__miniatura-text">Artículos</div>
-              {/* </button> */}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -911,7 +903,7 @@ export function RecursosMain() {
                         <label htmlFor="audio">Audio</label>
                       </div>
 
-                      <div className="recursos__radio-element">
+                      {/* <div className="recursos__radio-element">
                         <input
                           onChange={handleOnRadio}
                           className="radio-check"
@@ -921,7 +913,7 @@ export function RecursosMain() {
                           value="articulo"
                         />
                         <label htmlFor="articulo">Artículo</label>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="recursos__selectors">
@@ -1009,9 +1001,9 @@ export function RecursosMain() {
                           <p>{recursosObj.fuente}</p>
                         </div>
                       </div>
-                      <div className="recrusos__card-length">
+                      {/* <div className="recrusos__card-length">
                         {recursosObj.length} Min
-                      </div>
+                      </div> */}
                     </div>
                   </Link>
                 </motion.div>
@@ -1068,7 +1060,7 @@ function Recursos(props) {
       <Navbar />
       <RecursosMain />
       <Alianzas />
-      <ContactoWhats />
+      {/* <ContactoWhats /> */}
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />

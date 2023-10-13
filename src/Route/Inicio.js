@@ -16,7 +16,7 @@ import {
   FaPlayCircle,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { FaChevronCircleUp, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 import Button from "../UI/Buttons/Button";
@@ -150,7 +150,11 @@ export function Navbar(props) {
                 RECURSOS
               </NavLink>
             </li>
-            <HashLink className="dropdown-item" to="#contacto" href="#contacto">
+            <HashLink
+              className="dropdown-item btn__navbar-container"
+              to="#contacto"
+              href="#contacto"
+            >
               <Button specificClass="btn__navbar">CONTACTO</Button>
             </HashLink>
           </ul>
@@ -169,17 +173,17 @@ export function MainBanner(props) {
         alt=""
       />
       <div className="main-banner__text">
-        <h2 className="main-banner__subtitle">Entrenando a la próxima</h2>
+        <h2 className="main-banner__subtitle">Creemos que</h2>
         <h1 className="main-banner__title">
-          Generación de <span>Expositores</span> <br></br> de{" "}
-          <span>la Biblia.</span>
+          la <span>Salud</span> de la <span>Iglesia</span>
         </h1>
         <div className="main-banner__line"></div>
         <p className="main-banner__paragraph">
-          Fielmente comprometidos con la predicación de evangelio de Jesucristo,
-          entrenando a expositores bíblicos en el mundo hispano parlante.
+          está ligada a la fiel exposición de la Biblia, estamos enfocados a
+          formar, capacitar y entrenar a predicadores y maestros de la Palabra
+          de Dios, preparándolos para el ministerio.
         </p>
-        <NavLink to="/entrenamientos">
+        <NavLink to="/nosotros">
           <Button specificClass="btn__main-banner">CONOCE MÁS</Button>
         </NavLink>
       </div>
@@ -191,7 +195,7 @@ export function EntrenamientosOnline(props) {
   return (
     <div className="entrenamiento">
       <div className="entrenamiento-online">
-        <div className="entrenamiento-online__container">
+        {/* <div className="entrenamiento-online__container">
           <div className="entrenamiento-online__box-text">
             <p className="entrnamiento-online__text--normal">
               Creemos que la salud de la Iglesia está ligada a la fiel
@@ -223,7 +227,7 @@ export function EntrenamientosOnline(props) {
               </NavLink>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="entrenamiento__card">
           <img
             className="entrenamiento__card-image"
@@ -275,7 +279,7 @@ export function EntrenamientosOnline(props) {
 export function EntrenamientosPresenciales(props) {
   return (
     <div className="entrenamiento-presencial">
-      <img src="/images/inicio/banner-3.png" alt="" />
+      {/* <img src="/images/inicio/banner-3.png" alt="" /> */}
       <div className="entrenamiento-presencial__text">
         <h1>ENTRENAMIENTOS PRESENCIALES</h1>
         <p className="entrenamieto-presencial__paragraph">Plan Habana, Cuba.</p>
@@ -313,7 +317,7 @@ export function RecursosVid(props) {
         <div className="recursos__header-logo">
           <h1 className="recursos__header-title">
             DISFRUTA DE TODOS LOS RECURSOS
-            <span>QUE TENEMOS PARA TI.</span>
+            {/* <span>QUE TENEMOS PARA TI.</span> */}
           </h1>
           <div>
             <img
@@ -324,10 +328,10 @@ export function RecursosVid(props) {
           </div>
         </div>
         <div className="line--gray"></div>
-        <p className="recursos__text">
+        {/* <p className="recursos__text">
           Disponemos de una gran variedad de recursos en video, audio y
           articulos preparados para tu formación como expositor biblico
-        </p>
+        </p> */}
       </div>
       <div className="container">
         <div className="row">
@@ -670,7 +674,164 @@ export function Alianzas(props) {
   );
 }
 
-export function ContactoWhats(props) {
+// export function ContactoWhats(props) {
+//   const {
+//     register,
+//     handleSubmit,
+//     reset,
+//     formState: { errors },
+//   } = useForm({
+//     defaultValues: { yes_i_understand: false },
+//   });
+//   const sendEmail = (formData) => {
+//     emailjs
+//       .send(
+//         "service_nvx5h12",
+//         "template_0xq23fl",
+//         formData,
+//         "67xUYJ6zrwMgo-AtQ"
+//       )
+//       .then(
+//         (result) => {
+//           console.log(result.text);
+//         },
+//         (error) => {
+//           console.log(error.text);
+//         }
+//       );
+//     reset();
+//   };
+
+//   return (
+//     <div id="contacto" className="contacto">
+//       <div className="contacto__container">
+//         <div className="contacto__text">
+//           <div className="contacto__logo">
+//             <img
+//               className="contacto__image"
+//               src="/images/inicio/logo-largo-blanco.png"
+//               alt="Fiel Logo"
+//             />
+//           </div>
+//           <h1 className="contacto__header">CONTÁCTANOS</h1>
+//           <p className="contacto__paragraph">
+//             <span className="contacto__paragraph--bold">Entrenando</span> a la
+//             próxima generación de{" "}
+//             <span className="contacto__paragraph--bold">Expositores</span> de la{" "}
+//             <span className="contacto__paragraph--bold">Biblia.</span>
+//           </p>
+//           <button className="contacto__whatsapp">
+//             <a
+//               className="whatsapp-link"
+//               href="https://www.whatsapp.com"
+//               target="_blank"
+//               rel="noreferrer"
+//             >
+//               <IconContext.Provider value={{ className: "whatsapp-icon" }}>
+//                 <div>
+//                   <FaWhatsapp />
+//                 </div>
+//               </IconContext.Provider>
+//               <div className="whatsapp-text">WhatsApp</div>
+//             </a>
+//           </button>
+//         </div>
+//         <div className="contacto__form-container">
+//           <p className="contacto__form-paragraph">
+//             Para brindarte atención personaliza compartenos tus datos y pronto
+//             nos pondremos en contacto contigo
+//           </p>
+
+//           <form onSubmit={handleSubmit(sendEmail)} className="contacto__form">
+//             <div className="contacto__inputs-container">
+//               <input
+//                 {...register("de_nombre", {
+//                   required: true,
+//                 })}
+//                 id="de_nombre"
+//                 className="contacto__input"
+//                 type="text"
+//                 placeholder="Nombre"
+//                 name="de_nombre"
+//               />
+//               {errors.de_nombre?.type === "required" && (
+//                 <p className="input-errors">Este campo es requerido</p>
+//               )}
+//               <input
+//                 {...register("de_apellido", {
+//                   required: true,
+//                 })}
+//                 id="de_apellido"
+//                 className="contacto__input"
+//                 type="text"
+//                 placeholder="Apellido"
+//                 name="de_apellido"
+//               />
+//               {errors.de_apellido?.type === "required" && (
+//                 <p className="input-errors">Este campo es requerido</p>
+//               )}
+//               <input
+//                 {...register("de_telefono", {
+//                   required: true,
+//                 })}
+//                 id="de_telefono"
+//                 className="contacto__input"
+//                 type="tel"
+//                 placeholder="Teléfono"
+//                 name="de_telefono"
+//               />
+//               {errors.de_telefono?.type === "required" && (
+//                 <p className="input-errors">Este campo es requerido</p>
+//               )}
+//               <input
+//                 {...register("de_mail", {
+//                   required: true,
+//                   pattern:
+//                     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+//                 })}
+//                 id="de_mail"
+//                 className="contacto__input"
+//                 type="email"
+//                 placeholder="E-mail"
+//                 name="de_mail"
+//               />
+//               {errors.de_mail?.type === "required" && (
+//                 <p className="input-errors">Este campo es requerido</p>
+//               )}
+//             </div>
+//             <textarea
+//               {...register("mensaje", {
+//                 required: true,
+//                 maxLength: 140,
+//               })}
+//               id="mensaje"
+//               className="contacto__input-large"
+//               type="text"
+//               placeholder="Mensaje"
+//               name="mensaje"
+//             ></textarea>
+//             {errors.mensaje?.type === "required" && (
+//               <p className="input-errors">Este campo es requerido</p>
+//             )}
+//             {errors.Mensaje?.type === "maxLength" && (
+//               <p className="input-errors">Maximo 140 caracteres</p>
+//             )}
+//             <div className="contacto__button-container form_button">
+//               <input
+//                 className="button-component"
+//                 type="submit"
+//                 value="ENVIAR"
+//                 id="btn__form"
+//               />
+//             </div>
+//           </form>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+export function Footer(props) {
   const {
     register,
     handleSubmit,
@@ -699,273 +860,143 @@ export function ContactoWhats(props) {
   };
 
   return (
-    <div id="contacto" className="contacto">
-      <div className="contacto__container">
-        <div className="contacto__text">
-          <div className="contacto__logo">
-            <img
-              className="contacto__image"
-              src="/images/inicio/logo-largo-blanco.png"
-              alt="Fiel Logo"
-            />
-          </div>
-          <h1 className="contacto__header">CONTÁCTANOS</h1>
-          <p className="contacto__paragraph">
-            <span className="contacto__paragraph--bold">Entrenando</span> a la
-            próxima generación de{" "}
-            <span className="contacto__paragraph--bold">Expositores</span> de la{" "}
-            <span className="contacto__paragraph--bold">Biblia.</span>
-          </p>
-          <button className="contacto__whatsapp">
-            <a
-              className="whatsapp-link"
-              href="https://www.whatsapp.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <IconContext.Provider value={{ className: "whatsapp-icon" }}>
-                <div>
-                  <FaWhatsapp />
-                </div>
-              </IconContext.Provider>
-              <div className="whatsapp-text">WhatsApp</div>
-            </a>
-          </button>
-        </div>
-        <div className="contacto__form-container">
-          <p className="contacto__form-paragraph">
-            Para brindarte atención personaliza compartenos tus datos y pronto
-            nos pondremos en contacto contigo
-          </p>
-
-          {/*----------------------------------------FORMULARIO */}
-          <form onSubmit={handleSubmit(sendEmail)} className="contacto__form">
-            <div className="contacto__inputs-container">
-              <input
-                {...register("de_nombre", {
-                  required: true,
-                })}
-                id="de_nombre"
-                className="contacto__input"
-                type="text"
-                placeholder="Nombre"
-                name="de_nombre"
-              />
-              {errors.de_nombre?.type === "required" && (
-                <p className="input-errors">Este campo es requerido</p>
-              )}
-              <input
-                {...register("de_apellido", {
-                  required: true,
-                })}
-                id="de_apellido"
-                className="contacto__input"
-                type="text"
-                placeholder="Apellido"
-                name="de_apellido"
-              />
-              {errors.de_apellido?.type === "required" && (
-                <p className="input-errors">Este campo es requerido</p>
-              )}
-              <input
-                {...register("de_telefono", {
-                  required: true,
-                })}
-                id="de_telefono"
-                className="contacto__input"
-                type="tel"
-                placeholder="Teléfono"
-                name="de_telefono"
-              />
-              {errors.de_telefono?.type === "required" && (
-                <p className="input-errors">Este campo es requerido</p>
-              )}
-              <input
-                {...register("de_mail", {
-                  required: true,
-                  pattern:
-                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                })}
-                id="de_mail"
-                className="contacto__input"
-                type="email"
-                placeholder="E-mail"
-                name="de_mail"
-              />
-              {errors.de_mail?.type === "required" && (
-                <p className="input-errors">Este campo es requerido</p>
-              )}
-            </div>
-            <textarea
-              {...register("mensaje", {
-                required: true,
-                maxLength: 140,
-              })}
-              id="mensaje"
-              className="contacto__input-large"
-              type="text"
-              placeholder="Mensaje"
-              name="mensaje"
-            ></textarea>
-            {errors.mensaje?.type === "required" && (
-              <p className="input-errors">Este campo es requerido</p>
-            )}
-            {errors.Mensaje?.type === "maxLength" && (
-              <p className="input-errors">Maximo 140 caracteres</p>
-            )}
-            <div className="contacto__button-container form_button">
-              <input
-                className="button-component"
-                type="submit"
-                value="ENVIAR"
-                id="btn__form"
-              />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function Footer(props) {
-  return (
     <div className="footer">
       <div className="footer__summary">
-        <div className="footer__contactanos">
-          <p className="footer__header-contactanos">Contáctanos</p>
-          <ul className="footer__contactanos-list">
-            <li className="footer__contactanos-list-item">
-              <div className="footer__contactanos-icon">
-                <IconContext.Provider value={{ className: "whatsapp-icon" }}>
-                  <div>
-                    <FaWhatsapp />
-                  </div>
-                </IconContext.Provider>
-              </div>
-              <div className="footer__contactanos-text">
-                <a
-                  className="footer__item-link"
-                  href="https://www.whatsapp.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  00 0000 0000
-                </a>
-              </div>
-            </li>
-            <li className="footer__contactanos-list-item">
-              <div className="footer__contactanos-icon">
-                <IconContext.Provider value={{ className: "whatsapp-icon" }}>
-                  <div className="footer__contactanos-icon-phone">
-                    <FaPhoneAlt />
-                  </div>
-                </IconContext.Provider>
-              </div>
-              <div className="footer__contactanos-text">
-                <a className="footer__item-link" href="tel:+1234567890">
-                  +1234567890
-                </a>
-              </div>
-            </li>
-            <li className="footer__contactanos-list-item">
-              <div className="footer__contactanos-icon">
-                <IconContext.Provider value={{ className: "whatsapp-icon" }}>
-                  <div>
-                    <GrMail />
-                  </div>
-                </IconContext.Provider>
-              </div>
-              <div className="footer__contactanos-text">
-                <a
-                  className="footer__item-link"
-                  href="mailto:info@predicafiel.com"
-                >
-                  info@predicafiel
-                </a>
-              </div>
-            </li>
-            <li className="footer__contactanos-list-item">
-              <ul className="footer__list-icons">
-                <li>
-                  <div className="footer__icon-circle">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="footer__icon-link"
-                      href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
-                    >
-                      <FaYoutube />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="footer__icon-circle">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="footer__icon-link"
-                      href="https://twitter.com/PredicaFiel"
-                    >
-                      <FaTwitter />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="footer__icon-circle">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="footer__icon-link"
-                      href="https://www.facebook.com/EntrenandoExpositores/"
-                    >
-                      <FaFacebook />
-                    </a>
-                  </div>
-                </li>
-                <li>
-                  <div className="footer__icon-circle">
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      className="footer__icon-link"
-                      href="https://www.instagram.com/predicafiel/"
-                    >
-                      <FaInstagram />
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div className="footer__accesos-directos">
-          <p className="footer__header-accesos-directos">Accesos Directos</p>
-          <div className="footer__accesos-directos-container">
-            <div className="footer__accesos-directos1">
-              <ul className="footer__accesos-directos-list">
-                <li className="footer__accesos-directos-list-item">
-                  <NavLink to="/" className="footer__accesos-directos-link">
-                    Inicio
-                  </NavLink>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/nosotros"
-                    className="footer__accesos-directos-link"
+        <div className="footer__contactanosaccesos">
+          <div className="footer__contactanos">
+            <p className="footer__header-contactanos">Contáctanos</p>
+            <ul className="footer__contactanos-list">
+              <li className="footer__contactanos-list-item">
+                <div className="footer__contactanos-icon">
+                  <IconContext.Provider value={{ className: "whatsapp-icon" }}>
+                    <div>
+                      <FaWhatsapp />
+                    </div>
+                  </IconContext.Provider>
+                </div>
+                <div className="footer__contactanos-text">
+                  <a
+                    className="footer__item-link"
+                    href="https://www.whatsapp.com"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    Nosotros
-                  </NavLink>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/entrenamientos"
-                    className="footer__accesos-directos-link"
+                    00 0000 0000
+                  </a>
+                </div>
+              </li>
+              <li className="footer__contactanos-list-item">
+                <div className="footer__contactanos-icon">
+                  <IconContext.Provider value={{ className: "whatsapp-icon" }}>
+                    <div className="footer__contactanos-icon-phone">
+                      <FaPhoneAlt />
+                    </div>
+                  </IconContext.Provider>
+                </div>
+                <div className="footer__contactanos-text">
+                  <a className="footer__item-link" href="tel:+1234567890">
+                    +1234567890
+                  </a>
+                </div>
+              </li>
+              <li className="footer__contactanos-list-item">
+                <div className="footer__contactanos-icon">
+                  <IconContext.Provider value={{ className: "whatsapp-icon" }}>
+                    <div>
+                      <GrMail />
+                    </div>
+                  </IconContext.Provider>
+                </div>
+                <div className="footer__contactanos-text">
+                  <a
+                    className="footer__item-link"
+                    href="mailto:info@predicafiel.com"
                   >
-                    Entrenamientos
-                  </NavLink>
-                </li>
-                {/* ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
+                    info@predicafiel
+                  </a>
+                </div>
+              </li>
+              <li className="footer__contactanos-list-item">
+                <ul className="footer__list-icons">
+                  <li>
+                    <div className="footer__icon-circle">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="footer__icon-link"
+                        href="https://www.youtube.com/channel/UCUPxK7QD67w6nq4CZEwIrnQ"
+                      >
+                        <FaYoutube />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="footer__icon-circle">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="footer__icon-link"
+                        href="https://twitter.com/PredicaFiel"
+                      >
+                        <FaTwitter />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="footer__icon-circle">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="footer__icon-link"
+                        href="https://www.facebook.com/EntrenandoExpositores/"
+                      >
+                        <FaFacebook />
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="footer__icon-circle">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        className="footer__icon-link"
+                        href="https://www.instagram.com/predicafiel/"
+                      >
+                        <FaInstagram />
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__accesos-directos">
+            <p className="footer__header-accesos-directos">Accesos Directos</p>
+            <div className="footer__accesos-directos-container">
+              <div className="footer__accesos-directos1">
+                <ul className="footer__accesos-directos-list">
+                  <li className="footer__accesos-directos-list-item">
+                    <NavLink to="/" className="footer__accesos-directos-link">
+                      Inicio
+                    </NavLink>
+                  </li>
+                  <li className="footer__accesos-directos-list-item">
+                    <NavLink
+                      to="/nosotros"
+                      className="footer__accesos-directos-link"
+                    >
+                      Nosotros
+                    </NavLink>
+                  </li>
+                  <li className="footer__accesos-directos-list-item">
+                    <NavLink
+                      to="/entrenamientos"
+                      className="footer__accesos-directos-link"
+                    >
+                      Entrenamientos
+                    </NavLink>
+                  </li>
+                  {/* ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/eventos"
                     className="footer__accesos-directos-link"
@@ -973,15 +1004,15 @@ export function Footer(props) {
                     Eventos
                   </NavLink>
                 </li> */}
-                <li className="footer__accesos-directos-list-item">
-                  <NavLink
-                    to="/recursos"
-                    className="footer__accesos-directos-link"
-                  >
-                    Recursos
-                  </NavLink>
-                </li>
-                {/*  ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
+                  <li className="footer__accesos-directos-list-item">
+                    <NavLink
+                      to="/recursos"
+                      className="footer__accesos-directos-link"
+                    >
+                      Recursos
+                    </NavLink>
+                  </li>
+                  {/*  ^ BAJA POR EL MOMENTO ^ <li className="footer__accesos-directos-list-item">
                   <NavLink
                     to="/cobime"
                     className="footer__accesos-directos-link"
@@ -989,64 +1020,156 @@ export function Footer(props) {
                     COBIME
                   </NavLink>
                 </li> */}
-                <li className="footer__accesos-directos-list-item">
-                  <HashLink
-                    smooth
-                    to="/nosotros#declaracion-doctrinal"
-                    href="#declaracion-doctrinal"
-                    className="footer__accesos-directos-link"
-                  >
-                    Declaración Doctrinal
-                  </HashLink>
-                </li>
-              </ul>
-            </div>
-            <div className="footer__accesos-directos2">
-              <ul className="footer__accesos-directos-list">
-                <li className="footer__accesos-directos-list-item">
-                  <HashLink
-                    to="/nosotros#nuestro-equipo"
-                    className="footer__accesos-directos-link"
-                  >
-                    Equipo
-                  </HashLink>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <a href="#alianzas" className="footer__accesos-directos-link">
-                    Alianzas
-                  </a>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <HashLink
-                    to="/entrenamientos#talleres"
-                    href=""
-                    className="footer__accesos-directos-link"
-                  >
-                    Talleres
-                  </HashLink>
-                </li>
-                <li className="footer__accesos-directos-list-item">
-                  <HashLink
-                    to="/entrenamientos#plan-habana"
-                    href=""
-                    className="footer__accesos-directos-link"
-                  >
-                    Plan Habana
-                  </HashLink>
-                </li>
-                {/* <li className="footer__accesos-directos-list-item">
+                  <li className="footer__accesos-directos-list-item">
+                    <HashLink
+                      smooth
+                      to="/nosotros#declaracion-doctrinal"
+                      href="#declaracion-doctrinal"
+                      className="footer__accesos-directos-link"
+                    >
+                      Declaración Doctrinal
+                    </HashLink>
+                  </li>
+                </ul>
+              </div>
+              <div className="footer__accesos-directos2">
+                <ul className="footer__accesos-directos-list">
+                  <li className="footer__accesos-directos-list-item">
+                    <HashLink
+                      to="/nosotros#nuestro-equipo"
+                      className="footer__accesos-directos-link"
+                    >
+                      Equipo
+                    </HashLink>
+                  </li>
+                  <li className="footer__accesos-directos-list-item">
+                    <HashLink
+                      to="#alianzas"
+                      className="footer__accesos-directos-link"
+                    >
+                      Alianzas
+                    </HashLink>
+                  </li>
+                  <li className="footer__accesos-directos-list-item">
+                    <HashLink
+                      to="/entrenamientos#talleres"
+                      href=""
+                      className="footer__accesos-directos-link"
+                    >
+                      Talleres
+                    </HashLink>
+                  </li>
+                  <li className="footer__accesos-directos-list-item">
+                    <HashLink
+                      to="/entrenamientos#plan-habana"
+                      href=""
+                      className="footer__accesos-directos-link"
+                    >
+                      Plan Habana
+                    </HashLink>
+                  </li>
+                  {/* <li className="footer__accesos-directos-list-item">
                   <a href="" className="footer__accesos-directos-link">
                     Residentes (SEND)
                   </a>
                 </li> */}
-              </ul>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div className="footer__button-up">
-          <HashLink to="#header">
-            <FaChevronCircleUp className="footer__button-up-icon" />
-          </HashLink>
+        <div className="footer__form" id="contacto">
+          <div className="contacto__form-container">
+            <p className="contacto__form-paragraph">
+              Para brindarte atención personaliza compartenos tus datos y pronto
+              nos pondremos en contacto contigo
+            </p>
+
+            {/*----------------------------------------FORMULARIO */}
+            <form onSubmit={handleSubmit(sendEmail)} className="contacto__form">
+              <div className="contacto__inputs-container">
+                <input
+                  {...register("de_nombre", {
+                    required: true,
+                  })}
+                  id="de_nombre"
+                  className="contacto__input"
+                  type="text"
+                  placeholder="Nombre"
+                  name="de_nombre"
+                />
+                {errors.de_nombre?.type === "required" && (
+                  <p className="input-errors">Este campo es requerido</p>
+                )}
+                <input
+                  {...register("de_apellido", {
+                    required: true,
+                  })}
+                  id="de_apellido"
+                  className="contacto__input"
+                  type="text"
+                  placeholder="Apellido"
+                  name="de_apellido"
+                />
+                {errors.de_apellido?.type === "required" && (
+                  <p className="input-errors">Este campo es requerido</p>
+                )}
+                <input
+                  {...register("de_telefono", {
+                    required: true,
+                  })}
+                  id="de_telefono"
+                  className="contacto__input"
+                  type="tel"
+                  placeholder="Teléfono"
+                  name="de_telefono"
+                />
+                {errors.de_telefono?.type === "required" && (
+                  <p className="input-errors">Este campo es requerido</p>
+                )}
+                <input
+                  {...register("de_mail", {
+                    required: true,
+                    pattern:
+                      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                  })}
+                  id="de_mail"
+                  className="contacto__input"
+                  type="email"
+                  placeholder="E-mail"
+                  name="de_mail"
+                />
+                {errors.de_mail?.type === "required" && (
+                  <p className="input-errors">Este campo es requerido</p>
+                )}
+              </div>
+              <textarea
+                {...register("mensaje", {
+                  required: true,
+                  maxLength: 140,
+                })}
+                id="mensaje"
+                className="contacto__input-large"
+                type="text"
+                placeholder="Mensaje"
+                name="mensaje"
+              ></textarea>
+              {errors.mensaje?.type === "required" && (
+                <p className="input-errors">Este campo es requerido</p>
+              )}
+              {errors.Mensaje?.type === "maxLength" && (
+                <p className="input-errors">Maximo 140 caracteres</p>
+              )}
+              <div className="contacto__button-container form_button">
+                <input
+                  className="button-component"
+                  type="submit"
+                  value="ENVIAR"
+                  id="btn__form"
+                />
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -1062,12 +1185,12 @@ export function DisclaimerDonar(props) {
           <p className="disclaimer-donar__text">
             Prédica Fiel es una organización sin fines de lucro, adecuadamente
             registrada en el estado de Texas. Desarrollamos nuestro ministerio a
-            través de las contribuciones de cristianos y organi- zaciones que
-            dan con generosidad para que los siervos de Dios puedan ser
-            entrenados en el fiel manejo de las Escrituras. Si estima a bien
-            contribuir a nuestro ministerio, en el siguiente enlace encontrará
-            una manera sencilla para hacerlo. También puede contactarnos si así
-            lo desea. El Señor le bendiga.
+            través de las contribuciones de cristianos y organizaciones que dan
+            con generosidad para que los siervos de Dios puedan ser entrenados
+            en el fiel manejo de las Escrituras. Si estima a bien contribuir a
+            nuestro ministerio, en el siguiente enlace encontrará una manera
+            sencilla para hacerlo. También puede contactarnos si así lo desea.
+            El Señor le bendiga.
           </p>
         </div>
         <div className="donar">
@@ -1118,7 +1241,7 @@ function Inicio(props) {
       <Testimonios />
       {/* <Cobime /> */}
       <Alianzas />
-      <ContactoWhats />
+      {/* <ContactoWhats /> */}
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
