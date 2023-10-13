@@ -255,7 +255,7 @@
     background-position: center;
   }
   .main-banner__paragraph {
-    width: 30rem;
+    width: 25rem;
   }
 }
 
@@ -990,11 +990,11 @@
   flex-direction: column;
   height: fit-content;
 }
-
+/* 
 .footer__accesos-directos-container {
-  /* display: flex;
-  justify-content: flex-start; */
-}
+  display: flex;
+  justify-content: flex-start;
+} */
 
 .footer__accesos-directos-list {
   list-style: none;
