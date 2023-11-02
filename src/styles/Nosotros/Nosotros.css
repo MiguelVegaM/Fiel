@@ -424,6 +424,8 @@
     }
   }
   .nosotros__flotante--negro {
+    top: 400px;
+
     .text {
       width: 90%;
       font-size: 1.5rem;
