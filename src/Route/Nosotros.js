@@ -387,12 +387,12 @@ export function NosotrosBanner(props) {
               {/* // ^ card <-------------------- */}
               <div className="nuestro-equipo__card">
                 <img src="../images/nosotros/alexis.png" alt="Alexis Pérez" />
-                <h3>Alexis Pérez</h3>
-                <p>
+                <h4>Alexis Pérez</h4>
+                {/* <p>
                   Director del Ministerio Prédica Fiel. Ha servido como pastor
                   en Cuba desde 1999. En el 2008-2009 cursó estudios en Cornhill
                   Training Course, que pertenece a...
-                </p>
+                </p> */}
                 {/* //?               Modal */}
                 <AlexisModal
                   show={modalShowAlexis}
@@ -409,12 +409,12 @@ export function NosotrosBanner(props) {
               {/* // ^ card <-------------------- */}
               <div className="nuestro-equipo__card">
                 <img src="../images/nosotros/andy.png" alt="Andy Quesada" />
-                <h3>Andy Quesada</h3>
-                <p>
+                <h4>Andy Quesada</h4>
+                {/* <p>
                   Andy sirve como Director de Entrenamiento. Ha servido como
                   pastor enCuba desde el 2014 y ha estado involucrado en los
                   ministerios de enseñanza y adoración...
-                </p>
+                </p> */}
                 {/* //?               Modal */}
                 <AndyModal
                   show={modalShowAndy}
@@ -436,12 +436,12 @@ export function NosotrosBanner(props) {
                   src="../images/nosotros/lourdes.png"
                   alt="Lourdes Llorens"
                 />
-                <h3>Lourdes Llorens</h3>
-                <p>
+                <h4>Lourdes Llorens</h4>
+                {/* <p>
                   Lourdes Llorens supervisa nuestras iniciativas para mujeres.
                   Sirve junto a su esposo Alexis Pérez en Cuba. Desde 1999,
                   luego de haberse graduado en el Seminario Teológico...
-                </p>
+                </p> */}
                 <LourdesModal
                   show={modalShowLourdes}
                   onHide={() => setModalShowLourdes(false)}
@@ -456,12 +456,12 @@ export function NosotrosBanner(props) {
               {/* // ^ card <-------------------- */}
               <div className="nuestro-equipo__card">
                 <img src="../images/nosotros/dayan.png" alt="Dayán Frontela" />
-                <h3>Dayán Frontela</h3>
-                <p>
+                <h4>Dayán Frontela</h4>
+                {/* <p>
                   Dayán Frontela sirve como Administrador. Desde su conversión
                   ha estado involucrado en el servicio dentro de la iglesia. Es
                   diácono en la Iglesia Bautista Nueva Vida...
-                </p>
+                </p> */}
                 <DayanModal
                   show={modalShowDayan}
                   onHide={() => setModalShowDayan(false)}

@@ -186,10 +186,11 @@ html {
 
 .plan-habana-exposicion {
   padding-block: 80px;
-  width: 65%;
+  /* width: 65%; */
+  padding-inline: 18%;
   margin: 0 auto;
-  background-color: #0e0e0e;
-  color: #fff;
+  background: linear-gradient(#313131, #000);
+  color: #ffffff;
 }
 
 .plan-habana-exposicion__header {
@@ -370,7 +371,10 @@ html {
   }
 
   .plan-habana-exposicion {
-    width: 80%;
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .exposicion-p1 {
@@ -388,6 +392,12 @@ html {
   }
   .exposicion-p5 {
     font-size: 1rem;
+  }
+
+  .btn-plan-habana-exposicion-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .internado__footer-text {
@@ -415,7 +425,7 @@ html {
     font-size: 10vw;
   }
   .plan-habana-exposicion--big {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .row {
     max-width: 100%;

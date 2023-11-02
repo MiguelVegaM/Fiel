@@ -13,7 +13,7 @@ import {
   FaTwitter,
   FaFacebook,
   FaInstagram,
-  FaPlayCircle,
+  // FaPlayCircle,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -292,7 +292,7 @@ export function EntrenamientosPresenciales(props) {
             {" "}
             pero como dicen Las Escrituras: "¿Cómo, pues, invocarán a aquel en
             quien no han creído? ¿Y cómo creerán en aquel de quien no han oído?
-            ¿Y cómo oirán sin haber quien les predique? (Ro- manos 10:14).
+            ¿Y cómo oirán sin haber quien les predique? (Romanos 10:14).
           </span>{" "}
           A través de Plan Habana, capacitamos a pastores, maestros y líderes en
           cómo predicar el evangelio fielmente.
@@ -342,7 +342,7 @@ export function RecursosVid(props) {
                 className="recursos__vid-image"
                 alt="Vid 1"
               />
-              <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
+              {/* <FaPlayCircle className="recursos__play-button"></FaPlayCircle> */}
             </div>
           </div>
           <div className="col thumbnail">
@@ -352,7 +352,7 @@ export function RecursosVid(props) {
                 className="recursos__vid-image"
                 alt="Vid 2"
               />
-              <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
+              {/* <FaPlayCircle className="recursos__play-button"></FaPlayCircle> */}
             </div>
           </div>
           <div className="col thumbnail">
@@ -362,7 +362,7 @@ export function RecursosVid(props) {
                 className="recursos__vid-image"
                 alt="Vid 3"
               />
-              <FaPlayCircle className="recursos__play-button"></FaPlayCircle>
+              {/* <FaPlayCircle className="recursos__play-button"></FaPlayCircle> */}
             </div>
           </div>
         </div>

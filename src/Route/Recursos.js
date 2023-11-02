@@ -767,6 +767,10 @@ export function RecursosMain() {
 
   const handleOnLibroSelector = (libro) => {
     console.log(libro);
+    const idGeneros = document.getElementById("generos");
+    const idTalleres = document.getElementById("talleres");
+    idGeneros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
     if (libro === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -780,6 +784,10 @@ export function RecursosMain() {
 
   const handleOnGeneroSelector = (genero) => {
     console.log(genero);
+    const idLibros = document.getElementById("libros");
+    const idTalleres = document.getElementById("talleres");
+    idLibros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
     if (genero === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -792,6 +800,10 @@ export function RecursosMain() {
   };
 
   const handleOnTallerSelector = (taller) => {
+    const idLibros = document.getElementById("libros");
+    const idGeneros = document.getElementById("generos");
+    idLibros.selectedIndex = 0;
+    idGeneros.selectedIndex = 0;
     if (taller === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -807,6 +819,23 @@ export function RecursosMain() {
 
   console.log(datosFiltrados.length);
   // console.log(recursoFiltrado);
+
+  // ^ ------------------------------------------------------------- RESET FILTER
+
+  const resetFilter = (e) => {
+    e.preventDefault();
+    const idLibros = document.getElementById("libros");
+    const idGeneros = document.getElementById("generos");
+    const idTalleres = document.getElementById("talleres");
+    const nameRadio = document.getElementsByName("radiocheck");
+    idLibros.selectedIndex = 0;
+    idGeneros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
+    for (let i = 0; i < nameRadio.length; i++) nameRadio[i].checked = false;
+    setDatosFiltrados(recursosObj);
+  };
+
+  // ^ --------------------------------------------------------------------------
 
   return (
     <>
@@ -972,6 +1001,9 @@ export function RecursosMain() {
                           Apocalipsis, La Habana, 2019
                         </option>
                       </select>
+                      <div className="recursos__filter-btn">
+                        <button onClick={resetFilter}>Borrar Filtro</button>
+                      </div>
                     </div>
                   </div>
                 </div>

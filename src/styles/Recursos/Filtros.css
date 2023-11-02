@@ -3,12 +3,9 @@
   background-color: #000;
 }
 .video-frame {
-  /* border: 1px solid blue; */
-
   margin: 0 auto;
-
   height: 100%;
-  width: 80%;
+  width: 50%;
 }
 
 .video-info {
@@ -69,11 +66,14 @@
 
 @media (max-width: 1024px) {
   .video-frame {
-    width: 100%;
+    width: 70%;
   }
 }
 
 @media (max-width: 768px) {
+  .video-frame {
+    width: 100%;
+  }
   .video-filtro__title {
     & h3 {
       font-size: 5vw;

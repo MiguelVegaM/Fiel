@@ -421,7 +421,10 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  .entrenamiento__card-image {
+    height: 300px;
+  }
   .entrenamiento__card-title {
     font-size: 2rem;
   }
@@ -997,7 +1000,7 @@
 } */
 
 .footer__accesos-directos-list {
-  list-style: none;
+  /* list-style: none; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1048,7 +1051,7 @@
   justify-content: space-between;
   margin-bottom: 15px;
   background-color: #0d0d0d;
-  border: 1.5px solid #1f1f1f;
+  border: 1.5px solid #bebebe;
   border-radius: 5px;
   color: #fff;
   /* width: 45%; */
@@ -1056,6 +1059,7 @@
 
 .contacto__input:hover {
   border-color: #850731;
+  box-shadow: 1px 1px 5px #850731;
 }
 
 .contacto__input-large {
@@ -1063,13 +1067,14 @@
   height: 130px;
   padding: 10px;
   background-color: #0d0d0d;
-  border: 1.5px solid #1f1f1f;
+  border: 1.5px solid #bebebe;
   border-radius: 5px;
   color: #fff;
 }
 
 .contacto__input-large:hover {
   border-color: #850731;
+  box-shadow: 1px 1px 5px #850731;
 }
 
 .form_button {
@@ -1127,6 +1132,9 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
     padding-bottom: 40px;
+  }
+  .footer__contactanosaccesos {
+    width: 100%;
   }
 }
 
@@ -1190,11 +1198,11 @@
   background-color: #850731;
   color: #fff;
   font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
 }
 
 .mini-footer__text {
-  width: 65%;
-  margin: 0 auto;
   padding-block: 7.5px;
 }
 
