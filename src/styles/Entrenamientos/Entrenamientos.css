@@ -8,7 +8,7 @@ html {
   /* overflow-x: hidden; */
 }
 
-/* ! CAPACITACION BANNER<-------------- */
+/* ? CAPACITACION BANNER<-------------- */
 
 .entrenamientos__scroll-wrapper {
   height: 100vh;
@@ -36,12 +36,12 @@ html {
 }
 
 .entrenamientos__header {
-  font-size: max(4.5vw, 3rem);
+  font-size: max(4vw, 2rem);
   font-weight: 800;
 }
 
 .entrenamientos__paragraph {
-  font-size: max(1.5vw, 1rem);
+  font-size: max(1.3vw, 1rem);
   font-weight: 200;
 }
 
@@ -92,7 +92,7 @@ html {
   }
 }
 
-/*! ENTRENAMIENOT ONLINE<----------- */
+/*? ENTRENAMIENOT ONLINE<----------- */
 
 .entrenamientos__entrenamientos-online {
   background-color: #fff;
@@ -136,7 +136,7 @@ html {
 
 /* Medias queries<------------- */
 
-/* ! PLAN HABANA BANNER <------------- */
+/* ? PLAN HABANA BANNER <------------- */
 
 .plan-habana {
   background-color: #0e0e0e;
@@ -154,13 +154,13 @@ html {
   /* justify-content: center; */
   margin: auto;
   padding: 10%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 
 .plan-habana-banner__header {
   font-size: max(3vw, 25px);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .plan-habana-banner--bold {
@@ -172,9 +172,9 @@ html {
   font-size: max(1vw, 0.8rem);
 }
 
-.plan-habana-banner__imagen-container {
-  /* width: 45%; */
-}
+/* .plan-habana-banner__imagen-container {
+  width: 100%;
+} */
 
 .plan-habana-banner__imagen {
   width: 100%;
@@ -182,14 +182,15 @@ html {
   object-fit: cover;
 }
 
-/* ! PLAN HABANA EXPOSICION <--------- */
+/* ? PLAN HABANA EXPOSICION <--------- */
 
 .plan-habana-exposicion {
   padding-block: 80px;
-  width: 80%;
+  /* width: 65%; */
+  padding-inline: 18%;
   margin: 0 auto;
-  background-color: #0e0e0e;
-  color: #fff;
+  background: linear-gradient(#313131, #000);
+  color: #ffffff;
 }
 
 .plan-habana-exposicion__header {
@@ -200,11 +201,11 @@ html {
 }
 
 .plan-habana-exposicion--small {
-  font-size: 23px;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 .plan-habana-exposicion--big {
-  font-size: 55px;
+  font-size: 3rem;
 
   font-weight: 700;
 }
@@ -214,13 +215,13 @@ html {
 }
 
 .exposicion-p1 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 200;
   line-height: 1.9rem;
   text-align: justify;
 }
 .exposicion-p2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-align: justify;
   color: #b9b9b9;
@@ -230,19 +231,19 @@ html {
   font-weight: 300;
 }
 .exposicion-p3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-align: justify;
   color: #989898;
 }
 .exposicion-p4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-align: justify;
   color: #909090;
 }
 .exposicion-p5 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-align: justify;
   color: #6f6f6f;
@@ -250,19 +251,16 @@ html {
 }
 
 .btn-plan-habana-exposicion {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 15px 40px;
 }
 
-/* ! INTERNADO <---------------- */
+/* ? INTERNADO <---------------- */
 .internado {
   background: linear-gradient(#850731, #6c0526);
   color: #fff;
-  /* width: 80%; */
-  padding-inline: 15%;
-  margin: 0 auto;
-  padding-block: 70px;
-  position: relative;
+  padding-inline: 10%;
+  padding-block: 50px;
 }
 
 .internado__header {
@@ -273,7 +271,7 @@ html {
 }
 
 .internado__header-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
@@ -282,7 +280,7 @@ html {
 }
 
 .internado__paragraph {
-  font-size: max(1.5rem);
+  font-size: max(1rem);
   font-weight: 200;
   margin-bottom: 30px;
   text-align: justify;
@@ -292,56 +290,50 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 }
 
 .btn__internado {
   background-color: #ffffff;
   color: #850731;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 15px 30px;
 }
 
 .internado__footer-text {
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
 .internado__images-container {
-  width: 85%;
-  margin-inline: auto;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  /* gap: 1rem; */
-  position: absolute;
-  margin-top: -150px;
-  /* top: 610px; */
-  right: -20px;
-  left: -20px;
-  /* bottom: -80px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
 }
 
 .internado__image {
-  /* height: 300px; */
   width: 100%;
   border-radius: 20px;
 }
 
 .talleres {
-  padding: 15% 15% 100px 15%;
+  padding: 5% 15% 80px 15%;
   align-items: center;
   background: linear-gradient(#fff, #fbfbfb);
   overflow-x: hidden;
 }
 
 .talleres__header {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #850731;
 }
 
 .talleres__paragraph {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #4d4d4d;
   padding-right: 95px;
   padding-bottom: 30px;
@@ -354,11 +346,12 @@ html {
 
 .talleres__image {
   width: 100%;
+  border-radius: 15px;
 }
 
 /* MEDIA QUERIES <---------------- */
 
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   .plan-habana-exposicion__header {
     flex-direction: column;
     justify-content: space-between;
@@ -368,6 +361,56 @@ html {
 
   .entrenamientos-entrenamiento__card-image {
     object-position: 70%;
+  }
+
+  .plan-habana-banner__imagen {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .plan-habana-exposicion {
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exposicion-p1 {
+    font-size: 1.2rem;
+  }
+  .exposicion-p2 {
+    font-size: 1rem;
+  }
+
+  .exposicion-p3 {
+    font-size: 1rem;
+  }
+  .exposicion-p4 {
+    font-size: 1rem;
+  }
+  .exposicion-p5 {
+    font-size: 1rem;
+  }
+
+  .btn-plan-habana-exposicion-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .internado__footer-text {
+    padding-top: 30px;
+    width: 80%;
+  }
+  .talleres__image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .talleres__image {
+    width: 70%;
   }
 }
 
@@ -382,7 +425,7 @@ html {
     font-size: 10vw;
   }
   .plan-habana-exposicion--big {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .row {
     max-width: 100%;
@@ -394,29 +437,16 @@ html {
   }
 
   .internado__images-container {
-    /* width: 100%; */
-
-    /* margin-inline: auto; */
-    /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-    /* gap: 1rem; */
-    /* position: absolute; */
-    /* margin-top: -150px; */
-    /* top: 610px; */
-    /* right: -20px;
-    left: -20px; */
-    /* bottom: -80px; */
     align-items: center;
   }
-
+  /* 
   .internado__image {
-    /* width: 100%; */
     height: 80px;
-  }
+  } */
 
   .internado__footer {
     flex-direction: column;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .talleres__header {
@@ -425,11 +455,15 @@ html {
 
   .talleres__paragraph {
     padding-right: 0px;
-    text-align: center;
+    text-align: justify;
   }
 
   .talleres__text {
     text-align: center;
+  }
+  .btn__talleres-container {
+    display: flex;
+    justify-content: center;
   }
 }
 

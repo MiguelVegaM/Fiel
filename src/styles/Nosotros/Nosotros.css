@@ -10,7 +10,7 @@
   background: linear-gradient(90deg, #850731 0%, #63011e 100%);
   color: #fff;
   height: 545px;
-  padding-top: 100px;
+  padding-top: 80px;
   position: relative;
   transform-style: preserve-3d;
   z-index: -1;
@@ -45,11 +45,12 @@
   background-position: center;
   background-size: cover;
   position: absolute;
-  top: 450px;
+  top: 350px;
   left: 50%;
   transform: translate(-50%, 0%);
   border-radius: 30px;
-  height: 750px;
+  /* height: 750px; */
+  padding-block: 100px;
   width: 85%;
   color: #fff;
   display: flex;
@@ -58,7 +59,7 @@
   justify-content: center;
 
   .text {
-    font-size: 3.2rem;
+    font-size: 2.25rem;
     margin: 0 auto;
     line-height: 1.05em;
   }
@@ -70,7 +71,7 @@
   }
 
   .text-sub {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 200;
     padding-top: 40px;
     margin: 0 auto;
@@ -82,7 +83,7 @@
 }
 
 .nosotros__biblia {
-  margin-top: 430px;
+  margin-top: 150px;
 
   .biblia-banner {
     background-image: url(../../../public/images/nosotros/Banner\ Biblia.png);
@@ -114,7 +115,7 @@
     width: 70%;
     line-height: 2.7rem;
     margin-inline: auto;
-    font-size: 2.6rem;
+    font-size: 1.75rem;
     font-weight: 500;
   }
 
@@ -122,13 +123,13 @@
     width: 65%;
     line-height: 2.7rem;
     margin-inline: auto;
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 50px;
   }
   .btn__biblia-banner {
     margin: 0 auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     width: 296px;
     padding: 18px 54px;
   }
@@ -139,7 +140,8 @@
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-block: 140px 175px;
+  padding-block: 40px;
+  scroll-margin-top: 100px;
 
   .declaracion-doctrinal__text {
     display: flex;
@@ -149,12 +151,12 @@
 
     .declaracion-doctrinal--supertitle {
       color: #777777;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-weight: 300;
       margin-bottom: -5px;
     }
     .declaracion-doctrinal--title {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
     }
     .declaracion-doctrinal__logo {
@@ -163,20 +165,20 @@
     }
   }
 
-  .declaracion-doctrinal__cuerpo-mostrado {
+  /* .declaracion-doctrinal__cuerpo-mostrado {
     width: 65%;
     margin: 0 auto;
     text-align: justify;
     color: #979797;
     font-size: 1.5rem;
     font-weight: 300;
-  }
+  } */
   .declaracion-doctrinal__cuerpo-oculto {
     width: 65%;
     margin: 0 auto;
     text-align: justify;
     color: #979797;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 300;
   }
 
@@ -186,12 +188,10 @@
     font-size: 1rem;
     font-weight: 300;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
-
     font-size: 1.2rem;
-    margin: 0 auto;
-    padding: 20px 40px;
+    margin: 10px auto 0px;
+    padding: 15px 35px;
   }
 }
 
@@ -199,7 +199,7 @@
   /* background-color: #fff;
   background-size: cover; */
   padding-top: 150px;
-  padding-bottom: 1000px;
+  padding-bottom: 550px;
   text-align: center;
 
   position: relative;
@@ -210,17 +210,18 @@
   transform-style: preserve-3d;
   z-index: -1;
   transform: translateZ(-10px) scale(1.85);
+  scroll-margin-top: 895px;
 
   .nuestro-equipo__wrapper {
     .title {
       color: #850731;
-      font-size: 3.2rem;
+      font-size: 3rem;
       font-weight: 800;
     }
     .subtitle {
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       font-weight: 200;
-      margin-bottom: 85px;
+      margin-bottom: 20px;
     }
     .nuestro-equipo__pair-cards {
       display: flex;
@@ -229,9 +230,9 @@
     .nuestro-equipo__cards {
       display: flex;
       /* flex-direction: row; */
-      max-width: 75%;
+      /* max-width: 75%; */
       margin: 0 auto;
-      justify-content: space-around;
+      justify-content: center;
     }
   }
   .nuestro-equipo__card {
@@ -240,27 +241,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 
     & img {
-      width: 275px;
+      width: 200px;
       border-radius: 50%;
     }
-    & h3 {
+    & h4 {
       color: #850731;
       font-weight: 700;
-      margin-top: 30px;
+      margin-top: 15px;
+      margin-bottom: 50px;
     }
     & p {
       color: #555555;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       font-weight: 300;
       margin-bottom: 50px;
     }
     .nuestro-equipo__card-button {
       background-color: #fff;
       color: #808080;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 300;
       border: 1px solid gray;
       border-radius: 5px;
@@ -271,10 +273,13 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1050px) {
   .nosotros-banner--rojo {
     padding-inline: 10%;
     .nosotros-banner--rojo__wrapper {
+      & h1 {
+        font-size: 8vw;
+      }
       .btn__nosotros-banner--rojo {
         margin-top: 55px;
       }
@@ -282,14 +287,14 @@
   }
   .nosotros__flotante--negro {
     .text {
-      font-size: 2.8rem;
+      font-size: 2rem;
     }
 
     .text-sub {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
     .text-footer {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -301,13 +306,16 @@
   }
 
   .nuestro-equipo {
-    padding-top: 350px;
-    padding-bottom: 1600px;
+    padding-top: 250px;
+    padding-bottom: 1000px;
   }
 
   .nuestro-equipo__cards {
     flex-direction: column;
     align-items: center;
+  }
+  .nuestro-equipo__pair-cards {
+    gap: 5rem;
   }
 }
 /* 
@@ -319,50 +327,42 @@
   }
 } */
 
-@media (max-width: 1025px) {
+/* @media (max-width: 1025px) {
   .nosotros-banner--rojo {
     .nosotros-banner--rojo__wrapper {
       flex-direction: column;
       justify-content: flex-start;
       padding-top: 0px;
-      /* padding-inline: 17%; */
+
       & p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
       & h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
       .btn__nosotros-banner--rojo {
         background-color: #fff;
         color: #850731;
         height: 60px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         margin-top: 0px;
       }
     }
   }
 
-  /* .btn__nosotros-banner--rojo {
-    background-color: #fff;
-    color: #850731;
-    height: 60px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 80px;
-  } */
-
   .nosotros__flotante--negro {
+    top: 400px;
     .text {
       width: 90%;
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     .text-sub {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .text-footer {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -383,16 +383,22 @@
 
   .nuestro-equipo {
     padding-top: 350px;
-    padding-bottom: 1700px;
+    padding-bottom: 1100px;
   }
-}
+} */
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .nosotros-banner--rojo {
     .nosotros-banner--rojo__wrapper {
+      flex-direction: column;
+      margin-top: -30px;
+
       & h1 {
-        font-size: 10vw;
+        font-size: 8vw;
         font-weight: 800;
+      }
+      .btn__nosotros-banner--rojo {
+        margin-top: 0px;
       }
     }
   }
@@ -407,28 +413,37 @@
     .biblia-text {
       .text {
         width: 80%;
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
       }
       .text-sub {
         width: 80%;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
       }
     }
   }
   .nosotros__flotante--negro {
+    top: 400px;
+
     .text {
       width: 90%;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     .text-sub {
       width: 90%;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     .text-footer {
       font-size: 1.2rem;
     }
   }
+
+  .nosotros__biblia {
+    margin-top: 75px;
+  }
+
   .declaracion-doctrinal {
     .declaracion-doctrinal__text {
       flex-direction: column;
@@ -441,8 +456,8 @@
     }
   }
   .nuestro-equipo {
-    padding-top: 1000px;
-    padding-bottom: 3400px;
+    padding-top: 800px;
+    padding-bottom: 2350px;
     .title {
       width: 80%;
       margin: 0 auto;

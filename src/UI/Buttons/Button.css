@@ -16,6 +16,11 @@
   box-shadow: 0 0 0 0.25rem #850e3045;
 }
 
+.btn__navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
 .btn__navbar {
   font-size: 0.9rem;
   padding-inline: 15px;
@@ -49,8 +54,8 @@
 }
 
 .btn__entrenamiento-presencial {
-  background-color: #ffffff;
-  color: #850731;
+  background-color: #850731;
+  color: #ffffff;
   font-size: 0.8rem;
 }
 

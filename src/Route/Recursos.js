@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet";
 import {
   Alianzas,
-  ContactoWhats,
   DisclaimerDonar,
   Footer,
   MiniFooter,
@@ -768,6 +767,10 @@ export function RecursosMain() {
 
   const handleOnLibroSelector = (libro) => {
     console.log(libro);
+    const idGeneros = document.getElementById("generos");
+    const idTalleres = document.getElementById("talleres");
+    idGeneros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
     if (libro === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -781,6 +784,10 @@ export function RecursosMain() {
 
   const handleOnGeneroSelector = (genero) => {
     console.log(genero);
+    const idLibros = document.getElementById("libros");
+    const idTalleres = document.getElementById("talleres");
+    idLibros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
     if (genero === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -793,6 +800,10 @@ export function RecursosMain() {
   };
 
   const handleOnTallerSelector = (taller) => {
+    const idLibros = document.getElementById("libros");
+    const idGeneros = document.getElementById("generos");
+    idLibros.selectedIndex = 0;
+    idGeneros.selectedIndex = 0;
     if (taller === "todos") {
       setDatosFiltrados(recursosObj);
     } else {
@@ -808,6 +819,23 @@ export function RecursosMain() {
 
   console.log(datosFiltrados.length);
   // console.log(recursoFiltrado);
+
+  // ^ ------------------------------------------------------------- RESET FILTER
+
+  const resetFilter = (e) => {
+    e.preventDefault();
+    const idLibros = document.getElementById("libros");
+    const idGeneros = document.getElementById("generos");
+    const idTalleres = document.getElementById("talleres");
+    const nameRadio = document.getElementsByName("radiocheck");
+    idLibros.selectedIndex = 0;
+    idGeneros.selectedIndex = 0;
+    idTalleres.selectedIndex = 0;
+    for (let i = 0; i < nameRadio.length; i++) nameRadio[i].checked = false;
+    setDatosFiltrados(recursosObj);
+  };
+
+  // ^ --------------------------------------------------------------------------
 
   return (
     <>
@@ -856,26 +884,19 @@ export function RecursosMain() {
               <div className="recursos__miniatura-text">Audios</div>
               {/* </button> */}
             </div>
-            <div
+            {/* <div
               id="miniImgArticulo"
               className="col-12 col-md-4 recursos__miniatura-container"
             >
-              {/* <button value={"articulo"} id={"articulo"} onClick={handleOnRadio}> */}
               <img
                 className="recursos__miniatura-img
                             "
                 id="miniImgArticulo"
                 src="images/recursos/IMAGEN_ARTICULO.png"
-                // {
-                //   recursoFiltrado.articulo
-                //     ? "images/recursos/FILTROS/RECURSOS_ARTICULOS/IMAGEN_ARTICULO_FILTRADO.png"
-                //     : "images/recursos/IMAGEN_ARTICULO.png"
-                // }
                 alt="Miniatura sección artículos"
               />
               <div className="recursos__miniatura-text">Artículos</div>
-              {/* </button> */}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -911,7 +932,7 @@ export function RecursosMain() {
                         <label htmlFor="audio">Audio</label>
                       </div>
 
-                      <div className="recursos__radio-element">
+                      {/* <div className="recursos__radio-element">
                         <input
                           onChange={handleOnRadio}
                           className="radio-check"
@@ -921,7 +942,7 @@ export function RecursosMain() {
                           value="articulo"
                         />
                         <label htmlFor="articulo">Artículo</label>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="recursos__selectors">
@@ -980,6 +1001,9 @@ export function RecursosMain() {
                           Apocalipsis, La Habana, 2019
                         </option>
                       </select>
+                      <div className="recursos__filter-btn">
+                        <button onClick={resetFilter}>Borrar Filtro</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1009,9 +1033,9 @@ export function RecursosMain() {
                           <p>{recursosObj.fuente}</p>
                         </div>
                       </div>
-                      <div className="recrusos__card-length">
+                      {/* <div className="recrusos__card-length">
                         {recursosObj.length} Min
-                      </div>
+                      </div> */}
                     </div>
                   </Link>
                 </motion.div>
@@ -1068,7 +1092,7 @@ function Recursos(props) {
       <Navbar />
       <RecursosMain />
       <Alianzas />
-      <ContactoWhats />
+      {/* <ContactoWhats /> */}
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />

@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 import {
   Alianzas,
-  ContactoWhats,
   DisclaimerDonar,
   Footer,
   MiniHeader,
@@ -27,7 +26,7 @@ function Eventos(props) {
       <MiniHeader />
       <Navbar />
       <Alianzas />
-      <ContactoWhats />
+      {/* <ContactoWhats /> */}
       <Footer />
       <DisclaimerDonar />
       <MiniFooter />
