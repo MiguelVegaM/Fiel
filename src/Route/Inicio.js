@@ -176,12 +176,16 @@ export function MainBanner(props) {
         <h2 className="main-banner__subtitle">Creemos que</h2>
         <h1 className="main-banner__title">
           la <span>Salud</span> de la <span>Iglesia</span>
+          <h2 className="main-banner__subtitle">
+            está ligada a la fiel exposición de la
+          </h2>
+          <span>Biblia</span>
         </h1>
         <div className="main-banner__line"></div>
         <p className="main-banner__paragraph">
-          está ligada a la fiel exposición de la Biblia, estamos enfocados a
+          {/* , estamos enfocados a
           formar, capacitar y entrenar a predicadores y maestros de la Palabra
-          de Dios, preparándolos para el ministerio.
+          de Dios, preparándolos para el ministerio. */}
         </p>
         <NavLink to="/nosotros">
           <Button specificClass="btn__main-banner">CONOCE MÁS</Button>

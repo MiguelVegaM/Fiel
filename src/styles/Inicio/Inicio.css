@@ -224,6 +224,7 @@
   font-size: 2rem;
   font-weight: lighter;
   margin-left: 4px;
+  /* margin-bottom: 0px; */
 }
 .main-banner__title {
   color: #fff;
@@ -501,7 +502,7 @@
 /* ?              EntrenamientosPresenciales.css  */
 
 .entrenamiento-presencial {
-  background-image: linear-gradient(90deg, #fff 25%, #ffffff00),
+  background-image: linear-gradient(90deg, #bdbdbd 25%, #ffffff00),
     url("/public/images/inicio/banner-3.png");
   background-size: cover;
   background-position: right;
