@@ -45,8 +45,16 @@ html {
   font-weight: 200;
 }
 
+.btn__capacitacion-main-banner {
+  background-color: #ffffff;
+  color: #850731;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
 /* ^ SIDEBAR ON BANNER */
-.sidenav {
+/* .sidenav {
   height: 100%;
   width: 0;
   position: absolute;
@@ -90,7 +98,7 @@ html {
   .sidenav a {
     font-size: 18px;
   }
-}
+} */
 
 /*? ENTRENAMIENOT ONLINE<----------- */
 
@@ -125,13 +133,13 @@ html {
 .btn__entrenamientos-entrenamientos-online--rojo {
   margin-bottom: 5px;
   font-size: 0.8rem;
-  padding: 15px 25px;
+  padding: 10px 25px;
   margin-right: 10px;
 }
 .btn__entrenamientos-entrenamientos-online--gris {
   font-size: 0.8rem;
   background-color: #3b3b3b;
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 
 /* Medias queries<------------- */
@@ -252,7 +260,7 @@ html {
 
 .btn-plan-habana-exposicion {
   font-size: 1rem;
-  padding: 15px 40px;
+  padding: 10px 40px;
 }
 
 /* ? INTERNADO <---------------- */
@@ -297,7 +305,7 @@ html {
   background-color: #ffffff;
   color: #850731;
   font-size: 1rem;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .internado__footer-text {
@@ -340,7 +348,7 @@ html {
 }
 
 .btn__talleres {
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 0.9rem;
 }
 

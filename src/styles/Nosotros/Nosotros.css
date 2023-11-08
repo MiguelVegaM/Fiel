@@ -131,7 +131,7 @@
     margin: 0 auto;
     font-size: 1.25rem;
     width: 296px;
-    padding: 18px 54px;
+    padding: 12.5px 54px;
   }
 }
 
@@ -191,7 +191,7 @@
     border-radius: 5px;
     font-size: 1.2rem;
     margin: 10px auto 0px;
-    padding: 15px 35px;
+    padding: 10px 35px;
   }
 }
 
@@ -266,7 +266,7 @@
       font-weight: 300;
       border: 1px solid gray;
       border-radius: 5px;
-      padding: 15px 20px;
+      padding: 7.5px 20px;
       position: absolute;
       bottom: 0px;
     }
