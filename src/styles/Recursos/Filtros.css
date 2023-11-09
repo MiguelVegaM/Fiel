@@ -1,5 +1,5 @@
-.video-filtro__main {
-}
+/* .video-filtro__main {
+} */
 
 .video-filtro__container {
   /* height: 100%; */
@@ -14,7 +14,7 @@
 .video-info {
   width: 70%;
   margin-inline: auto;
-  margin-bottom: 150px;
+  margin-bottom: 175px;
 }
 
 .video-info__title {
@@ -199,7 +199,7 @@
 .audio-info {
   width: 70%;
   margin-inline: auto;
-  margin-bottom: 150px;
+  margin-bottom: 175px;
 }
 
 .audio-info__title {

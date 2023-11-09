@@ -104,7 +104,7 @@ function Player({
         <div className="volume">
           <button
             onClick={() => {
-              setMuteVolume((prev) => !prev);
+              setMuteVolume(!muteVolume);
             }}
           >
             {muteVolume || volume < 5 ? (
@@ -124,11 +124,9 @@ function Player({
             min={0}
             max={100}
             value={volume}
-            onChange={(e) => setVolume(e.target.value)}
-            onClick={() => {
-              if (muteVolume) {
-                setMuteVolume((prev) => !prev);
-              }
+            onChange={(e) => {
+              setVolume(e.target.value);
+              setMuteVolume(false);
             }}
           />
         </div>
