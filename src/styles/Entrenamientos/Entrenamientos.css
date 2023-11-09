@@ -10,12 +10,12 @@ html {
 
 /* ? CAPACITACION BANNER<-------------- */
 
-.entrenamientos__scroll-wrapper {
+/* .entrenamientos__scroll-wrapper {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-}
+} */
 
 .capacitacion {
   background-image: url(/public/images/entrenamientos/Banner-1.jpg);
@@ -24,8 +24,8 @@ html {
   padding-block: 100px;
   display: flex;
   position: relative;
-  transform: translateZ(-10px) scale(2.08);
-  z-index: -1;
+  /* transform: translateZ(-10px) scale(2.08);
+  z-index: -1; */
 }
 
 .capacitacion-container {
@@ -473,11 +473,6 @@ html {
   .btn__talleres-container {
     display: flex;
     justify-content: center;
-  }
-}
-@media (max-width: 375px) {
-  .capacitacion {
-    top: -250px;
   }
 }
 
