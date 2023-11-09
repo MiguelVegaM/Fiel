@@ -475,6 +475,11 @@ html {
     justify-content: center;
   }
 }
+@media (max-width: 375px) {
+  .capacitacion {
+    top: -250px;
+  }
+}
 
 .nopadding {
   padding-left: 0 !important;
