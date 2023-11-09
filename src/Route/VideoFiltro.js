@@ -23,7 +23,7 @@ export function VideoFiltro() {
   };
 
   return (
-    <div>
+    <div className="video-filtro__main">
       <div className="barra-direccion">
         <NavLink to="/" className="barra-direccion__link">
           Inicio
