@@ -177,9 +177,8 @@ export function MainBanner(props) {
         <h1 className="main-banner__title">
           la <span>Salud</span> de la <span>Iglesia</span>
           <h2 className="main-banner__subtitle">
-            está ligada a la fiel exposición de la
+            está ligada a la fiel exposición de la <br /> <span>Biblia</span>
           </h2>
-          <span>Biblia</span>
         </h1>
         <div className="main-banner__line"></div>
         <p className="main-banner__paragraph">
@@ -239,7 +238,9 @@ export function EntrenamientosOnline(props) {
             alt="Men on laptop"
           />
           <div className="entrenamiento__card-text">
-            <h1 className="entrenamiento__card-title">Entrenamientos</h1>
+            <h1 className="entrenamiento__card-title">
+              Mentoría en predicación expositiva
+            </h1>
             <div className="entrenamiento__modalidad">
               Modalidad:{" "}
               <span className="entrenamiento__card-text-bold"> En Línea</span>
@@ -252,7 +253,7 @@ export function EntrenamientosOnline(props) {
               con el objetivo de desarrollar las habilidades de los mismos
               semana tras semana.
             </p>
-            <p className="entrenamiento__card-text-normal">
+            {/* <p className="entrenamiento__card-text-normal">
               Hemos escogido el género literario de Evangelios para este primer
               tiempo, especificamente el evangelio de Marcos. Los participantes
               estarán recibiendo instrucciones en el manejo adecuado de las
@@ -260,18 +261,18 @@ export function EntrenamientosOnline(props) {
               específicos del libro de Marcos, así como también harán una
               exposición de veinte minutos, para las cuáles recibirán
               retroalimentación.
-            </p>
+            </p> */}
             <div className="entrenamiento__button-container-box">
-              <NavLink to="/entrenamientos">
+              <HashLink to="/entrenamientos#entrenamientos-online">
                 <Button specificClass="btn__entrenamientos-online-card--rojo">
                   CONOCER MÁS
                 </Button>
-              </NavLink>
-              <a href="#contacto">
+              </HashLink>
+              {/* <a href="#contacto">
                 <Button specificClass="btn__entrenamientos-online--gris">
                   APLICAR
                 </Button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -285,7 +286,7 @@ export function EntrenamientosPresenciales(props) {
     <div className="entrenamiento-presencial">
       {/* <img src="/images/inicio/banner-3.png" alt="" /> */}
       <div className="entrenamiento-presencial__text">
-        <h1>ENTRENAMIENTOS PRESENCIALES</h1>
+        <h1>CONOCE NUESTRO TRABAJO EN CUBA</h1>
         <p className="entrenamieto-presencial__paragraph">Plan Habana, Cuba.</p>
         <p className="entrenamieto-presencial__paragraph">
           Plan Habana nace de la pasión de transformar La Habana con el

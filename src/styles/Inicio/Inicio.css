@@ -223,9 +223,11 @@
   color: #fff;
   font-size: 2rem;
   font-weight: lighter;
-  margin-left: 4px;
+
+  /* margin-left: 4px; */
   /* margin-bottom: 0px; */
 }
+
 .main-banner__title {
   color: #fff;
   font-size: 2.5rem;
@@ -238,12 +240,13 @@
 .main-banner__title span {
   color: #fff;
   font-weight: 800;
+  font-size: 2.5rem;
 }
 
 .main-banner__line {
   border: 0.75px solid rgba(255, 255, 255, 0.367);
   width: 175px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .main-banner__paragraph {
@@ -347,7 +350,7 @@
   /* border: 1px solid rebeccapurple; */
   display: flex;
   width: 300px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* margin-right: -125px; */
 }
 
@@ -419,7 +422,7 @@
 }
 
 .entrenamiento__card-title {
-  font-size: 3rem;
+  /* font-size: 2rem; */
   font-weight: 700;
   color: #850731;
 }
@@ -432,9 +435,10 @@
 }
 
 .entrenamiento__card-text-bold {
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 1rem;
   color: rgb(44, 44, 44);
+  margin-bottom: 50px;
 }
 .entrenamiento__card-text-normal {
   color: #2b2b2b;
@@ -466,6 +470,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .entrenamiento__button-container-box {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 700px) {
@@ -489,13 +497,6 @@
     width: 100%;
     padding-inline: 10%;
     text-align: justify;
-  }
-
-  .entrenamiento__button-container-box {
-    flex-direction: column;
-    /* align-items: center; */
-    margin: 0 auto;
-    gap: 5px;
   }
 }
 
@@ -544,12 +545,14 @@
 
 .entrenamieto-presencial__text--light-text {
   color: #000000;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 0.8rem;
 }
 
 .entrenamieto-presencial__text--small-text {
   color: #000000;
+  font-weight: 500;
+
   font-size: 0.8rem;
 }
 

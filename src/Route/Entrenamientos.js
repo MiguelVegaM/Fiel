@@ -147,7 +147,7 @@ export function PlanHabana() {
           </div>
         </div>
       </div>
-      <div className="plan-habana-exposicion">
+      {/* <div className="plan-habana-exposicion">
         <div className="plan-habana-exposicion__header">
           <div className="plan-habana-exposicion__header-text">
             <span className="plan-habana-exposicion--small">Plan Habana</span>
@@ -163,7 +163,7 @@ export function PlanHabana() {
             />
           </div>
         </div>
-        {/* <div className="plan-habana-exposicion__text">
+        <div className="plan-habana-exposicion__text">
           <p className="exposicion-p1">
             El Espíritu de Dios usa la Palabra de Dios para cumplir los
             propósitos de Dios (Isaías 55:10-11; Hebreos 4:12). Si el pueblo de
@@ -209,11 +209,11 @@ export function PlanHabana() {
             continuación y estaremos en contacto con usted en breve,
             proporcionándole más detalles.
           </p>
-        </div> */}
+        </div>
         <a className="btn-plan-habana-exposicion-wrapper" href="#contacto">
           <Button specificClass="btn-plan-habana-exposicion">SABER MÁS</Button>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -256,7 +256,7 @@ export function Internado() {
             </div>
             <div className="internado__footer row">
               <a href="#contacto" className="col-12 col-lg-6">
-                <Button specificClass="btn__internado">APLICAR AHORA</Button>
+                <Button specificClass="btn__internado">SABER MÁS</Button>
               </a>
               <div className="internado__footer-text col-12 col-lg-6">
                 Plan Habana, Modalidad Presencial, Cuba
@@ -293,7 +293,7 @@ export function Internado() {
             congregaciones.
           </div>
           <a className="btn__talleres-container" href="#contacto">
-            <Button specificClass="btn__talleres">MÁS INFORMACIÓN</Button>
+            <Button specificClass="btn__talleres">SABER MÁS</Button>
           </a>
         </div>
 

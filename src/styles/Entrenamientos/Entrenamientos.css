@@ -104,6 +104,7 @@ html {
 
 .entrenamientos__entrenamientos-online {
   background-color: #fff;
+  scroll-margin-top: 75px;
 }
 
 .entrenamientos-entrenamiento__card-image-container {
