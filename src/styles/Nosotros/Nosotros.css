@@ -197,21 +197,19 @@
 }
 
 .nuestro-equipo {
-  /* background-color: #fff;
-  background-size: cover; */
-  padding-top: 150px;
-  padding-bottom: 550px;
+  background-color: #fff;
+  padding-block: 100px;
   text-align: center;
+  /* scroll-margin-top: 895px; */
 
-  position: relative;
+  /* position: relative; */
   /* display: flex;
   justify-content: flex-end;
   align-items: center; */
-  height: 100vh;
+  /* height: 100vh; */
   /* transform-style: preserve-3d;
   z-index: -1;
   transform: translateZ(-10px) scale(1.85); */
-  scroll-margin-top: 895px;
 
   .nuestro-equipo__wrapper {
     .title {
@@ -306,10 +304,10 @@
     }
   }
 
-  .nuestro-equipo {
+  /* .nuestro-equipo {
     padding-top: 250px;
     padding-bottom: 1000px;
-  }
+  } */
 
   .nuestro-equipo__cards {
     flex-direction: column;
@@ -422,7 +420,7 @@
     }
   }
   .nosotros__flotante--negro {
-    top: 475px;
+    top: 375px;
 
     .text {
       width: 90%;
@@ -449,13 +447,13 @@
       padding-bottom: 20px;
     }
     .declaracion-doctrinal__logo {
-      width: 50px;
+      /* width: 50px; */
       margin: 0 auto;
     }
   }
   .nuestro-equipo {
-    padding-top: 800px;
-    padding-bottom: 2350px;
+    /* padding-top: 800px;
+    padding-bottom: 2350px; */
     .title {
       width: 80%;
       margin: 0 auto;
