@@ -1,9 +1,9 @@
-.nosotros__scroll-wrapper {
+/* .nosotros__scroll-wrapper {
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
-}
+} */
 
 .nosotros-banner--rojo {
   background: linear-gradient(90deg, #850731 0%, #63011e 100%);
@@ -11,9 +11,9 @@
   height: 545px;
   padding-top: 80px;
   position: relative;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d;
   z-index: -1;
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-10px) scale(2); */
 
   .nosotros-banner--rojo__wrapper {
     display: flex;
@@ -81,7 +81,7 @@
   }
 }
 
-.nosotros__biblia {
+/* .nosotros__biblia {
   margin-top: 150px;
 
   .biblia-banner {
@@ -132,14 +132,16 @@
     width: 296px;
     padding: 12.5px 54px;
   }
-}
+} */
 
 .declaracion-doctrinal {
-  background-color: black;
+  background: #1b1b1b;
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-block: 40px;
+  padding-top: 275px;
+  padding-bottom: 75px;
+  /* margin-top: 250px; */
   scroll-margin-top: 100px;
 
   .declaracion-doctrinal__text {
@@ -206,9 +208,9 @@
   justify-content: flex-end;
   align-items: center; */
   height: 100vh;
-  transform-style: preserve-3d;
+  /* transform-style: preserve-3d;
   z-index: -1;
-  transform: translateZ(-10px) scale(1.85);
+  transform: translateZ(-10px) scale(1.85); */
   scroll-margin-top: 895px;
 
   .nuestro-equipo__wrapper {

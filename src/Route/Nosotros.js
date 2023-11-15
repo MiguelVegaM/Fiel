@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import Modal from "react-bootstrap/Modal";
 import Collapse from "react-bootstrap/Collapse";
 import { Helmet } from "react-helmet";
@@ -16,14 +16,27 @@ import {
   DayanModal,
   LourdesModal,
 } from "../UI/Buttons/NuestroEquipoModal";
-import { NavLink } from "react-router-dom";
 
 export function NosotrosBanner(props) {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+    if (open) {
+      document.getElementById("btn__declaracion-doctrinal").innerText =
+        "LEER MENOS";
+    } else {
+      document.getElementById("btn__declaracion-doctrinal").innerText =
+        "LEER MÁS";
+    }
+  }, [open]);
+
   const [modalShowAlexis, setModalShowAlexis] = React.useState(false);
   const [modalShowAndy, setModalShowAndy] = React.useState(false);
   const [modalShowLourdes, setModalShowLourdes] = React.useState(false);
   const [modalShowDayan, setModalShowDayan] = React.useState(false);
+
+  const onButtonClick = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <div className="nosotros-banner--rojo">
@@ -61,7 +74,7 @@ export function NosotrosBanner(props) {
           <p className="text-footer">Mateo 28:16-20</p>
         </div>
       </div>
-      <div className="nosotros__biblia">
+      {/* <div className="nosotros__biblia">
         <div className="biblia-banner">
           <img
             className="biblia-banner-logo"
@@ -84,7 +97,7 @@ export function NosotrosBanner(props) {
             <Button specificClass="btn__biblia-banner">CAPACITACIONES</Button>
           </NavLink>
         </div>
-      </div>
+      </div> */}
       <div id="declaracion-doctrinal" className="declaracion-doctrinal">
         <div className="declaracion-doctrinal__text">
           <div>
@@ -366,8 +379,9 @@ export function NosotrosBanner(props) {
         </Collapse>
 
         <button
+          id="btn__declaracion-doctrinal"
           className="btn__declaracion-doctrinal"
-          onClick={() => setOpen(!open)}
+          onClick={onButtonClick}
           aria-controls="example-collapse-text"
           aria-expanded={open}
         >
