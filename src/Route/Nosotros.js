@@ -68,10 +68,10 @@ export function NosotrosBanner(props) {
             <span className="light">en el mundo</span> <br></br> hispano
             parlante.
           </p>
-          <p className="text-sub">
+          {/* <p className="text-sub">
             Fielmente comprometidos con la Gran Comisión
           </p>
-          <p className="text-footer">Mateo 28:16-20</p>
+          <p className="text-footer">Mateo 28:16-20</p> */}
         </div>
       </div>
       {/* <div className="nosotros__biblia">

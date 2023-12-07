@@ -36,7 +36,7 @@ export function EntrenamientosHeader() {
         <a href="#talleres">Talleres</a> */}
       </div>
       <div className="capacitacion-container">
-        <h1 className="entrenamientos__header">CAPACITACIÓN</h1>
+        <h1 className="entrenamientos__header">ENTRENAMIENTO</h1>
         <p className="entrenamientos__paragraph">
           Fielmente comprometidos con la predicación de evangelio de Jesucristo,
           entrenando a expositores bíblicos en el mundo hispano parlante.
@@ -76,20 +76,10 @@ export function EntrenamientosEntrenamientosOnline() {
               <span className="online-dot">.</span>
             </div>
             <p className="entrenamiento__card-text-bold">
-              Debido a las limitaciones de movilidad y el distanciamiento social
-              que hemos estado experimentando en el mundo en los últimos meses,
-              Prédica Fiel ha diseñado un entrenamiento online para predicadores
-              con el objetivo de desarrollar las habilidades de los mismos
-              semana tras semana.
+            El avance de las tecnologías de la comunicación ha hecho cada vez más asequible entrenamientos en línea. Las plataformas de video conferencias se han desarrollado mucho en los últimos años al igual que plataformas educacionales online. Lo cuál hace posible que podamos acercar los entrenamientos en predicación a lugares lejanos. Esto unido a la falta de entrenamientos locales de este tipo, hace de los entrenamientos online una opción viable para muchos pastores en el mundo hispano.
             </p>
             <p className="entrenamiento__card-text-normal">
-              Hemos escogido el género literario de Evangelios para este primer
-              tiempo, especificamente el evangelio de Marcos. Los participantes
-              estarán recibiendo instrucciones en el manejo adecuado de las
-              Escrituras, así como en la exposición de estas. Trabajarán pasajes
-              específicos del libro de Marcos, así como también harán una
-              exposición de veinte minutos, para las cuáles recibirán
-              retroalimentación.
+            A pesar de ser entrenamientos online, éstos entrenamientos son en vivo, en tiempo real. Durante las horas de encuentro semanal el estudiante es expuesto a principios de interpretación y predicación, discusión de textos bíblicos y tiempos de predicación y retroalimentación. Es un entrenamiento enteramente interactivo.
             </p>
             <div className="entrenamientos-entrenamiento__button-container-box">
               <HashLink to="#contacto">

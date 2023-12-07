@@ -173,11 +173,11 @@ export function MainBanner(props) {
         alt=""
       />
       <div className="main-banner__text">
-        <h2 className="main-banner__subtitle">Creemos que</h2>
+        <h2 className="main-banner__subtitle">Tenemos la convicción de que </h2>
         <h1 className="main-banner__title">
           la <span>Salud</span> de la <span>Iglesia</span>
           <h2 className="main-banner__subtitle">
-            está ligada a la fiel exposición de la <br /> <span>Biblia</span>
+            depende de la fiel exposición de la <br /> <span>Biblia</span>
           </h2>
         </h1>
         <div className="main-banner__line"></div>
@@ -247,11 +247,7 @@ export function EntrenamientosOnline(props) {
               <span className="online-dot">.</span>
             </div>
             <p className="entrenamiento__card-text-bold">
-              Debido a las limitaciones de movilidad y el distanciamiento social
-              que hemos estado experimentando en el mundo en los últimos meses,
-              Prédica Fiel ha diseñado un entrenamiento online para predicadores
-              con el objetivo de desarrollar las habilidades de los mismos
-              semana tras semana.
+            El avance de las tecnologías modernas en el área de las video-conferencias ha hecho posible que ahora podamos ofrecer un entrenamiento online efectivo. Este entrenamiento está diseñado para desarrollar las habilidades en el manejo y la exposición de cada género literario de la Biblia.
             </p>
             {/* <p className="entrenamiento__card-text-normal">
               Hemos escogido el género literario de Evangelios para este primer
@@ -568,7 +564,7 @@ export function Testimonios(props) {
 export function Alianzas(props) {
   return (
     <div className="alianzas" id="alianzas">
-      <div className="alianzas__text">ALIANZAS</div>
+      <div className="alianzas__text">Alianzas / Ministerios Recomendados</div>
       <ul className="alianzas__icons-list">
         <div className="list-items1">
           <li className="alianzas__list-item">
@@ -670,6 +666,20 @@ export function Alianzas(props) {
                 className="alianzas__image"
                 src="/images/inicio/crossconnections.jpg"
                 alt="Crossconections Logo"
+              />
+            </a>
+          </li>
+          <li className="alianzas__list-item">
+            <a
+              className="alianzas__link"
+              href="https://thepillarnetwork.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="alianzas__image"
+                src="/images/inicio/thepillanetwork.jpeg"
+                alt="The Pillar Network Logo"
               />
             </a>
           </li>

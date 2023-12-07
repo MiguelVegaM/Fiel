@@ -438,7 +438,7 @@
   font-weight: 600;
   font-size: 1rem;
   color: rgb(44, 44, 44);
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .entrenamiento__card-text-normal {
   color: #2b2b2b;
@@ -859,6 +859,7 @@
   margin-inline: auto;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   text-align: center;
   /* margin-top: -110px;
@@ -872,9 +873,9 @@
 
 .alianzas__text {
   color: #929292;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
-  margin: auto 0;
+  margin-block: 10px;
 }
 
 .list-items1,
