@@ -900,17 +900,23 @@
   /* max-width: 100%; */
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .alianzas {
     flex-direction: column;
     padding-block: 1rem;
   }
-}
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .alianzas__icons-list {
     flex-direction: column;
   }
+}
+@media (max-width: 600px) {
+  .list-items3 {
+    display: flex;
+    flex-direction: column;
+      }
 }
 
 /* ?                       ContactoWhats.css */
