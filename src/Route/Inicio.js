@@ -8,7 +8,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import {
-  FaWhatsapp,
   FaYoutube,
   FaTwitter,
   FaFacebook,
@@ -16,7 +15,6 @@ import {
   // FaPlayCircle,
 } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import { FaPhoneAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
 
 import Button from "../UI/Buttons/Button";
@@ -881,7 +879,7 @@ export function Footer(props) {
           <div className="footer__contactanos">
             <p className="footer__header-contactanos">Contáctanos</p>
             <ul className="footer__contactanos-list">
-              <li className="footer__contactanos-list-item">
+              {/* <li className="footer__contactanos-list-item">
                 <div className="footer__contactanos-icon">
                   <IconContext.Provider value={{ className: "whatsapp-icon" }}>
                     <div>
@@ -899,8 +897,8 @@ export function Footer(props) {
                     00 0000 0000
                   </a>
                 </div>
-              </li>
-              <li className="footer__contactanos-list-item">
+              </li> */}
+              {/* <li className="footer__contactanos-list-item">
                 <div className="footer__contactanos-icon">
                   <IconContext.Provider value={{ className: "whatsapp-icon" }}>
                     <div className="footer__contactanos-icon-phone">
@@ -910,10 +908,10 @@ export function Footer(props) {
                 </div>
                 <div className="footer__contactanos-text">
                   <a className="footer__item-link" href="tel:+1234567890">
-                    +1234567890
+                    +53 5 4296676
                   </a>
                 </div>
-              </li>
+              </li> */}
               <li className="footer__contactanos-list-item">
                 <div className="footer__contactanos-icon">
                   <IconContext.Provider value={{ className: "whatsapp-icon" }}>
@@ -925,9 +923,9 @@ export function Footer(props) {
                 <div className="footer__contactanos-text">
                   <a
                     className="footer__item-link"
-                    href="mailto:info@predicafiel.com"
+                    href="mailto:info@predicafiel.org"
                   >
-                    info@predicafiel
+                    info@predicafiel.org
                   </a>
                 </div>
               </li>
@@ -1209,11 +1207,13 @@ export function DisclaimerDonar(props) {
           </p>
         </div>
         <div className="donar">
+          <a href="/">
           <img
             className="donar__image"
             src="/images/inicio/donar.png"
             alt="Donar Logo"
           />
+          </a>
         </div>
       </div>
     </div>

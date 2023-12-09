@@ -1043,6 +1043,9 @@
 .footer__contactanos-list {
   list-style: none;
   padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .footer__contactanos-list-item {
