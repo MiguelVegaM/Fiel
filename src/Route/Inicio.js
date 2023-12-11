@@ -28,14 +28,14 @@ export function MiniHeader() {
   return (
     <div id="header" className="header">
       <ul className="header__list">
-        <li className="header__item">
+        {/* <li className="header__item">
           <a className="header__item-link" href="tel:+1234567890">
             +1234567890
           </a>
-        </li>
+        </li> */}
         <li className="header__item">
           <a className="header__item-link" href="mailto:info@predicafiel.com">
-            info@predicafiel.com
+            info@predicafiel.org
           </a>
         </li>
         <li className="header__item">
