@@ -576,7 +576,7 @@ export const recursosObj = [
   {
     id: "38",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/Exposicio%CC%81n_en_2_Timoteo_2_Delvis_Acun%CC%83a-COBIME_2015.mp3",
+    url: "/audios/Exposición_en_2_Timoteo_2_Delvis_Acuña-COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Exposición en 2 Timoteo 2 ",
@@ -591,7 +591,7 @@ export const recursosObj = [
   {
     id: "39",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/La_Iglesia_Saludable_Juan_Sa%CC%81nchez_COBIME_2015.mp3",
+    url: "/audios/La_Iglesia_Saludable_Juan_Sánchez_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La Iglesia Saludable I",
@@ -606,7 +606,7 @@ export const recursosObj = [
   {
     id: "40",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/2.Predicacio%CC%81n_Expositiva_1_David%20Helm_COBIME_2015.mp3",
+    url: "/audios/2.Predicación_Expositiva_1_David Helm_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva I",
@@ -621,7 +621,7 @@ export const recursosObj = [
   {
     id: "41",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/4.Predicacio%CC%81n_Expositiva_2_David_Helm_COBIME_2015.mp3",
+    url: "/audios/4.Predicación_Expositiva_2_David_Helm_COBIME_2015.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "Predicación Expositiva II",
@@ -636,7 +636,7 @@ export const recursosObj = [
   {
     id: "42",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-Juan-Sa%CC%81nchez-COBIME-2012-D3_1.mp3",
+    url: "/audios/La-supremacía-de-Dios-a-través-de-su-Palabra-Juan-Sánchez-COBIME-2012-D3_1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
@@ -651,7 +651,7 @@ export const recursosObj = [
   {
     id: "43",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-David-Jackman-COBIME-2012-D3_1.mp3",
+    url: "/audios/La-supremacía-de-Dios-a-través-de-su-Palabra-David-Jackman-COBIME-2012-D3_1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
@@ -666,7 +666,7 @@ export const recursosObj = [
   {
     id: "44",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/La-supremaci%CC%81a-de-Dios-a-trave%CC%81s-de-su-Palabra-Peter-Sholl-COBIME2012-D3.mp3",
+    url: "/audios/La-supremacía-de-Dios-a-través-de-su-Palabra-Peter-Sholl-COBIME2012-D3.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 3",
@@ -681,7 +681,7 @@ export const recursosObj = [
   {
     id: "45",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/audio3.mp3",
+    url: "/audios/Peter-Sholl-La-supremacía-de-Dios-a-través-de-su-Palabra-Día-2.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
@@ -696,7 +696,7 @@ export const recursosObj = [
   {
     id: "46",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/audioa2dj.mp3",
+    url: "/audios/David-Jackman-La-supremacía-de-Dios-a-través-de-su-Palabra-Día-2.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su Palabra-Día 2",
@@ -711,7 +711,7 @@ export const recursosObj = [
   {
     id: "47",
     tags: [""],
-    url: "https://www.predicafiel.org/audios/audio1.mp3",
+    url: "/audios/Peter-Sholl-La-supremacía-de-Dios-a-través-de-su-Palabra-Día-1.mp3",
     icon: "images/recursos/ICON_AUDIO.png",
     type: "audio",
     title: "La supremacía de Dios a través de su palabra-Día 1",

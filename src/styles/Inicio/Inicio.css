@@ -1051,7 +1051,7 @@
   padding-left: 0px;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 35px;
 }
 
 .footer__contactanos-list-item {
@@ -1244,6 +1244,12 @@
   .footer__contactanosaccesos {
     width: 100%;
   }
+}
+@media (max-width: 500px) {
+  .footer__contactanosaccesos {
+    flex-direction: column;
+  }
+
 }
 
 /* ?                      DisclaimerDonar.css */

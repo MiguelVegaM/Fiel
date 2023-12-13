@@ -36,7 +36,7 @@ html {
 }
 
 .entrenamientos__header {
-  font-size: max(4vw, 2rem);
+  font-size: max(4vw, 1.75rem) !important;
   font-weight: 800;
 }
 
