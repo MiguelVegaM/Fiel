@@ -507,7 +507,7 @@ function Nosotros(props) {
       // exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>Fiel | Nosotros</title>
+        <title>Predica Fiel | Nosotros</title>
       </Helmet>
       <MiniHeader />
       <Navbar />

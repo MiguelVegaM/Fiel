@@ -312,7 +312,7 @@ function Entrenamientos(props) {
       // exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>Fiel | Entrenamientos</title>
+        <title>Predica Fiel | Entrenamientos</title>
       </Helmet>
       <MiniHeader />
       <Navbar />

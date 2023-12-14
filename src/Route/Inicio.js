@@ -1245,7 +1245,7 @@ function Inicio(props) {
       // exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>Fiel | Inicio</title>
+        <title>Predica Fiel | Inicio</title>
       </Helmet>
       <MiniHeader />
       <Navbar />

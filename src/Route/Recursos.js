@@ -1086,7 +1086,7 @@ function Recursos(props) {
       // exit={{ opacity: 0 }}
     >
       <Helmet>
-        <title>Fiel | Recursos</title>
+        <title>Predica Fiel | Recursos</title>
       </Helmet>
       <MiniHeader />
       <Navbar />
