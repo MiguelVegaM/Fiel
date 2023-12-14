@@ -63,7 +63,7 @@ export function EntrenamientosEntrenamientosOnline() {
         <div className="col-12 col-md-6 nopadding entrenamientos-entrenamiento__card-image-container">
           <img
             className="entrenamientos-entrenamiento__card-image"
-            src="/images/entrenamientos/estudiante-sonriente-tiro-medio-estudiando-laptop.jpg"
+            src="/images/entrenamientos/hombres-exponiendo.jpeg"
             alt="Men on laptop"
           />
         </div>
@@ -290,7 +290,7 @@ export function Internado() {
         <div className="talleres__image-container col-12 col-lg-5 nopadding">
           <img
             className="talleres__image"
-            src="/images/entrenamientos/ponente-escenario-frente-sala-vista-posterior-audiencia-accion-puesta.jpg"
+            src="/images/entrenamientos/ponente-escenario.jpg"
             alt=""
           />
         </div>

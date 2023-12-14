@@ -118,7 +118,7 @@ html {
   height: 100%;
   aspect-ratio: 10/9;
   object-fit: cover;
-  object-position: -250px;
+  /* object-position: -250px; */
 }
 
 .entrenamientos-entrenamiento__card-text-container {

@@ -232,8 +232,8 @@ export function EntrenamientosOnline(props) {
         <div className="entrenamiento__card">
           <img
             className="entrenamiento__card-image"
-            src="/images/inicio/medium-shot-man-with-laptop.png"
-            alt="Men on laptop"
+            src="/images/inicio/hombre-podio.jpg"
+            alt="Men on Podium"
           />
           <div className="entrenamiento__card-text">
             <h1 className="entrenamiento__card-title">
