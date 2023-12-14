@@ -232,7 +232,7 @@ export function EntrenamientosOnline(props) {
         <div className="entrenamiento__card">
           <img
             className="entrenamiento__card-image"
-            src="/images/inicio/hombre-podio.jpg"
+            src="/images/inicio/hombre-podio.jpeg"
             alt="Men on Podium"
           />
           <div className="entrenamiento__card-text">
