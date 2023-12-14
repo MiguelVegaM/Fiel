@@ -100,12 +100,13 @@ html {
   }
 } */
 
-/*? ENTRENAMIENOT ONLINE<----------- */
+/*? ENTRENAMIENTO ONLINE<----------- */
 
 .entrenamientos__entrenamientos-online {
   background-color: #fff;
-  scroll-margin-top: 75px;
+  scroll-margin-top: 850px;
 }
+
 
 .entrenamientos-entrenamiento__card-image-container {
   display: flex;
@@ -149,6 +150,7 @@ html {
 
 .plan-habana {
   background-color: #0e0e0e;
+  scroll-margin-top: 800px;
 }
 
 .plan-habana-banner {

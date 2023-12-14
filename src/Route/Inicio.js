@@ -175,7 +175,7 @@ export function MainBanner(props) {
         <h1 className="main-banner__title">
           la <span>Salud</span> de la <span>Iglesia</span>
           <h2 className="main-banner__subtitle">
-            depende de la fiel exposición de la <br /> <span>Biblia</span>
+            depende de la fiel exposición de la <br /> <span>Palabra de Dios</span>
           </h2>
         </h1>
         <div className="main-banner__line"></div>
@@ -402,12 +402,12 @@ export function Testimonios(props) {
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
-            <button
+            {/* <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            ></button>
+            ></button> */}
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -445,7 +445,7 @@ export function Testimonios(props) {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <div className="testimonios">
                 <div className="gray-line"></div>
                 <div className="testimonios__testimonio">
@@ -474,7 +474,7 @@ export function Testimonios(props) {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="carousel-item">
               <div className="testimonios">
                 <div className="gray-line"></div>

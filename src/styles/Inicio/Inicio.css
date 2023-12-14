@@ -1124,7 +1124,7 @@
 }
 
 .footer__form {
-  scroll-margin-top: 125px;
+  /* scroll-margin-top: 125px; */
   max-width: 40%;
 }
 
