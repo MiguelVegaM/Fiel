@@ -175,7 +175,8 @@ export function MainBanner(props) {
         <h1 className="main-banner__title">
           la <span>Salud</span> de la <span>Iglesia</span>
           <h2 className="main-banner__subtitle">
-            depende de la fiel exposición de la <br /> <span>Palabra de Dios</span>
+            depende de la fiel exposición de la <br />{" "}
+            <span>Palabra de Dios</span>
           </h2>
         </h1>
         <div className="main-banner__line"></div>
@@ -245,7 +246,11 @@ export function EntrenamientosOnline(props) {
               <span className="online-dot">.</span>
             </div>
             <p className="entrenamiento__card-text-bold">
-            El avance de las tecnologías modernas en el área de las video-conferencias ha hecho posible que ahora podamos ofrecer un entrenamiento online efectivo. Este entrenamiento está diseñado para desarrollar las habilidades en el manejo y la exposición de cada género literario de la Biblia.
+              El avance de las tecnologías modernas en el área de las
+              video-conferencias ha hecho posible que ahora podamos ofrecer un
+              entrenamiento online efectivo. Este entrenamiento está diseñado
+              para desarrollar las habilidades en el manejo y la exposición de
+              cada género literario de la Biblia.
             </p>
             {/* <p className="entrenamiento__card-text-normal">
               Hemos escogido el género literario de Evangelios para este primer
@@ -856,10 +861,10 @@ export function Footer(props) {
   const sendEmail = (formData) => {
     emailjs
       .send(
-        "service_nvx5h12",
-        "template_0xq23fl",
+        "service_predicafiel",
+        "template_predicafiel",
         formData,
-        "67xUYJ6zrwMgo-AtQ"
+        "TGhRe0t2oUBFfICLW"
       )
       .then(
         (result) => {
@@ -1208,11 +1213,11 @@ export function DisclaimerDonar(props) {
         </div>
         <div className="donar">
           <a href="/">
-          <img
-            className="donar__image"
-            src="/images/inicio/donar.png"
-            alt="Donar Logo"
-          />
+            <img
+              className="donar__image"
+              src="/images/inicio/donar.png"
+              alt="Donar Logo"
+            />
           </a>
         </div>
       </div>
