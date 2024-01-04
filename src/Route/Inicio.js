@@ -858,6 +858,9 @@ export function Footer(props) {
   } = useForm({
     defaultValues: { yes_i_understand: false },
   });
+
+  // Para la configuracion del smtp se necesita la contraseña original del correo
+
   const sendEmail = (formData) => {
     emailjs
       .send(
